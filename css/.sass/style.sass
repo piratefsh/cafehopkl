@@ -1,3 +1,80 @@
+// Static variables
+$space: 12px
+$dark-red: #90110d
+$orange: #ec6338
+$light-orange: #facc88
+$beige:#fee9c6
+$brown: #412218
+
+$wrapper-width: 700px
+
+// Custom Fonts
+@font-face
+    font-family: 'Matchbook'
+    src: url('./fonts/Matchbook.ttf')
+    src: local("Matchbook"), url('./fonts/Matchbook.ttf') format("truetype")
+    font-weight: normal
+@font-face
+    font-family: 'Champagne'
+    src: url('./fonts/Champagne & Limousines.ttf')
+    src: local("Champagne & Limousines"), url('./fonts/Champagne & Limousines.ttf') format("truetype")
+    font-weight: normal
+
+
+// Everything Else
 body
-    background-color: #fee9c6
-    
+    background-color:  $light-orange
+
+div#wrapper
+    max-width: $wrapper-width
+    margin: 0 auto
+    padding: $space
+
+header
+    background-color: $beige
+    margin-top: 0
+    img#logo
+        margin: $space auto
+        display: block
+h1
+    color: $dark-red
+    font-size: 3em
+
+h2
+    color: $orange 
+    font-size: 2em
+
+h3 
+    font-size: 1.5em
+
+h1, h2, h3, h4 
+    font-family: Matchbook, Tahoma, sans-serif
+    margin-bottom: $space
+
+div 
+    &#map-canvas
+        height: 500px
+        width: 100%
+        background-color: $brown
+        padding: $space
+
+p 
+    color: $brown
+    font-family: Champagne, Helvetica, Arial, sans-serif
+
+a 
+    color: $orange
+
+footer
+    background-color: $brown
+    padding: $space
+    div#sponsors 
+        width: $wrapper-width
+        margin: 0 auto
+    h1, h2, h3, p 
+        color: $light-orange
+    img 
+        max-width: 100px
+        display: block
+        margin: 
+            bottom: $space/2
