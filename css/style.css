@@ -92,8 +92,13 @@ footer h1, footer h2, footer h3, footer p {
   color: #facc88;
 }
 /* line 76, .sass/style.sass */
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 79, .sass/style.sass */
 footer img {
   max-width: 100px;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
