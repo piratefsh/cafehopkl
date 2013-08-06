@@ -56,9 +56,10 @@ h3 {
 h1, h2, h3, h4 {
   font-family: Matchbook, Tahoma, sans-serif;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
-/* line 55, .sass/style.sass */
+/* line 56, .sass/style.sass */
 div#map-canvas {
   height: 500px;
   width: 100%;
@@ -66,37 +67,37 @@ div#map-canvas {
   padding: 12px;
 }
 
-/* line 61, .sass/style.sass */
+/* line 62, .sass/style.sass */
 p {
   color: #412218;
   font-family: Champagne, Helvetica, Arial, sans-serif;
 }
 
-/* line 65, .sass/style.sass */
+/* line 66, .sass/style.sass */
 a {
   color: #ec6338;
 }
 
-/* line 68, .sass/style.sass */
+/* line 69, .sass/style.sass */
 footer {
   background-color: #412218;
   padding: 12px;
 }
-/* line 71, .sass/style.sass */
+/* line 72, .sass/style.sass */
 footer div#sponsors {
   width: 700px;
   margin: 0 auto;
 }
-/* line 74, .sass/style.sass */
+/* line 75, .sass/style.sass */
 footer h1, footer h2, footer h3, footer p {
   color: #facc88;
 }
-/* line 76, .sass/style.sass */
+/* line 77, .sass/style.sass */
 footer a {
   text-decoration: none;
   font-weight: bold;
 }
-/* line 79, .sass/style.sass */
+/* line 80, .sass/style.sass */
 footer img {
   max-width: 100px;
   display: block;
