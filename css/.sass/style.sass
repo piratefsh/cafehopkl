@@ -1,4 +1,6 @@
 // Static variables
+
+//Colors
 $space: 12px
 $white: #fff
 $red: #91110E
@@ -9,8 +11,8 @@ $beige:#fee9c6
 $brown: #412218
 $dark-brown: #160703
 
-$wrapper-width: 700px
 // Proportions
+$wrapper-width: 700px
 $logo-size: 400px
 
 // Custom Fonts
@@ -25,12 +27,16 @@ $logo-size: 400px
     src: local("Champagne & Limousines"), url('./fonts/Champagne & Limousines.ttf') format("truetype")
     font-weight: normal
 
+//Mixins
 @mixin dark-shadow
     box-shadow: 0px 0px $space $dark-brown
 
 // Everything Else
 body
     background-color:  $orange
+    color: $beige
+    font-family: Champagne, Helvetica, Arial, sans-serif
+    font-size: 1.4em
 
 div#wrapper
     max-width: $wrapper-width
@@ -46,11 +52,13 @@ header
     img#logo
         margin: 0 auto
         padding: $space
+        padding-bottom: $space * 3
         display: block
         width: $logo-size
 h1
     color: $light-orange
     font-size: 5em
+    margin-top: auto
 
 h2
     color: $beige 
@@ -67,6 +75,15 @@ h1, h2, h3, h4
     font-weight: bold
     text-align: center
 
+a 
+    color: $light-orange
+
+p
+    margin-top: 0
+    &.desc
+        text-align: center
+
+//Google Map styling
 div 
     &#map-canvas
         @include dark-shadow
@@ -75,29 +92,27 @@ div
         background-color: $brown
         padding: $space
 
-section p    
-    // text-shadow: $brown 0 -1px 0
-p 
-    color: $beige
-    font-family: Champagne, Helvetica, Arial, sans-serif
-    font-size: 1.4em
-
-a 
-    color: $light-orange
-
 footer
     background-color: $brown
+    // background-image: url('../img/header_bg.jpg')
     padding: $space
     div#sponsors 
         width: $wrapper-width
         margin: 0 auto
+        table
+            width: 100%
+            text-align: center
+            vertical-align: top
+            img
+                @include dark-shadow
+                margin: 0 auto
+                margin-bottom: $space
+                max-width: 100px
+                display: block
     h1, h2, h3, p, a 
         color: $light-orange
+        text-shadow: $dark-brown 0 -1px 0
+
     a 
         text-decoration: none 
         font-weight: bold
-    img 
-        max-width: 100px
-        display: block
-        margin: 
-            bottom: $space

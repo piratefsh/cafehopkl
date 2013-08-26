@@ -11,7 +11,10 @@
   font-weight: normal; }
 
 body {
-  background-color: #ec6338; }
+  background-color: #ec6338;
+  color: #fee9c6;
+  font-family: Champagne, Helvetica, Arial, sans-serif;
+  font-size: 1.4em; }
 
 div#wrapper {
   max-width: 700px;
@@ -26,12 +29,14 @@ header {
   header img#logo {
     margin: 0 auto;
     padding: 12px;
+    padding-bottom: 36px;
     display: block;
     width: 400px; }
 
 h1 {
   color: #facc88;
-  font-size: 5em; }
+  font-size: 5em;
+  margin-top: auto; }
 
 h2 {
   color: #fee9c6;
@@ -48,6 +53,14 @@ h1, h2, h3, h4 {
   font-weight: bold;
   text-align: center; }
 
+a {
+  color: #facc88; }
+
+p {
+  margin-top: 0; }
+  p.desc {
+    text-align: center; }
+
 div#map-canvas {
   box-shadow: 0px 0px 12px #160703;
   height: 500px;
@@ -55,26 +68,25 @@ div#map-canvas {
   background-color: #412218;
   padding: 12px; }
 
-p {
-  color: #fee9c6;
-  font-family: Champagne, Helvetica, Arial, sans-serif;
-  font-size: 1.4em; }
-
-a {
-  color: #facc88; }
-
 footer {
   background-color: #412218;
   padding: 12px; }
   footer div#sponsors {
     width: 700px;
     margin: 0 auto; }
+    footer div#sponsors table {
+      width: 100%;
+      text-align: center;
+      vertical-align: top; }
+      footer div#sponsors table img {
+        box-shadow: 0px 0px 12px #160703;
+        margin: 0 auto;
+        margin-bottom: 12px;
+        max-width: 100px;
+        display: block; }
   footer h1, footer h2, footer h3, footer p, footer a {
-    color: #facc88; }
+    color: #facc88;
+    text-shadow: #160703 0 -1px 0; }
   footer a {
     text-decoration: none;
     font-weight: bold; }
-  footer img {
-    max-width: 100px;
-    display: block;
-    margin-bottom: 12px; }
