@@ -7,6 +7,8 @@ $beige:#fee9c6
 $brown: #412218
 
 $wrapper-width: 700px
+// Proportions
+$logo-size: 400px
 
 // Custom Fonts
 @font-face
@@ -36,21 +38,25 @@ header
     img#logo
         margin: $space auto
         display: block
+        width: $logo-size
+        height: $logo-size
 h1
     color: $dark-red
-    font-size: 3em
+    font-size: 5em
 
 h2
     color: $orange 
-    font-size: 2em
+    font-size: 3em
 
 h3 
-    font-size: 1.5em
+    font-size: 2em
 
 h1, h2, h3, h4 
     font-family: Matchbook, Tahoma, sans-serif
     margin-bottom: $space
     text-transform: uppercase
+    font-weight: bold
+    text-align: center
 
 div 
     &#map-canvas
@@ -62,6 +68,7 @@ div
 p 
     color: $brown
     font-family: Champagne, Helvetica, Arial, sans-serif
+    font-size: 1.4em
 
 a 
     color: $orange

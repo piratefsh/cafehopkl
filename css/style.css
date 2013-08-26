@@ -2,104 +2,91 @@
   font-family: "Matchbook";
   src: url("./fonts/Matchbook.ttf");
   src: local("Matchbook"), url("./fonts/Matchbook.ttf") format("truetype");
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 @font-face {
   font-family: "Champagne";
   src: url("./fonts/Champagne & Limousines.ttf");
   src: local("Champagne & Limousines"), url("./fonts/Champagne & Limousines.ttf") format("truetype");
-  font-weight: normal;
-}
+  font-weight: normal; }
 
-/* line 25, .sass/style.sass */
+/* line 27, style.sass */
 body {
-  background-color: #facc88;
-}
+  background-color: #facc88; }
 
-/* line 28, .sass/style.sass */
+/* line 30, style.sass */
 div#wrapper {
   max-width: 700px;
   margin: 0 auto;
-  padding: 12px;
-}
+  padding: 12px; }
 
-/* line 33, .sass/style.sass */
+/* line 35, style.sass */
 header {
   background-color: #fee9c6;
-  margin-top: 0;
-}
-/* line 36, .sass/style.sass */
-header img#logo {
-  margin: 12px auto;
-  display: block;
-}
+  margin-top: 0; }
+  /* line 38, style.sass */
+  header img#logo {
+    margin: 12px auto;
+    display: block;
+    width: 400px;
+    height: 400px; }
 
-/* line 39, .sass/style.sass */
+/* line 43, style.sass */
 h1 {
   color: #90110d;
-  font-size: 3em;
-}
+  font-size: 5em; }
 
-/* line 43, .sass/style.sass */
+/* line 47, style.sass */
 h2 {
   color: #ec6338;
-  font-size: 2em;
-}
+  font-size: 3em; }
 
-/* line 47, .sass/style.sass */
+/* line 51, style.sass */
 h3 {
-  font-size: 1.5em;
-}
+  font-size: 2em; }
 
-/* line 50, .sass/style.sass */
+/* line 54, style.sass */
 h1, h2, h3, h4 {
   font-family: Matchbook, Tahoma, sans-serif;
   margin-bottom: 12px;
   text-transform: uppercase;
-}
+  font-weight: bold;
+  text-align: center; }
 
-/* line 56, .sass/style.sass */
+/* line 62, style.sass */
 div#map-canvas {
   height: 500px;
   width: 100%;
   background-color: #412218;
-  padding: 12px;
-}
+  padding: 12px; }
 
-/* line 62, .sass/style.sass */
+/* line 68, style.sass */
 p {
   color: #412218;
   font-family: Champagne, Helvetica, Arial, sans-serif;
-}
+  font-size: 1.4em; }
 
-/* line 66, .sass/style.sass */
+/* line 73, style.sass */
 a {
-  color: #ec6338;
-}
+  color: #ec6338; }
 
-/* line 69, .sass/style.sass */
+/* line 76, style.sass */
 footer {
   background-color: #412218;
-  padding: 12px;
-}
-/* line 72, .sass/style.sass */
-footer div#sponsors {
-  width: 700px;
-  margin: 0 auto;
-}
-/* line 75, .sass/style.sass */
-footer h1, footer h2, footer h3, footer p {
-  color: #facc88;
-}
-/* line 77, .sass/style.sass */
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-}
-/* line 80, .sass/style.sass */
-footer img {
-  max-width: 100px;
-  display: block;
-  margin-bottom: 12px;
-}
+  padding: 12px; }
+  /* line 79, style.sass */
+  footer div#sponsors {
+    width: 700px;
+    margin: 0 auto; }
+  /* line 82, style.sass */
+  footer h1, footer h2, footer h3, footer p {
+    color: #facc88; }
+  /* line 84, style.sass */
+  footer a {
+    text-decoration: none;
+    font-weight: bold; }
+  /* line 87, style.sass */
+  footer img {
+    max-width: 100px;
+    display: block;
+    margin-bottom: 12px; }
