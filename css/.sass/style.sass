@@ -1,10 +1,13 @@
 // Static variables
 $space: 12px
+$white: #fff
+$red: #91110E
 $dark-red: #90110d
 $orange: #ec6338
 $light-orange: #facc88
 $beige:#fee9c6
 $brown: #412218
+$dark-brown: #160703
 
 $wrapper-width: 700px
 // Proportions
@@ -22,10 +25,12 @@ $logo-size: 400px
     src: local("Champagne & Limousines"), url('./fonts/Champagne & Limousines.ttf') format("truetype")
     font-weight: normal
 
+@mixin dark-shadow
+    box-shadow: 0px 0px $space $dark-brown
 
 // Everything Else
 body
-    background-color:  $light-orange
+    background-color:  $orange
 
 div#wrapper
     max-width: $wrapper-width
@@ -33,25 +38,29 @@ div#wrapper
     padding: $space
 
 header
-    background-color: $beige
+    @include dark-shadow
+    background-color: $brown
+    background-image: url(../img/header_bg.jpg)
     margin-top: 0
+   
     img#logo
-        margin: $space auto
+        margin: 0 auto
+        padding: $space
         display: block
         width: $logo-size
-        height: $logo-size
 h1
-    color: $dark-red
+    color: $light-orange
     font-size: 5em
 
 h2
-    color: $orange 
+    color: $beige 
     font-size: 3em
 
 h3 
     font-size: 2em
 
 h1, h2, h3, h4 
+    text-shadow: $red 0 -1px 0
     font-family: Matchbook, Tahoma, sans-serif
     margin-bottom: $space
     text-transform: uppercase
@@ -60,18 +69,21 @@ h1, h2, h3, h4
 
 div 
     &#map-canvas
+        @include dark-shadow
         height: 500px
         width: 100%
         background-color: $brown
         padding: $space
 
+section p    
+    // text-shadow: $brown 0 -1px 0
 p 
-    color: $brown
+    color: $beige
     font-family: Champagne, Helvetica, Arial, sans-serif
     font-size: 1.4em
 
 a 
-    color: $orange
+    color: $light-orange
 
 footer
     background-color: $brown
@@ -79,7 +91,7 @@ footer
     div#sponsors 
         width: $wrapper-width
         margin: 0 auto
-    h1, h2, h3, p 
+    h1, h2, h3, p, a 
         color: $light-orange
     a 
         text-decoration: none 
