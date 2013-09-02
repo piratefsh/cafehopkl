@@ -14,6 +14,7 @@ $dark-brown: #160703
 // Proportions
 $wrapper-width: 700px
 $logo-size: 400px
+$sponsor_width: 100px
 
 // Custom Fonts
 @font-face
@@ -55,10 +56,19 @@ header
         padding-bottom: $space * 3
         display: block
         width: $logo-size
+
+h1, h2, h3, h4 
+    text-shadow: $red 0 -1px 0
+    font-family: Matchbook, Tahoma, sans-serif
+    margin: $space
+    text-transform: uppercase
+    font-weight: bold
+    text-align: center
+
 h1
     color: $light-orange
     font-size: 5em
-    margin-top: auto
+    margin-bottom: 0
 
 h2
     color: $beige 
@@ -67,13 +77,6 @@ h2
 h3 
     font-size: 2em
 
-h1, h2, h3, h4 
-    text-shadow: $red 0 -1px 0
-    font-family: Matchbook, Tahoma, sans-serif
-    margin-bottom: $space
-    text-transform: uppercase
-    font-weight: bold
-    text-align: center
 
 a 
     color: $light-orange
@@ -87,28 +90,38 @@ p
 div 
     &#map-canvas
         @include dark-shadow
+        margin: 0 auto
         height: 500px
-        width: 100%
+        width: 90%
         background-color: $brown
         padding: $space
 
 footer
+    @include dark-shadow
     background-color: $brown
-    // background-image: url('../img/header_bg.jpg')
+    background-image: url('../img/header_bg.jpg')
     padding: $space
     div#sponsors 
-        width: $wrapper-width
+        max-width: $wrapper-width
         margin: 0 auto
-        table
+        ul#sponsor_list
             width: 100%
+            padding: 0  
+            display: table
             text-align: center
-            vertical-align: top
-            img
-                @include dark-shadow
-                margin: 0 auto
-                margin-bottom: $space
-                max-width: 100px
-                display: block
+
+            li 
+                display: table-cell
+                max-width: $sponsor_width
+                img
+                    vertical-align: top
+                    margin: 0 auto
+                    margin-bottom: $space
+                    max-width: $sponsor_width
+                    display: block
+                span 
+                    display: block
+                    vertical-align: bottom
     h1, h2, h3, p, a 
         color: $light-orange
         text-shadow: $dark-brown 0 -1px 0
@@ -116,3 +129,8 @@ footer
     a 
         text-decoration: none 
         font-weight: bold
+
+
+@media screen and (max-width: 700px)
+    ul#sponsor_list
+        display: block

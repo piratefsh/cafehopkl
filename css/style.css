@@ -33,10 +33,18 @@ header {
     display: block;
     width: 400px; }
 
+h1, h2, h3, h4 {
+  text-shadow: #91110e 0 -1px 0;
+  font-family: Matchbook, Tahoma, sans-serif;
+  margin: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center; }
+
 h1 {
   color: #facc88;
   font-size: 5em;
-  margin-top: auto; }
+  margin-bottom: 0; }
 
 h2 {
   color: #fee9c6;
@@ -44,14 +52,6 @@ h2 {
 
 h3 {
   font-size: 2em; }
-
-h1, h2, h3, h4 {
-  text-shadow: #91110e 0 -1px 0;
-  font-family: Matchbook, Tahoma, sans-serif;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center; }
 
 a {
   color: #facc88; }
@@ -63,30 +63,44 @@ p {
 
 div#map-canvas {
   box-shadow: 0px 0px 12px #160703;
+  margin: 0 auto;
   height: 500px;
-  width: 100%;
+  width: 90%;
   background-color: #412218;
   padding: 12px; }
 
 footer {
+  box-shadow: 0px 0px 12px #160703;
   background-color: #412218;
+  background-image: url("../img/header_bg.jpg");
   padding: 12px; }
   footer div#sponsors {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto; }
-    footer div#sponsors table {
+    footer div#sponsors ul#sponsor_list {
       width: 100%;
-      text-align: center;
-      vertical-align: top; }
-      footer div#sponsors table img {
-        box-shadow: 0px 0px 12px #160703;
-        margin: 0 auto;
-        margin-bottom: 12px;
-        max-width: 100px;
-        display: block; }
+      padding: 0;
+      display: table;
+      text-align: center; }
+      footer div#sponsors ul#sponsor_list li {
+        display: table-cell;
+        max-width: 100px; }
+        footer div#sponsors ul#sponsor_list li img {
+          vertical-align: top;
+          margin: 0 auto;
+          margin-bottom: 12px;
+          max-width: 100px;
+          display: block; }
+        footer div#sponsors ul#sponsor_list li span {
+          display: block;
+          vertical-align: bottom; }
   footer h1, footer h2, footer h3, footer p, footer a {
     color: #facc88;
     text-shadow: #160703 0 -1px 0; }
   footer a {
     text-decoration: none;
     font-weight: bold; }
+
+@media screen and (max-width: 700px) {
+  ul#sponsor_list {
+    display: block; } }
