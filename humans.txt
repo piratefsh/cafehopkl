@@ -4,10 +4,12 @@
 # TEAM
 
     Sher Minn Chong -- Web Developer -- @piratefsh
+    Joachim Leong -- CafeHopKL Founder 
+    Jamie Lim -- CafeHopK Designer
 
 # THANKS
 
-    <name>
+    
 
 # TECHNOLOGY COLOPHON
 
