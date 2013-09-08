@@ -17,11 +17,7 @@
   font-weight: bold;
   font-style: normal; }
 
-div#maincontent {
-  width: 95%;
-  margin: 0 auto; }
 div#map-canvas {
-  box-shadow: 0px 0px 12px #160703;
   width: 100%;
   margin: 0 auto;
   height: 300px;

@@ -12,13 +12,13 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/vendor/jquery.mCustomScrollbar.css">
+        <base href="file:///home/piratefsh/Dropbox/Development/HTML5/cafehopkl/" />
 
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/map.css">
-        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
         <title>Café Hop KL</title>
     </head>
@@ -31,7 +31,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/about.html" class="selected">About Us</a></li>
                         <li><a href="pages/map.html">Map</a></li>
                         <li><a href="pages/blog.html">Blog</a></li>
                         <li><a href="pages/getacopy.html">Get A Copy</a></li>
@@ -39,31 +39,15 @@
                 </nav>
             </div>
         </header>
+
         <div id="wrapper">
-            <!-- The Map -->
-            <div id="maincontent">
-                <ul id="map-legend">
-                    <li><img src="img/map-icons/chkl-pin-03.png"/>Partner Cafes</li>
-                    <li><img src="img/map-icons/chkl-pin-02.png"/>Located in the Klang Valley</li>
-                    <li><img src="img/map-icons/chkl-pin-01.png"/>Located outside of the Klang Valley</li>
-                </ul>
-
-                <div id="map-canvas"></div>
-
-                <!-- The List -->
-                <div id="locations-list-wrapper">
-                    <div id="search-bar-wrapper">
-                        <input type="text" id="search-bar" placeholder="Search Cafes"/>
-                    </div>
-                    <div id="locations-list">
-                        <ul name="list" id="locations"></ul>
-                    </div>
-                </div>
-            </div>
+            <section> 
+                <h2>About CafeHop KL</h2>
+                <p>CafeHop KL is a mapping project mapping independent cafes around Kuala Lumpur. We have made this site and also printed copies to distribute among 28 cafes that have supported this project.
+                <br/>
+                Cafes are chosen based on a combination of good coffee, good food, good service and/or good vibes in general. So, what are you waiting for? Start cafe hopping, pop by these novel cafes and ﬁnd one that suits you. We hope you ﬁnd a nice place and have a great coffee.</p>
+            </section>
         </div>
-        <div class="clear-both"></div>
-
-        <!-- Footer -->
         <footer>
             <div id="sponsors">
                 <h3>Supported by</h3>
@@ -104,13 +88,8 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9EG2XGeh9UYfYK7jqX_SQ0W03QYHYD_4&sensor=false"></script>
-        <script src="js/vendor/geoXML3.js"></script>
-        <script src="js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="js/vendor/jquery.mousewheel.min.js"></script>
-        <script src="js/constants.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/list-search.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
              <script>

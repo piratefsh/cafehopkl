@@ -56,20 +56,26 @@ nav {
     margin: 0;
     float: right; }
     nav ul li {
-      text-shadow: #c53d13 1px 2px 0;
       display: inline;
       margin-right: 6px; }
+      nav ul li a {
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -khtml-border-radius: 12px;
+        border-radius: 12px;
+        text-shadow: #c53d13 1px 2px 0;
+        background-color: #ec6338;
+        color: #f9c36f;
+        text-decoration: none;
+        font-weight: bold; }
+        nav ul li a:hover, nav ul li a.selected {
+          background-color: #c53d13; }
       nav ul li a {
         -moz-border-radius: 6px;
         -webkit-border-radius: 6px;
         -khtml-border-radius: 6px;
         border-radius: 6px;
-        color: #f9c36f;
-        text-decoration: none;
-        padding: 6px;
-        font-weight: bold; }
-        nav ul li a:hover {
-          background-color: #c53d13; }
+        padding: 6px; }
 
 div#wrapper {
   width: 95%;
@@ -81,7 +87,6 @@ div.clear-both {
   clear: both; }
 
 h1, h2, h3, h4 {
-  text-shadow: white 1px 2px 0;
   font-family: Matchbook, Tahoma, sans-serif;
   margin: 12px;
   text-transform: uppercase;

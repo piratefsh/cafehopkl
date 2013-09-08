@@ -42,18 +42,12 @@ nav
         margin: 0
         float: right
         li 
-            @include text-shadow($dark-orange)
+            @include non-text-link-style
             display: inline
             margin-right: $space/2
             a
                 @include rounded-corners($space/2)
-                color: $beige 
-                text-decoration: none
                 padding: $space/2
-                font-weight: bold
-                &:hover
-                    background-color: $dark-orange
-
 
 
 div#wrapper
@@ -65,7 +59,6 @@ div.clear-both
     clear: both
 
 h1, h2, h3, h4 
-    @include text-shadow($white)
     font-family: Matchbook, Tahoma, sans-serif
     margin: $space
     text-transform: uppercase
