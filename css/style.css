@@ -35,7 +35,7 @@ header {
     border-spacing: 6px; }
     header div#header-wrapper div {
       display: table-cell;
-      min-width: 80%; }
+      min-width: 40%; }
       header div#header-wrapper div img#logo {
         display: block;
         float: left;
@@ -43,7 +43,7 @@ header {
         vertical-align: middle; }
       header div#header-wrapper div h1 {
         text-shadow: #c53d13 1px 2px 0;
-        display: inline;
+        display: block;
         margin-left: 12px;
         color: #f9c36f;
         font-size: 3em;
@@ -70,8 +70,8 @@ nav {
     margin: 0;
     float: right; }
     nav ul li {
-      display: inline;
-      margin-right: 6px; }
+      display: inline-block;
+      margin: 0 6px 6px; }
       nav ul li a {
         -moz-border-radius: 12px;
         -webkit-border-radius: 12px;

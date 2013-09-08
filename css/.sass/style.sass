@@ -19,7 +19,7 @@ header
         border-spacing: $space/ 2
         div 
             display: table-cell
-            min-width: 80%
+            min-width: 40%
             img#logo
                 display: block
                 float: left
@@ -29,7 +29,7 @@ header
             h1 
                 @include non-text-link-style
                 @include text-shadow($dark-orange)
-                display: inline
+                display: block
                 margin-left: $space
                 color: $beige
                 font-size: 3em
@@ -46,8 +46,8 @@ nav
         float: right
         li 
             @include non-text-link-style
-            display: inline
-            margin-right: $space/2
+            display: inline-block
+            margin: 0 $space/2 $space/2
             a
                 @include rounded-corners($space/2)
                 padding: $space/2
