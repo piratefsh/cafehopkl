@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Matchbook";
+  src: url("./fonts/Matchbook.ttf");
+  src: local("Matchbook"), url("./fonts/Matchbook.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Champagne";
+  src: url("./fonts/Champagne_&_Limousines.ttf");
+  src: local("Champagne & Limousines"), url("./fonts/Champagne_&_Limousines.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Champagne Bold";
+  src: url("./fonts/Champagne_&_Limousines_Bold.ttf");
+  src: local("Champagne & Limousines Bold"), url("./fonts/Champagne_&_Limousines_Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+div#maincontent {
+  width: 95%;
+  margin: 0 auto; }
+div#map-canvas {
+  box-shadow: 0px 0px 12px #160703;
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  background-color: #412218;
+  color: #412218;
+  font-family: "Champagne", Helvetica, Arial, sans-serif; }
+  div#map-canvas h3 {
+    text-shadow: none;
+    font-family: "Champagne", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0; }
+
+div#locations-list-wrapper {
+  width: 100%; }
+  div#locations-list-wrapper div#locations-list ul#locations {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: visible; }
+    div#locations-list-wrapper div#locations-list ul#locations li {
+      border-bottom: solid 1px #f8b582;
+      font-size: 0.8em;
+      padding: 12px; }
+      div#locations-list-wrapper div#locations-list ul#locations li .title {
+        font-weight: bold; }
+      div#locations-list-wrapper div#locations-list ul#locations li span {
+        display: block; }
+        div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc {
+          display: block;
+          font-size: 0.8em; }
+          div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc a {
+            display: inline-block;
+            width: auto; }
+          div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc span.address {
+            font-style: italic;
+            margin-bottom: 6px; }
+      div#locations-list-wrapper div#locations-list ul#locations li.selected {
+        background-color: #f8b582; }
+  div#locations-list-wrapper div#search-bar-wrapper {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 6px;
+    width: 100%;
+    margin: 12px auto;
+    background-color: #f8b582;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    div#locations-list-wrapper div#search-bar-wrapper input#search-bar {
+      width: 100%;
+      border: none;
+      margin: 0 auto;
+      background-color: #f8b582;
+      color: #90120e;
+      font-family: "Champagne", Helvetica, Arial, sans-serif;
+      font-weight: bold; }
+    div#locations-list-wrapper div#search-bar-wrapper input:hover, div#locations-list-wrapper div#search-bar-wrapper input:focus {
+      box-shadow: none;
+      border: none; }
+
+ul#map-legend {
+  padding: 0; }
+  ul#map-legend li {
+    list-style: none;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 12px; }
+    ul#map-legend li img {
+      margin-right: 6px; }

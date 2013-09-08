@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <base href="file:///home/piratefsh/Dropbox/Development/HTML5/cafehopkl/" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/vendor/jquery.mCustomScrollbar.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/map.css">
+        <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <title>Café Hop KL</title>
+    </head>
+    <body>
+        <header>
+            <div id="header-wrapper">
+                <div>
+                    <a href="http://cafehopkl.com"><img id='logo' src="img/cafehopkl_logo_dark.png" alt="CafeHop KL"/></a>
+                    <h1>CafeHop KL</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#" class="current">Map</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Get A Copy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="wrapper">
+            <!-- The Map -->
+            <div id="maincontent">
+                <ul id="map-legend">
+                    <li><img src="img/map-icons/chkl-pin-03.png"/>Partner Cafes</li>
+                    <li><img src="img/map-icons/chkl-pin-02.png"/>Located in the Klang Valley</li>
+                    <li><img src="img/map-icons/chkl-pin-01.png"/>Located outside of the Klang Valley</li>
+                </ul>
+
+                <div id="map-canvas"></div>
+
+                <!-- The List -->
+                <div id="locations-list-wrapper">
+                    <div id="search-bar-wrapper">
+                        <input type="text" id="search-bar" placeholder="Search Cafes"/>
+                    </div>
+                    <div id="locations-list">
+                        <ul name="list" id="locations"></ul>
+                    </div>
+                </div>
+            </div>
+
+        <footer>
+            <div id="sponsors">
+                <h3>Supported by</h3>
+                <ul id="sponsor_list">
+                    <li>
+                        <a href="https://www.facebook.com/BaristaGuildAsia?ref=br_rs" target="_blank">
+                            <img src="img/bga_logo.png" alt="Barrista Guild Asia"/>
+                            <span>Barista Guild Asia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pages/Coffex-Coffee-Malaysia/117423838316850" target="_blank">
+                            <img src="img/coffex_logo.png" alt="Coffex Coffee Malaysia"/>
+                            <span>Coffex Coffee</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pages/Dankoff-Coffee-Specialist-Sdn-Bhd/144234565705319" target="_blank">
+                            <img src="img/dankoff_logo.png" alt="Cuppa"/>
+                            <span>Dankoff Coffee Specialist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://cuppa.com.my" target="_blank">
+                            <img src="img/cuppa_logo.png" alt="Cuppa"/>
+                            <span>Cuppa</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://auresso.com.my" target="_blank">
+                            <img src="img/auresso_logo.png" alt="Auresso"/>
+                            <span>Auresso</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9EG2XGeh9UYfYK7jqX_SQ0W03QYHYD_4&sensor=false"></script>
+        <script src="js/vendor/geoXML3.js"></script>
+        <script src="js/vendor/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/vendor/jquery.mousewheel.min.js"></script>
+        <script src="js/constants.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/list-search.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+             <script>
+        //     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        //     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        //     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        //     s.parentNode.insertBefore(g,s)}(document,'script'));
+        // </script>
+    </body>
+</html>

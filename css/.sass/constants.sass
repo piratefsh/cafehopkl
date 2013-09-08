@@ -87,3 +87,17 @@ $bold-font: 'Champagne Bold', Helvetica, Arial, sans-serif
 @mixin clear-spacing
     margin: 0 
     padding: 0    
+
+@mixin center-element
+    margin: 0 auto    
+
+@mixin non-text-link-style
+    a 
+        @include rounded-corners($space)
+        @include text-shadow($orange)
+        background-color: $orange
+        color: $beige
+        text-decoration: none    
+        font-weight: bold
+        &:hover, &.selected
+            background-color: $dark-orange
