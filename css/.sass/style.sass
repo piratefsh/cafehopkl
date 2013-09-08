@@ -3,47 +3,84 @@
 //Colors
 $space: 12px
 $white: #fff
-$red: #91110E
+$red: #90120e
 $dark-red: #90110d
 $orange: #ec6338
-$light-orange: #facc88
-$beige:#fee9c6
+$light-orange: #f8b582
+$bright-orange: f07e2d
+$dark-orange: darken($orange, 15%)
+$beige: #f9c36f
+$light-beige:#ffe9c6
 $brown: #412218
 $dark-brown: #160703
-
+$light-brown: lighten($brown, 30%)
+$green: #7dc4a5
+$search-box-color: $light-orange
+$scroller-rail-color: $light-orange
 // Proportions
-$wrapper-width: 700px
+$wrapper-width: 1000px
+$sidebar-width: 30%
 $logo-size: 400px
 $sponsor_width: 100px
-$map-height: 500px
+$map-height: 300px
 
+$small-font: 0.8em
+
+// Font families
+$body-font: 'Champagne', Helvetica, Arial, sans-serif
 // Custom Fonts
 @font-face
     font-family: 'Matchbook'
     src: url('./fonts/Matchbook.ttf')
     src: local("Matchbook"), url('./fonts/Matchbook.ttf') format("truetype")
     font-weight: normal
+
 @font-face
     font-family: 'Champagne'
     src: url('./fonts/Champagne & Limousines.ttf')
     src: local("Champagne & Limousines"), url('./fonts/Champagne & Limousines.ttf') format("truetype")
     font-weight: normal
 
+@font-face
+    font-family: 'Champagne'
+    src: url('./fonts/Champagne & Limousines Bold.ttf')
+    src: local("Champagne & Limousines Bold"), url('./fonts/Champagne & Limousines Bold.ttf') format("truetype")
+    font-weight: bold
+    font-style: normal
+
+
 //Mixins
 @mixin dark-shadow
     box-shadow: 0px 0px $space $dark-brown
 
+@mixin inner-shadow
+    box-shadow: inset 0 0 4px $dark-orange
+
+@mixin upper-inner-shadow    
+    box-shadow: inset $space -$space $space/2 $space/2 $dark-orange
+@mixin insignificant-text
+    font-size: 0.5em
+    font-style: italic
+
+@mixin rounded-corners ($radius)
+    -moz-border-radius: $radius
+    -webkit-border-radius: $radius
+    -khtml-border-radius: $radius
+    border-radius: $radius
+
+@mixin text-shadow($color)
+    text-shadow: $color 1px 2px 0
+
+@mixin box-sizing
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
 // Everything Else
 body
-    background-color:  $orange
-    color: $beige
-    font-family: Champagne, Helvetica, Arial, sans-serif
+    background-color:  $light-beige
+    color: $red
+    font-family: $body-font
     font-size: 1.4em
-
-div#wrapper
-    max-width: $wrapper-width
-    margin: 0 auto
-    padding: $space
 
 header
     @include dark-shadow
@@ -56,31 +93,38 @@ header
         padding: $space
         padding-bottom: $space * 3
         display: block
-        width: $logo-size
+        width: $logo-size 
+div#wrapper
+    max-width: $wrapper-width
+    margin: 0 auto
+
+div.clear-both
+    clear: both
 
 h1, h2, h3, h4 
-    text-shadow: $red 0 -1px 0
+    @include text-shadow($white)
     font-family: Matchbook, Tahoma, sans-serif
     margin: $space
     text-transform: uppercase
     font-weight: bold
     text-align: center
+    margin-bottom: -$space
 
 h1
-    color: $light-orange
+    color: $red
     font-size: 5em
-    margin-bottom: 0
 
 h2
-    color: $beige 
+    color: $red 
     font-size: 3em
 
 h3 
     font-size: 2em
+    margin-bottom: 0
 
 
 a 
-    color: $light-orange
+    color: $dark-orange
 
 p
     margin-top: 0
@@ -89,18 +133,96 @@ p
 
 //Google Map styling
 div 
+    &#maincontent 
+        width: 95%
+        margin: 0 auto 
+
     &#map-canvas
         @include dark-shadow
-        margin: 0 auto
+        width: 100%
+        margin: 0 auto 
         height: $map-height
-        width: 90%
         background-color: $brown
-        padding: $space
+
+        color: $brown
+        font-family: $body-font
+        h3
+            text-shadow: none
+            font-family: $body-font
+            padding: 0
+            margin: 0
+
+//Overrule gmaps infowindow style
+div#locations-list-wrapper
+    width: 100%
+    div#locations-list
+        ul#locations
+            list-style: none
+            padding: 0
+            margin: 0
+            width: 100%
+            overflow: visible
+            li 
+                border-bottom: solid 1px $light-orange
+                font-size: 0.8em
+                padding: $space 
+                
+                .title
+                    font-weight: bold
+                span 
+                    display: block
+                    &.loc-desc
+                        display: block
+                        font-size: 0.8em
+                        a
+                            display: inline-block
+                            width: auto
+                        span.address
+                            font-style: italic
+                            margin:
+                                bottom: $space/2
+                &.selected
+                    background-color: $scroller-rail-color
+    //List search input
+    div#search-bar-wrapper
+        @include rounded-corners($space/2)
+        @include box-sizing
+        padding: $space/2
+        width: 100%
+        margin: $space auto
+        background-color: $search-box-color
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+        input
+            &#search-bar
+                width: 100%
+                border: none
+                margin: 0 auto
+                background-color: $search-box-color
+                color: $red
+                font-family: $body-font
+                font-weight: bold
+
+            &:hover, &:focus
+                box-shadow: none
+                border: none
+
+ul#map-legend
+    padding: 0
+    li 
+        list-style: none
+        display: inline-block
+        font-size: $small-font
+        margin-right: $space
+
+        img
+            margin-right: $space/ 2
 
 footer
     @include dark-shadow
+    clear: both
     background-color: $brown
-    background-image: url('../img/header_bg.jpg')
     padding: $space
     div#sponsors 
         max-width: $wrapper-width
@@ -123,6 +245,7 @@ footer
                 span 
                     display: block
                     vertical-align: bottom
+
     h1, h2, h3, p, a 
         color: $light-orange
         text-shadow: $dark-brown 0 -1px 0
@@ -131,7 +254,26 @@ footer
         text-decoration: none 
         font-weight: bold
 
+    p 
+        @include insignificant-text
+        text-align: center
+
 
 @media screen and (max-width: 700px)
     ul#sponsor_list
         display: block
+
+
+//Placeholder text color
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder 
+    color: $orange
+
+//Override mCustomScrollbar css
+.mCSB_scrollTools .mCSB_draggerRail
+    background-color: $scroller-rail-color !important
+
+.mCSB_scrollTools .mCSB_draggerRail
+    background-color: $scroller-rail-color  !important
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+    background: $dark-orange !important
