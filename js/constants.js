@@ -8,3 +8,5 @@ var listToSearchSelector 	= "ul#locations"
 var locationsListSelector 	= 'ul#locations'
 var divWithLocationsListSelector = 'div#locations-list'
 var chklBaseUrl				= "http://www.cafehopkl.com/"			
+
+var participatingCafesListSelector  = "ul#participating-cafes-list"
