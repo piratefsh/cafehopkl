@@ -10,7 +10,7 @@ $(document).ready(function(){
             $('body').prepend($(header))
             $(header).slideDown(300)
             $('body').append($(footer))
-        })   
+        }, 'html')   
     }
 
     //###################################################### RUN CODE #####################################################
