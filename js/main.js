@@ -15,7 +15,20 @@ $(document).ready(function(){
     markerIcons['default']         = chklBaseUrl + 'maplocationlister/img/map-icons/chkl-pin-02.png'
 
     var globalInfoWindow = new google.maps.InfoWindow() //only want one custom infowindow open
+    
+
     //################################################ INITIALIZERS ###################################################
+    function initializeTemplates(){
+        //Header
+        $.get('templates/header-template.html', function(templates){
+            console.log(templates)  
+            var template = $(templates).filter("#template-header").html()   
+            template = $(template).hide()
+            $('body').prepend($(template))
+            $(template).slideDown(300)
+        })   
+    }
+
     function initializeListScroller(){
         //Set plugin scrollbar
         $(divWithLocationsListSelector).height('400px').mCustomScrollbar({
@@ -289,5 +302,6 @@ $(document).ready(function(){
 
 
     //###################################################### RUN CODE #####################################################
+    initializeTemplates()
     google.maps.event.addDomListener(window, 'load', initialize);
 })
