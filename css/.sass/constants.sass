@@ -1,0 +1,85 @@
+// Static variables
+
+//Colors
+$space: 12px
+$white: #fff
+$red: #90120e
+$dark-red: #90110d
+$orange: #ec6338
+$light-orange: #f8b582
+$bright-orange: #f07e2d
+$dark-orange: darken($orange, 15%)
+$beige: #f9c36f
+$light-beige:#ffe9c6
+$brown: #412218
+$dark-brown: #160703
+$light-brown: lighten($brown, 30%)
+$green: #7dc4a5
+$search-box-color: $light-orange
+$scroller-rail-color: $light-orange
+// Proportions
+$wrapper-width: 1000px
+$sidebar-width: 30%
+$logo-size: 80px
+$sponsor_width: 100px
+$map-height: 300px
+$header-height: 150px
+
+$small-font: 0.8em
+
+// Font families
+$body-font: 'Champagne', Helvetica, Arial, sans-serif
+$bold-font: 'Champagne Bold', Helvetica, Arial, sans-serif
+
+
+// Custom Fonts
+@font-face
+    font-family: 'Matchbook'
+    src: url('./fonts/Matchbook.ttf')
+    src: local("Matchbook"), url('./fonts/Matchbook.ttf') format("truetype")
+    font-weight: normal
+
+@font-face
+    font-family: 'Champagne'
+    src: url('./fonts/Champagne_&_Limousines.ttf')
+    src: local("Champagne & Limousines"), url('./fonts/Champagne_&_Limousines.ttf') format("truetype")
+    font-weight: normal
+
+@font-face
+    font-family: 'Champagne Bold'
+    src: url('./fonts/Champagne_&_Limousines_Bold.ttf')
+    src: local("Champagne & Limousines Bold"), url('./fonts/Champagne_&_Limousines_Bold.ttf') format("truetype")
+    font-weight: bold
+    font-style: normal
+
+@mixin wrapper-style
+    width: 95%
+    margin: 0 auto 
+
+
+//Mixins
+@mixin dark-shadow
+    box-shadow: 0px 0px $space $dark-brown
+
+@mixin inner-shadow
+    box-shadow: inset 0 0 4px $dark-orange
+
+@mixin upper-inner-shadow    
+    box-shadow: inset $space -$space $space/2 $space/2 $dark-orange
+@mixin insignificant-text
+    font-size: 0.5em
+    font-style: italic
+
+@mixin rounded-corners ($radius)
+    -moz-border-radius: $radius
+    -webkit-border-radius: $radius
+    -khtml-border-radius: $radius
+    border-radius: $radius
+
+@mixin text-shadow($color)
+    text-shadow: $color 1px 2px 0
+
+@mixin box-sizing
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box

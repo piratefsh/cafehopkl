@@ -1,0 +1,73 @@
+/*
+Syntax error: Undefined mixin 'wrapper-style'.
+        on line 5 of css/.sass/maps.sass, in `wrapper-style'
+        from line 5 of css/.sass/maps.sass
+
+1: 
+2: //Google Map styling
+3: div 
+4:     &#maincontent 
+5:         @include wrapper-style
+6: 
+7:     &#map-canvas
+8:         @include dark-shadow
+9:         width: 100%
+10:         margin: 0 auto 
+
+Backtrace:
+css/.sass/maps.sass:5:in `wrapper-style'
+css/.sass/maps.sass:5
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/home/piratefsh/.gem/ruby/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/linux.rb:48:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'wrapper-style'.\A         on line 5 of css/.sass/maps.sass, in `wrapper-style'\A         from line 5 of css/.sass/maps.sass\A \A 1: \A 2: //Google Map styling\A 3: div \A 4:     &#maincontent \A 5:         @include wrapper-style\A 6: \A 7:     &#map-canvas\A 8:         @include dark-shadow\A 9:         width: 100%\A 10:         margin: 0 auto "; }
