@@ -8,7 +8,6 @@ body
     font-size: 1.4em
 
 header
-    @include dark-shadow
     width: 100%
     background-color: $orange
     margin-top: 0
@@ -97,36 +96,34 @@ p
 
 
 footer
-    @include dark-shadow
     clear: both
-    background-color: $brown
+    background-color: $red
     padding: $space
     div#sponsors 
         max-width: $wrapper-width
         margin: 0 auto
         ul#sponsor_list
+            @include clear-spacing
             width: 100%
-            padding: 0  
             display: table
             text-align: center
 
             li 
                 display: table-cell
+                vertical-align: middle
                 max-width: $sponsor_width
                 img
-                    vertical-align: top
                     margin: 0 auto
                     margin-bottom: $space
                     max-width: $sponsor_width
                     display: block
                 span 
                     display: block
-                    vertical-align: bottom
+                    font-size: $small-font
 
     h1, h2, h3, p, a 
-        color: $light-orange
-        text-shadow: $dark-brown 0 -1px 0
-
+        color: $orange
+        @include text-shadow($brown)
     a 
         text-decoration: none 
         font-weight: bold
