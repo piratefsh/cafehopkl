@@ -31,10 +31,12 @@ h2, h3 {
   clear: both; }
 
 img#about-logo {
-  -moz-border-radius: 125px;
-  -webkit-border-radius: 125px;
-  -khtml-border-radius: 125px;
-  border-radius: 125px;
+  box-shadow: 2px 3px #c53d13;
+  -moz-border-radius: 41.66667px;
+  -webkit-border-radius: 41.66667px;
+  -khtml-border-radius: 41.66667px;
+  border-radius: 41.66667px;
+  padding: 6px;
   width: 250px;
   margin-left: 24px;
   float: right;

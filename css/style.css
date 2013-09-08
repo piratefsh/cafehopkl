@@ -48,6 +48,20 @@ header {
         color: #f9c36f;
         font-size: 3em;
         text-align: left; }
+        header div#header-wrapper div h1 a {
+          -moz-border-radius: 12px;
+          -webkit-border-radius: 12px;
+          -khtml-border-radius: 12px;
+          border-radius: 12px;
+          text-shadow: #c53d13 1px 2px 0;
+          background-color: #ec6338;
+          color: #f9c36f;
+          text-decoration: none;
+          font-weight: bold; }
+          header div#header-wrapper div h1 a:hover, header div#header-wrapper div h1 a.selected {
+            background-color: #c53d13; }
+        header div#header-wrapper div h1 a:hover {
+          background-color: #ec6338; }
 
 nav {
   display: table-cell;

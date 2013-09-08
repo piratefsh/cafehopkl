@@ -27,12 +27,15 @@ header
                 vertical-align: middle
 
             h1 
+                @include non-text-link-style
                 @include text-shadow($dark-orange)
                 display: inline
                 margin-left: $space
                 color: $beige
                 font-size: 3em
                 text-align: left
+                a:hover 
+                    background-color: $orange //no cbg-color change on hover 
 
 
 nav 

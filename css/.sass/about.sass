@@ -13,7 +13,9 @@ h2, h3
     clear: both
 
 img#about-logo
-    @include rounded-corners($about-logo-size/2)
+    @include small-shadow($dark-orange)
+    @include rounded-corners($about-logo-size/6)
+    padding: $space/2
     width: $about-logo-size
     margin-left: $space * 2
     float: right
