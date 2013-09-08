@@ -40,15 +40,13 @@ div#locations-list-wrapper {
     overflow: visible; }
     div#locations-list-wrapper div#locations-list ul#locations li {
       border-bottom: solid 1px #f8b582;
-      font-size: 0.8em;
       padding: 12px; }
       div#locations-list-wrapper div#locations-list ul#locations li .title {
         font-weight: bold; }
       div#locations-list-wrapper div#locations-list ul#locations li span {
         display: block; }
         div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc {
-          display: block;
-          font-size: 0.8em; }
+          display: block; }
           div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc a {
             display: inline-block;
             width: auto; }

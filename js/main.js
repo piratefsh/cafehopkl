@@ -20,12 +20,13 @@ $(document).ready(function(){
     //################################################ INITIALIZERS ###################################################
     function initializeTemplates(){
         //Header
-        $.get('templates/header-template.html', function(templates){
-            console.log(templates)  
-            var template = $(templates).filter("#template-header").html()   
-            template = $(template).hide()
-            $('body').prepend($(template))
-            $(template).slideDown(300)
+        $.get('templates/static-templates.html', function(templates){
+            var header = $(templates).filter("#template-header").html()   
+            var footer = $(templates).filter("#template-footer").html()   
+            header = $(header).hide()
+            $('body').prepend($(header))
+            $(header).slideDown(300)
+            $('body').append($(footer))
         })   
     }
 
