@@ -34,7 +34,12 @@ div#links-to-parts-of-site {
     div#links-to-parts-of-site a:hover, div#links-to-parts-of-site a.selected {
       background-color: #c53d13; }
   div#links-to-parts-of-site a#link-to-map, div#links-to-parts-of-site a#link-to-getcopy {
-    width: 100%;
     padding: 24px;
     margin-right: 12px;
-    min-height: 48px; }
+    min-height: 48px;
+    display: inline-block; }
+  div#links-to-parts-of-site a span {
+    display: block; }
+  div#links-to-parts-of-site a img {
+    width: 150px;
+    margin: 12px; }

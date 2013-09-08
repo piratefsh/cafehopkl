@@ -1,17 +1,21 @@
 @import 'constants'
 
 $button-height: $space * 4
-
+$button-image-size: 150px
 div#links-to-parts-of-site
     @include center-element
     text-align: center
     padding: $space * 2
     
     @include non-text-link-style
-
     a
         &#link-to-map, &#link-to-getcopy
-            width: 100%
             padding: $space * 2
             margin-right: $space 
             min-height: $button-height
+            display: inline-block
+        span 
+            display: block
+        img
+            width: $button-image-size
+            margin: $space
