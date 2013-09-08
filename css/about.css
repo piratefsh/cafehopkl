@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Matchbook";
+  src: url("./fonts/Matchbook.ttf");
+  src: local("Matchbook"), url("./fonts/Matchbook.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Champagne";
+  src: url("./fonts/Champagne_&_Limousines.ttf");
+  src: local("Champagne & Limousines"), url("./fonts/Champagne_&_Limousines.ttf") format("truetype");
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Champagne Bold";
+  src: url("./fonts/Champagne_&_Limousines_Bold.ttf");
+  src: local("Champagne & Limousines Bold"), url("./fonts/Champagne_&_Limousines_Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+ul#team {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul#team li {
+    margin-bottom: 12px; }
+
+span.name {
+  font-weight: bold; }
+
+h2, h3 {
+  clear: both; }
+
+img#about-logo {
+  -moz-border-radius: 125px;
+  -webkit-border-radius: 125px;
+  -khtml-border-radius: 125px;
+  border-radius: 125px;
+  width: 250px;
+  margin-left: 24px;
+  float: right;
+  vertical-align: middle;
+  background-color: rgba(240, 126, 45, 0.8); }

@@ -1,0 +1,22 @@
+@import 'constants'
+
+$about-logo-size: 250px
+ul#team
+    @include clear-spacing
+    list-style: none 
+    li 
+        margin-bottom: $space
+span.name
+    font-weight: bold
+
+h2, h3
+    clear: both
+
+img#about-logo
+    @include rounded-corners($about-logo-size/2)
+    width: $about-logo-size
+    margin-left: $space * 2
+    float: right
+    vertical-align: middle
+    background-color: rgba($bright-orange, 0.8)
+    
