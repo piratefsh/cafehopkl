@@ -3,6 +3,7 @@
 div 
     &#map-canvas
         width: 100%
+        height: 100%
         margin: 0 auto 
         height: $map-height
         background-color: $brown
@@ -70,7 +71,8 @@ div#locations-list-wrapper
                 border: none
 
 ul#map-legend
-    padding: 0
+    @include clear-spacing
+    margin: $space / 3
     li 
         list-style: none
         display: inline-block
