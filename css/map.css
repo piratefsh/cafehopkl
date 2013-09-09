@@ -18,6 +18,7 @@
   font-style: normal; }
 
 div#map-canvas {
+  border-bottom: 1px solid #c53d13;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -86,7 +87,7 @@ div#locations-list-wrapper {
 ul#map-legend {
   margin: 0;
   padding: 0;
-  margin: 4px; }
+  margin-top: 6px; }
   ul#map-legend li {
     list-style: none;
     display: inline-block;
@@ -100,9 +101,22 @@ div#zones {
   background-color: #f8b582; }
   div#zones ul#zones-list {
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
     list-style: none; }
     div#zones ul#zones-list li {
-      padding: 6px;
-      margin-right: 6px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-right: 12px;
       display: inline-block; }
+      div#zones ul#zones-list li a {
+        padding: 6px;
+        display: block;
+        background-color: transparent;
+        text-decoration: none;
+        color: #90120e;
+        text-shadow: none;
+        font-size: 0.8em; }
+        div#zones ul#zones-list li a:hover {
+          color: #f8b582;
+          background-color: #c53d13; }

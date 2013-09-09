@@ -23,10 +23,10 @@ div#links-to-parts-of-site {
   padding: 24px;
   padding-top: 0; }
   div#links-to-parts-of-site a {
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -khtml-border-radius: 12px;
-    border-radius: 12px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
     text-shadow: #c53d13 1px 2px 0;
     background-color: #ec6338;
     color: #f9c36f;

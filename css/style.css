@@ -50,10 +50,10 @@ header {
         text-align: left;
         display: inline-block; }
         header div#header-wrapper div h1 a {
-          -moz-border-radius: 12px;
-          -webkit-border-radius: 12px;
-          -khtml-border-radius: 12px;
-          border-radius: 12px;
+          -moz-border-radius: 6px;
+          -webkit-border-radius: 6px;
+          -khtml-border-radius: 6px;
+          border-radius: 6px;
           text-shadow: #c53d13 1px 2px 0;
           background-color: #ec6338;
           color: #f9c36f;
@@ -80,10 +80,10 @@ nav {
       display: inline-block;
       margin: 0 6px 6px; }
       nav ul li a {
-        -moz-border-radius: 12px;
-        -webkit-border-radius: 12px;
-        -khtml-border-radius: 12px;
-        border-radius: 12px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -khtml-border-radius: 6px;
+        border-radius: 6px;
         text-shadow: #c53d13 1px 2px 0;
         background-color: #ec6338;
         color: #f9c36f;
@@ -92,10 +92,6 @@ nav {
         nav ul li a:hover, nav ul li a.selected {
           background-color: #c53d13; }
       nav ul li a {
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
-        -khtml-border-radius: 6px;
-        border-radius: 6px;
         padding: 6px; }
 
 div#wrapper {
