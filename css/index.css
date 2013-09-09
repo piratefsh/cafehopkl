@@ -49,6 +49,8 @@ div#links-to-parts-of-site {
 
 @media only screen and (max-width: 650px) {
   div#links-to-parts-of-site {
-    padding: 4px; }
+    padding: 3px; }
+    div#links-to-parts-of-site a span {
+      font-size: 1em; }
     div#links-to-parts-of-site a img {
       width: 80px; } }
