@@ -1,5 +1,6 @@
 @import 'constants'
 
+
 // Everything Else
 body
     background-color:  $light-beige
@@ -15,48 +16,49 @@ header
         max-width: $wrapper-width
         width: 100%
         margin: 0 auto
-        display: table
         border-spacing: $space/ 2
         div 
-            display: table-cell
-            vertical-align: middle
-            min-width: 40%
+            white-space: no-wrap
+            display: inline-block
             img#logo
                 display: block
                 float: left
                 width: $logo-size 
-                vertical-align: middle
-
-            h1 
-                @include non-text-link-style
-                @include text-shadow($dark-orange)
-                @include clear-spacing
-                font-size: 3em
-                text-align: left
-                display: inline-block
-                a
-                    margin: 
-                        top: $space
-                        bottom: $space
-                        left: $space
-                    color: $beige
-                a:hover 
-                    background-color: $orange //no cbg-color change on hover 
-
-
+    h1 
+        @include non-text-link-style
+        @include text-shadow($dark-orange)
+        @include clear-spacing
+        font-size: 3em
+        text-align: left
+        display: inline-block
+        line-height: $logo-size
+        a
+            margin: 
+                top: $space
+                bottom: $space
+                left: $space
+            color: $beige
+        a:hover 
+            background-color: $orange //no cbg-color change on hover 
 nav 
-    max-width: 60%
-    display: table-cell
-    vertical-align: middle  
+    position: relative
+    right: 0px
+    top: 0px
+    display: block
+    float: right
     ul
-        margin: 0
-        float: right
+        @include clear-spacing
+        display: inline
         li 
+            line-height: $logo-size
             @include non-text-link-style
             display: inline-block
             margin: 0 $space/2 $space/2
             a
                 padding: $space/2
+    img#menu-icon
+        display: none
+        margin: $space* 1.5
 
 
 div#wrapper
@@ -107,24 +109,24 @@ footer
     div#sponsors 
         max-width: $wrapper-width
         margin: 0 auto
-        ul#sponsor_list
-            @include clear-spacing
-            width: 100%
-            display: table
-            text-align: center
+    ul#sponsor_list
+        @include clear-spacing
+        width: 100%
+        display: table
+        text-align: center
 
-            li 
-                display: table-cell
-                vertical-align: middle
+        li 
+            display: table-cell
+            vertical-align: middle
+            max-width: $sponsor_width
+            img
+                margin: 0 auto
+                margin-bottom: $space
                 max-width: $sponsor_width
-                img
-                    margin: 0 auto
-                    margin-bottom: $space
-                    max-width: $sponsor_width
-                    display: block
-                span 
-                    display: block
-                    font-size: $small-font
+                display: block
+            span 
+                display: block
+                font-size: $small-font
 
     h1, h2, h3, p, a 
         color: $orange
@@ -182,3 +184,41 @@ div.heading-img
     font-weight: bold
     color: $bright-orange
     @include small-text-shadow($light-brown)
+
+//RESPONSIVE STUFF
+$icons-mobile-size: 80px 
+@mixin collapsed-nav
+    nav
+        ul
+            position: absolute
+            right: -9999px
+        img#menu-icon
+            display: block
+
+@media only screen and (max-width : 650px)
+    @include collapsed-nav
+    h1
+        font-size: 3em
+    h2, h3
+        font-size: 2em
+
+@media only screen and (max-width : 480px)
+    h1
+        font-size: 2.2em
+    h2, h3, h4
+        font-size: 2em
+    header 
+        h1
+            font-size: 2em         
+    footer 
+        padding: $space/2
+        ul#sponsor_list
+            display: block
+            li
+                display: inline-block
+                span 
+                    display: none
+                img 
+                    width: $icons-mobile-size
+
+            

@@ -10,11 +10,9 @@ div#links-to-parts-of-site
     
     @include non-text-link-style
     a
-        &#link-to-map, &#link-to-getcopy
-            padding: $space * 2
-            margin-right: $space 
-            min-height: $button-height
-            display: inline-block
+        padding: $space * 2
+        margin: $space 
+        display: inline-block
         span 
             display: block
             font-size: 1.2em
@@ -23,3 +21,11 @@ div#links-to-parts-of-site
         img
             width: $button-image-size
             margin: $space
+
+@media only screen and (max-width : 650px)
+    div#links-to-parts-of-site
+        padding: $space/3
+        a 
+            img 
+                width: $mobile-icon-size    
+@media only screen and (max-width : 480px)

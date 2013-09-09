@@ -31,52 +31,54 @@ header {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    display: table;
     border-spacing: 6px; }
     header div#header-wrapper div {
-      display: table-cell;
-      vertical-align: middle;
-      min-width: 40%; }
+      white-space: no-wrap;
+      display: inline-block; }
       header div#header-wrapper div img#logo {
         display: block;
         float: left;
-        width: 80px;
-        vertical-align: middle; }
-      header div#header-wrapper div h1 {
-        text-shadow: #c53d13 1px 2px 0;
-        margin: 0;
-        padding: 0;
-        font-size: 3em;
-        text-align: left;
-        display: inline-block; }
-        header div#header-wrapper div h1 a {
-          -moz-border-radius: 6px;
-          -webkit-border-radius: 6px;
-          -khtml-border-radius: 6px;
-          border-radius: 6px;
-          text-shadow: #c53d13 1px 2px 0;
-          background-color: #ec6338;
-          color: #f9c36f;
-          text-decoration: none;
-          font-weight: bold; }
-          header div#header-wrapper div h1 a:hover, header div#header-wrapper div h1 a.selected {
-            background-color: #c53d13; }
-        header div#header-wrapper div h1 a {
-          margin-top: 12px;
-          margin-bottom: 12px;
-          margin-left: 12px;
-          color: #f9c36f; }
-        header div#header-wrapper div h1 a:hover {
-          background-color: #ec6338; }
+        width: 80px; }
+  header h1 {
+    text-shadow: #c53d13 1px 2px 0;
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    text-align: left;
+    display: inline-block;
+    line-height: 80px; }
+    header h1 a {
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -khtml-border-radius: 6px;
+      border-radius: 6px;
+      text-shadow: #c53d13 1px 2px 0;
+      background-color: #ec6338;
+      color: #f9c36f;
+      text-decoration: none;
+      font-weight: bold; }
+      header h1 a:hover, header h1 a.selected {
+        background-color: #c53d13; }
+    header h1 a {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      margin-left: 12px;
+      color: #f9c36f; }
+    header h1 a:hover {
+      background-color: #ec6338; }
 
 nav {
-  max-width: 60%;
-  display: table-cell;
-  vertical-align: middle; }
+  position: relative;
+  right: 0px;
+  top: 0px;
+  display: block;
+  float: right; }
   nav ul {
     margin: 0;
-    float: right; }
+    padding: 0;
+    display: inline; }
     nav ul li {
+      line-height: 80px;
       display: inline-block;
       margin: 0 6px 6px; }
       nav ul li a {
@@ -93,6 +95,9 @@ nav {
           background-color: #c53d13; }
       nav ul li a {
         padding: 6px; }
+  nav img#menu-icon {
+    display: none;
+    margin: 18px; }
 
 div#wrapper {
   width: 95%;
@@ -143,24 +148,24 @@ footer {
   footer div#sponsors {
     max-width: 1000px;
     margin: 0 auto; }
-    footer div#sponsors ul#sponsor_list {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      display: table;
-      text-align: center; }
-      footer div#sponsors ul#sponsor_list li {
-        display: table-cell;
-        vertical-align: middle;
-        max-width: 100px; }
-        footer div#sponsors ul#sponsor_list li img {
-          margin: 0 auto;
-          margin-bottom: 12px;
-          max-width: 100px;
-          display: block; }
-        footer div#sponsors ul#sponsor_list li span {
-          display: block;
-          font-size: 0.8em; }
+  footer ul#sponsor_list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    text-align: center; }
+    footer ul#sponsor_list li {
+      display: table-cell;
+      vertical-align: middle;
+      max-width: 100px; }
+      footer ul#sponsor_list li img {
+        margin: 0 auto;
+        margin-bottom: 12px;
+        max-width: 100px;
+        display: block; }
+      footer ul#sponsor_list li span {
+        display: block;
+        font-size: 0.8em; }
   footer h1, footer h2, footer h3, footer p, footer a {
     color: #ec6338;
     text-shadow: #412218 1px 2px 0; }
@@ -215,3 +220,36 @@ div.heading-img {
   font-weight: bold;
   color: #f07e2d;
   text-shadow: #b15c41 1px 1px 0; }
+
+@media only screen and (max-width: 650px) {
+  nav ul {
+    position: absolute;
+    right: -9999px; }
+  nav img#menu-icon {
+    display: block; }
+
+  h1 {
+    font-size: 3em; }
+
+  h2, h3 {
+    font-size: 2em; } }
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.2em; }
+
+  h2, h3, h4 {
+    font-size: 2em; }
+
+  header h1 {
+    font-size: 2em; }
+
+  footer {
+    padding: 6px; }
+    footer ul#sponsor_list {
+      display: block; }
+      footer ul#sponsor_list li {
+        display: inline-block; }
+        footer ul#sponsor_list li span {
+          display: none; }
+        footer ul#sponsor_list li img {
+          width: 80px; } }
