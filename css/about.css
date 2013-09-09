@@ -29,16 +29,3 @@ span.name {
 
 h2, h3 {
   clear: both; }
-
-img#about-logo {
-  box-shadow: 2px 3px #c53d13;
-  -moz-border-radius: 33.33333px;
-  -webkit-border-radius: 33.33333px;
-  -khtml-border-radius: 33.33333px;
-  border-radius: 33.33333px;
-  padding: 6px;
-  width: 200px;
-  margin-left: 24px;
-  float: right;
-  vertical-align: middle;
-  background-color: rgba(240, 126, 45, 0.8); }

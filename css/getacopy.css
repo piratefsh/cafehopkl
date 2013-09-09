@@ -41,20 +41,3 @@ ul#participating-cafes-list {
         ul#participating-cafes-list li div.cafe div.logo img {
           margin: 0 auto;
           width: 80px; }
-
-div.heading-img {
-  -moz-border-radius: 124px;
-  -webkit-border-radius: 124px;
-  -khtml-border-radius: 124px;
-  border-radius: 124px;
-  display: block;
-  margin-top: 36px;
-  margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #90120e;
-  padding: 24px;
-  width: 200px; }
-  div.heading-img img.getacopy-icon {
-    width: 176px;
-    padding: 12px; }

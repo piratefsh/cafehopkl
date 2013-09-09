@@ -133,7 +133,8 @@ a {
 
 p {
   margin-top: 0;
-  font-size: 1em; }
+  font-size: 1em;
+  text-align: center; }
   p.desc {
     text-align: center; }
 
@@ -189,3 +190,21 @@ footer {
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background: #c53d13 !important; }
+
+div.heading-img {
+  -moz-border-radius: 124px;
+  -webkit-border-radius: 124px;
+  -khtml-border-radius: 124px;
+  border-radius: 124px;
+  box-shadow: 2px 3px #412218;
+  display: block;
+  margin-top: 36px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #90120e;
+  padding: 24px;
+  width: 200px; }
+  div.heading-img img {
+    width: 176px;
+    padding: 12px; }

@@ -96,6 +96,7 @@ a
 p
     margin-top: 0
     font-size: 1em
+    text-align: center
     &.desc
         text-align: center
 
@@ -158,3 +159,19 @@ footer
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
     background: $dark-orange !important
+
+div.heading-img
+    @include rounded-corners($heading-icon-size/2 + $space * 2)
+    @include small-shadow($brown)
+    display: block
+    margin:
+        top: $space * 3
+        bottom: $space
+        left: auto
+        right: auto
+    background-color: $red 
+    padding: $space * 2
+    width: $heading-icon-size
+    img
+        width: $heading-icon-size - $space * 2
+        padding: $space
