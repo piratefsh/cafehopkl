@@ -94,3 +94,15 @@ ul#map-legend {
     margin-right: 12px; }
     ul#map-legend li img {
       margin-right: 6px; }
+
+div#zones {
+  width: 100%;
+  background-color: #f8b582; }
+  div#zones ul#zones-list {
+    margin: 0 auto;
+    width: 1000px;
+    list-style: none; }
+    div#zones ul#zones-list li {
+      padding: 6px;
+      margin-right: 6px;
+      display: inline-block; }
