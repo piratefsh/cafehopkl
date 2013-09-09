@@ -40,7 +40,10 @@ div#links-to-parts-of-site {
     min-height: 48px;
     display: inline-block; }
   div#links-to-parts-of-site a span {
-    display: block; }
+    display: block;
+    font-size: 1.2em; }
+    div#links-to-parts-of-site a span.small-btn-title {
+      font-size: 0.8em; }
   div#links-to-parts-of-site a img {
     width: 150px;
     margin: 12px; }
