@@ -47,7 +47,8 @@ header {
         margin: 0;
         padding: 0;
         font-size: 3em;
-        text-align: left; }
+        text-align: left;
+        display: inline-block; }
         header div#header-wrapper div h1 a {
           -moz-border-radius: 12px;
           -webkit-border-radius: 12px;
@@ -69,6 +70,7 @@ header {
           background-color: #ec6338; }
 
 nav {
+  max-width: 60%;
   display: table-cell;
   vertical-align: middle; }
   nav ul {
@@ -101,9 +103,6 @@ div#wrapper {
   margin: 0 auto;
   max-width: 1000px;
   margin: 0 auto; }
-
-section {
-  min-height: 400px; }
 
 div.clear-both {
   clear: both; }
@@ -141,7 +140,8 @@ p {
 footer {
   clear: both;
   background-color: #90120e;
-  padding: 12px; }
+  padding: 12px;
+  margin-top: 48px; }
   footer div#sponsors {
     max-width: 1000px;
     margin: 0 auto; }

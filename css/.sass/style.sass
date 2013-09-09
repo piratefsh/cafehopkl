@@ -33,6 +33,7 @@ header
                 @include clear-spacing
                 font-size: 3em
                 text-align: left
+                display: inline-block
                 a
                     margin: 
                         top: $space
@@ -44,6 +45,7 @@ header
 
 
 nav 
+    max-width: 60%
     display: table-cell
     vertical-align: middle  
     ul
@@ -62,9 +64,6 @@ div#wrapper
     @include wrapper-style
     max-width: $wrapper-width
     margin: 0 auto
-
-section
-    min-height: $min-section-height
 
 div.clear-both
     clear: both
@@ -105,6 +104,7 @@ footer
     clear: both
     background-color: $red
     padding: $space
+    margin-top: $space * 4
     div#sponsors 
         max-width: $wrapper-width
         margin: 0 auto

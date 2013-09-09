@@ -1,10 +1,40 @@
 @import 'constants'
 
 $logo-size: 80px
+$logo-wrapper-size: 100px
+$map-icon-size: 200px
 ul#participating-cafes-list
     @include clear-spacing
+    @include center-element
     li 
-        display: inline-block 
-        margin: $space/2
-        img 
-            width: $logo-size
+        display: inline-block
+        padding: $space/2 $space
+        div.cafe
+            @include rounded-corners($space/2)
+            display: table
+            background-color: $light-orange
+            width: $logo-wrapper-size
+            height:  $logo-wrapper-size
+            padding: $space / 2
+            div.logo 
+                display: table-cell
+                text-align: center
+                vertical-align: middle
+                img 
+                    @include center-element
+                    width: $logo-size
+
+div.heading-img
+    @include rounded-corners($map-icon-size/2 + $space * 2)
+    display: block
+    margin:
+        top: $space * 3
+        bottom: $space
+        left: auto
+        right: auto
+    background-color: $red 
+    padding: $space * 2
+    width: $map-icon-size
+    img.getacopy-icon
+        width: $map-icon-size - $space * 2
+        padding: $space

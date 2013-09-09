@@ -20,7 +20,8 @@
 div#links-to-parts-of-site {
   margin: 0 auto;
   text-align: center;
-  padding: 24px; }
+  padding: 24px;
+  padding-top: 0; }
   div#links-to-parts-of-site a {
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
