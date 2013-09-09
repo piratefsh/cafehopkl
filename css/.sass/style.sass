@@ -19,6 +19,7 @@ header
         border-spacing: $space/ 2
         div 
             display: table-cell
+            vertical-align: middle
             min-width: 40%
             img#logo
                 display: block
@@ -29,11 +30,15 @@ header
             h1 
                 @include non-text-link-style
                 @include text-shadow($dark-orange)
-                display: block
-                margin-left: $space
-                color: $beige
+                @include clear-spacing
                 font-size: 3em
                 text-align: left
+                a
+                    margin: 
+                        top: $space
+                        bottom: $space
+                        left: $space
+                    color: $beige
                 a:hover 
                     background-color: $orange //no cbg-color change on hover 
 

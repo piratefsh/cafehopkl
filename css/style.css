@@ -35,6 +35,7 @@ header {
     border-spacing: 6px; }
     header div#header-wrapper div {
       display: table-cell;
+      vertical-align: middle;
       min-width: 40%; }
       header div#header-wrapper div img#logo {
         display: block;
@@ -43,9 +44,8 @@ header {
         vertical-align: middle; }
       header div#header-wrapper div h1 {
         text-shadow: #c53d13 1px 2px 0;
-        display: block;
-        margin-left: 12px;
-        color: #f9c36f;
+        margin: 0;
+        padding: 0;
         font-size: 3em;
         text-align: left; }
         header div#header-wrapper div h1 a {
@@ -60,6 +60,11 @@ header {
           font-weight: bold; }
           header div#header-wrapper div h1 a:hover, header div#header-wrapper div h1 a.selected {
             background-color: #c53d13; }
+        header div#header-wrapper div h1 a {
+          margin-top: 12px;
+          margin-bottom: 12px;
+          margin-left: 12px;
+          color: #f9c36f; }
         header div#header-wrapper div h1 a:hover {
           background-color: #ec6338; }
 
