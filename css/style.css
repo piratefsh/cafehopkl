@@ -121,15 +121,16 @@ h1 {
 
 h2 {
   color: #90120e;
-  font-size: 2.5em; }
+  font-size: 2.8em; }
 
 h3 {
   color: #f07e2d;
-  font-size: 2em;
+  font-size: 2.4em;
   margin-bottom: 0; }
 
 a {
-  color: #c53d13; }
+  color: #c53d13;
+  font-weight: bold; }
 
 p {
   margin-top: 0;
@@ -208,3 +209,12 @@ div.heading-img {
   div.heading-img img {
     width: 176px;
     padding: 12px; }
+
+.subtitle {
+  font-family: "Champagne Bold", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margiin-top: -24px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ec6338; }
