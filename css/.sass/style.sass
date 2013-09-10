@@ -47,6 +47,7 @@ header
 nav 
     float: right
     ul
+        display: block
         @include clear-spacing
         li 
             @include non-text-link-style
@@ -189,9 +190,23 @@ $icons-mobile-size: 80px
     nav
         ul
             position: absolute
-            right: -9999px
+            background-color: $orange
+            right: 0
+            display: none
+            &.open
+                display: block
+            li 
+                @include clear-spacing
+                display: block    
+                a 
+                    @include rounded-corners(0)
+                    display: block
+                    width: 100%
+                    padding: $space
+
         img#menu-icon
             display: block
+
 
 @media only screen and (max-width : 650px)
     @include collapsed-nav

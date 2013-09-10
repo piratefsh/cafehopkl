@@ -74,6 +74,7 @@ header {
 nav {
   float: right; }
   nav ul {
+    display: block;
     margin: 0;
     padding: 0; }
     nav ul li {
@@ -222,7 +223,23 @@ div.heading-img {
 @media only screen and (max-width: 650px) {
   nav ul {
     position: absolute;
-    right: -9999px; }
+    background-color: #ec6338;
+    right: 0;
+    display: none; }
+    nav ul.open {
+      display: block; }
+    nav ul li {
+      margin: 0;
+      padding: 0;
+      display: block; }
+      nav ul li a {
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        padding: 12px; }
   nav img#menu-icon {
     display: block; }
 

@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     //################################################ INITIALIZERS ###################################################
-    function initializeTemplates(){
+    function initializeTemplates(callback){
         //Header and footer
         $.get('templates/static-templates.html', function(templates){
             var header = $(templates).filter("#template-header").html()   
@@ -10,9 +10,22 @@ $(document).ready(function(){
             $('body').prepend($(header))
             $(header).slideDown(300)
             $('body').append($(footer))
+            
+            callback()
+
         }, 'html')   
+
+       
     }
 
+    function initializeResponsiveNav(){
+        console.log("holla")
+        var navIconSelector = "#collapsed-nav-icon"
+        $(navIconSelector).click(function(){
+            var navList = $("nav ul")
+            $(navList).toggleClass("open")
+        })
+    }
     //###################################################### RUN CODE #####################################################
-    initializeTemplates()
+    initializeTemplates(initializeResponsiveNav)
 })
