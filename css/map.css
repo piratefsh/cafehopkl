@@ -17,10 +17,9 @@
 div#map-canvas {
   border-bottom: 1px solid #c53d13;
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  height: 350px;
+  height: 380px;
   background-color: #412218;
+  padding: 36px;
   color: #412218;
   font-family: "Champagne", Helvetica, Arial, sans-serif; }
   div#map-canvas h3 {
@@ -117,3 +116,6 @@ div#zones {
         div#zones ul#zones-list li a:hover {
           color: #f8b582;
           background-color: #c53d13; }
+        div#zones ul#zones-list li a.selected {
+          background-color: #c53d13;
+          color: #f9c36f; }

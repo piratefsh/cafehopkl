@@ -15,6 +15,9 @@ $(document).ready(function(){
     markerIcons['default']         = chklBaseUrl + 'maplocationlister/img/map-icons/chkl-pin-02.png'
 
     var globalInfoWindow = new google.maps.InfoWindow() //only want one custom infowindow open
+
+    var defaultBounds 
+    var defaultZoom 
     
 
     //################################################ INITIALIZERS ###################################################
@@ -53,6 +56,8 @@ $(document).ready(function(){
         google.maps.event.addListenerOnce(gmap, 'bounds_changed', function() {
             gmap.setCenter(new google.maps.LatLng(3.136402, 101.66394))
             gmap.setZoom(11);
+            defaultBounds = gmap.getBounds()
+            defaultZoom = gmap.getZoom()
 
         });
     }
@@ -154,6 +159,28 @@ $(document).ready(function(){
         collapseLocationListDesc()
     }
 
+    //################################################## ZONING FUNCTIONS //################################################
+    function zoomToZone(zoneName){
+        $.get('js/zones.json', function(data){
+            var zone
+            for(var i = 0; i < data.zones.length; i++){
+                var currZone = data.zones[i]
+                if(currZone.id == zoneName){
+                    zone = currZone
+                    break
+                }
+            }
+            var sw = zone.sw 
+            var ne = zone.ne
+            var swLL = new google.maps.LatLng(sw.lat, sw.lng)
+            var neLL = new google.maps.LatLng(ne.lat, ne.lng)
+
+            var latlngBounds = new google.maps.LatLngBounds(swLL, neLL)
+            gmap.fitBounds(latlngBounds)
+            gmap.setZoom(zone.zoom)
+
+        }, 'json')
+    }
 
 
     //####################################### MARKER/LOCATION LI ONLCLICK FUNCTIONS //#######################################
@@ -292,4 +319,17 @@ $(document).ready(function(){
 
     //###################################################### RUN CODE #####################################################
     google.maps.event.addDomListener(window, 'load', initialize);
+
+    $("ul#zones-list li a").click(function(){
+        $("ul#zones-list li a").removeClass("selected")
+        $(this).addClass("selected")
+
+        if($(this).attr('id') == "all"){
+            gmap.fitBounds(defaultBounds)
+            gmap.setZoom(defaultZoom)
+        }
+        else{
+            zoomToZone($(this).attr('id'))
+        }
+    })
 })

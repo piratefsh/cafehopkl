@@ -4,11 +4,9 @@ div
     &#map-canvas
         border-bottom: 1px solid $dark-orange
         width: 100%
-        height: 100%
-        margin: 0 auto 
         height: $map-height
         background-color: $brown
-
+        padding: $space * 3
         color: $brown
         font-family: $body-font
         h3
@@ -106,3 +104,6 @@ div#zones
                 &:hover
                     color: $light-orange
                     background-color: $dark-orange
+                &.selected
+                    background-color: $dark-orange
+                    color: $beige

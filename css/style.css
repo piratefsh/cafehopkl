@@ -232,6 +232,7 @@ div.heading-img {
       background-color: #ec6338;
       position: absolute;
       right: 0;
+      z-index: 1000;
       top: 65px;
       display: none; }
       nav ul.open {
@@ -276,6 +277,7 @@ div.heading-img {
       background-color: #ec6338;
       position: absolute;
       right: 0;
+      z-index: 1000;
       top: 49px;
       display: none; }
       nav ul.open {
