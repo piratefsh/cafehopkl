@@ -96,6 +96,8 @@ div#zones {
   width: 100%;
   background-color: #f8b582; }
   div#zones ul#zones-list {
+    margin: 0;
+    padding: 0;
     margin: 0 auto;
     max-width: 1000px;
     list-style: none; }
@@ -103,10 +105,11 @@ div#zones {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      margin-right: 12px;
+      margin: 0;
+      padding: 0;
       display: inline-block; }
       div#zones ul#zones-list li a {
-        padding: 6px;
+        padding: 6px 12px;
         display: block;
         background-color: transparent;
         text-decoration: none;

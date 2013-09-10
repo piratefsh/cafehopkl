@@ -86,15 +86,16 @@ div#zones
     background-color: $light-orange
     //text-align: center
     ul#zones-list
+        @include clear-spacing
         @include center-element
         max-width: $wrapper-width
         list-style: none 
         li
             @include box-sizing
-            margin-right: $space
+            @include clear-spacing
             display: inline-block
             a
-                padding: $space / 2
+                padding: $space / 2 $space 
                 display: block
                 background-color: transparent
                 text-decoration: none
