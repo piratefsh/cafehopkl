@@ -7,9 +7,10 @@ $(document).ready(function(){
             var header = $(templates).filter("#template-header").html()   
             var footer = $(templates).filter("#template-footer").html()   
             header = $(header).hide()
+
+            $('body').append($(footer))
             $('body').prepend($(header))
             $(header).slideDown(300)
-            $('body').append($(footer))
             
             callback()
 
@@ -19,7 +20,6 @@ $(document).ready(function(){
     }
 
     function initializeResponsiveNav(){
-        console.log("holla")
         var navIconSelector = "#collapsed-nav-icon"
         $(navIconSelector).click(function(){
             var navList = $("nav ul")

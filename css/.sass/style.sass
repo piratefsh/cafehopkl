@@ -17,13 +17,17 @@ header
         width: 100%
         margin: 0 auto
         border-spacing: $space/ 2
-        display: table 
+        position: relative
         div 
             white-space: no-wrap
             display: table-cell
             vertical-align: middle
-            &:first-child 
-                width: 50%
+
+            &:last-child
+                position: absolute
+                right: 0
+                top: 0
+
             img#logo
                 display: block
                 float: left
@@ -45,7 +49,6 @@ header
         a:hover 
             background-color: $orange //no cbg-color change on hover 
 nav 
-    float: right
     ul
         display: block
         @include clear-spacing
@@ -53,6 +56,7 @@ nav
             @include non-text-link-style
             display: inline-block
             margin: 0 $space/2 $space/2
+            line-height: $logo-size
             a
                 padding: $space/2
     img#menu-icon
@@ -189,8 +193,8 @@ $icons-mobile-size: 80px
 @mixin collapsed-nav
     nav
         ul
-            position: absolute
             background-color: $orange
+            position: absolute
             right: 0
             display: none
             &.open
@@ -198,6 +202,8 @@ $icons-mobile-size: 80px
             li 
                 @include clear-spacing
                 display: block    
+                line-height: normal
+                white-space: nowrap
                 a 
                     @include rounded-corners(0)
                     display: block
@@ -207,9 +213,17 @@ $icons-mobile-size: 80px
         img#menu-icon
             display: block
 
+@mixin smaller-imgs
+    div.heading-img
+        padding: $space
+        width: $heading-icon-size * 0.6
+        img
+            width: ($heading-icon-size - $space * 2) * 0.6
+            padding: $space/2
 
 @media only screen and (max-width : 650px)
     @include collapsed-nav
+    @include smaller-imgs
     h1
         font-size: 3em
     h2, h3

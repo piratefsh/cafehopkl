@@ -1,19 +1,16 @@
 @font-face {
   font-family: "Matchbook";
   src: url("./fonts/Matchbook.ttf");
-  src: local("Matchbook"), url("./fonts/Matchbook.ttf") format("truetype");
   font-weight: normal; }
 
 @font-face {
   font-family: "Champagne";
   src: url("./fonts/Champagne_&_Limousines.ttf");
-  src: local("Champagne & Limousines"), url("./fonts/Champagne_&_Limousines.ttf") format("truetype");
   font-weight: normal; }
 
 @font-face {
   font-family: "Champagne Bold";
   src: url("./fonts/Champagne_&_Limousines_Bold.ttf");
-  src: local("Champagne & Limousines Bold"), url("./fonts/Champagne_&_Limousines_Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -32,7 +29,7 @@ div#links-to-parts-of-site {
     color: #f9c36f;
     text-decoration: none;
     font-weight: bold; }
-    div#links-to-parts-of-site a:hover, div#links-to-parts-of-site a.selected {
+    div#links-to-parts-of-site a:hover, div#links-to-parts-of-site a.selected, div#links-to-parts-of-site a:focus {
       background-color: #c53d13; }
   div#links-to-parts-of-site a {
     padding: 24px;
