@@ -25,8 +25,9 @@ header
 
             &:last-child
                 position: absolute
+                max-width: 50%
                 right: 0
-                top: 0
+                top: $logo-size/3
 
             img#logo
                 display: block
@@ -53,15 +54,15 @@ nav
         display: block
         @include clear-spacing
         li 
+            float: right
             @include non-text-link-style
             display: inline-block
             margin: 0 $space/2 $space/2
-            line-height: $logo-size
             a
                 padding: $space/2
     img#menu-icon
         display: none
-        margin: $space* 1.5
+        margin-right: $space
 
 
 div#wrapper
@@ -224,19 +225,18 @@ $icons-mobile-size: 80px
 @media only screen and (max-width : 650px)
     @include collapsed-nav
     @include smaller-imgs
-    h1
-        font-size: 3em
-    h2, h3
-        font-size: 2em
+    body
+        font-size: 1em
+    // h1
+    //     font-size: 2.5em
+    // h2, h3
+    //     font-size: 1.5em
 
 @media only screen and (max-width : 480px)
     h1
-        font-size: 2.2em
+        font-size: 3em
     h2, h3, h4
         font-size: 2em
-    header 
-        h1
-            font-size: 2em         
     footer 
         padding: $space/2
         ul#sponsor_list

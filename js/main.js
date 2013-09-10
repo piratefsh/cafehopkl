@@ -8,9 +8,10 @@ $(document).ready(function(){
             var footer = $(templates).filter("#template-footer").html()   
             header = $(header).hide()
 
-            $('body').append($(footer))
-            $('body').prepend($(header))
+            $('body').prepend(header)
             $(header).slideDown(300)
+            $('body').append(footer)
+            $(footer).slideDown(300)
             
             callback()
 

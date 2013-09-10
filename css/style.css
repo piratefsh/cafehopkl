@@ -36,8 +36,9 @@ header {
       vertical-align: middle; }
       header div#header-wrapper div:last-child {
         position: absolute;
+        max-width: 50%;
         right: 0;
-        top: 0; }
+        top: 26.66667px; }
       header div#header-wrapper div img#logo {
         display: block;
         float: left;
@@ -75,9 +76,9 @@ nav ul {
   margin: 0;
   padding: 0; }
   nav ul li {
+    float: right;
     display: inline-block;
-    margin: 0 6px 6px;
-    line-height: 80px; }
+    margin: 0 6px 6px; }
     nav ul li a {
       -moz-border-radius: 6px;
       -webkit-border-radius: 6px;
@@ -94,7 +95,7 @@ nav ul {
       padding: 6px; }
 nav img#menu-icon {
   display: none;
-  margin: 18px; }
+  margin-right: 12px; }
 
 div#wrapper {
   width: 95%;
@@ -250,19 +251,13 @@ div.heading-img {
       width: 105.6px;
       padding: 6px; }
 
+  body {
+    font-size: 1em; } }
+@media only screen and (max-width: 480px) {
   h1 {
     font-size: 3em; }
 
-  h2, h3 {
-    font-size: 2em; } }
-@media only screen and (max-width: 480px) {
-  h1 {
-    font-size: 2.2em; }
-
   h2, h3, h4 {
-    font-size: 2em; }
-
-  header h1 {
     font-size: 2em; }
 
   footer {
