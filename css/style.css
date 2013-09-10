@@ -23,12 +23,19 @@ body {
 header {
   width: 100%;
   background-color: #ec6338;
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 6px; }
+  header div#header-wrapper div:last-child {
+    top: 26.66667px; }
+  header div#header-wrapper div img#logo {
+    width: 80px; }
+  header h1 {
+    line-height: 80px; }
   header div#header-wrapper {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    border-spacing: 6px;
+    display: table;
     position: relative; }
     header div#header-wrapper div {
       white-space: no-wrap;
@@ -37,20 +44,17 @@ header {
       header div#header-wrapper div:last-child {
         position: absolute;
         max-width: 50%;
-        right: 0;
-        top: 26.66667px; }
+        right: 0; }
       header div#header-wrapper div img#logo {
         display: block;
-        float: left;
-        width: 80px; }
+        float: left; }
   header h1 {
     text-shadow: #c53d13 1px 2px 0;
     margin: 0;
     padding: 0;
     font-size: 3em;
     text-align: left;
-    display: inline-block;
-    line-height: 80px; }
+    display: inline-block; }
     header h1 a {
       -moz-border-radius: 6px;
       -webkit-border-radius: 6px;
@@ -76,7 +80,6 @@ nav ul {
   margin: 0;
   padding: 0; }
   nav ul li {
-    float: right;
     display: inline-block;
     margin: 0 6px 6px; }
     nav ul li a {
@@ -95,7 +98,7 @@ nav ul {
       padding: 6px; }
 nav img#menu-icon {
   display: none;
-  margin-right: 12px; }
+  margin-right: 24px; }
 
 div#wrapper {
   width: 95%;
@@ -220,29 +223,39 @@ div.heading-img {
   text-shadow: #b15c41 1px 1px 0; }
 
 @media only screen and (max-width: 650px) {
-  nav ul {
-    background-color: #ec6338;
-    position: absolute;
-    right: 0;
-    display: none; }
-    nav ul.open {
-      display: block; }
-    nav ul li {
-      margin: 0;
-      padding: 0;
-      display: block;
-      line-height: normal;
-      white-space: nowrap; }
-      nav ul li a {
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        -khtml-border-radius: 0;
-        border-radius: 0;
-        display: block;
+  header div#header-wrapper div:last-child {
+    position: static; }
+
+  nav {
+    position: relative; }
+    nav ul {
+      background-color: #ec6338;
+      position: absolute;
+      right: 0;
+      top: 65px;
+      display: none; }
+      nav ul.open {
+        display: block; }
+      nav ul li {
+        margin: 0;
+        padding: 0;
+        float: right;
         width: 100%;
-        padding: 12px; }
-  nav img#menu-icon {
-    display: block; }
+        display: block;
+        line-height: normal;
+        white-space: nowrap; }
+        nav ul li a {
+          -moz-border-radius: 0;
+          -webkit-border-radius: 0;
+          -khtml-border-radius: 0;
+          border-radius: 0;
+          display: block;
+          width: 100%;
+          padding: 12px; }
+    nav img#menu-icon {
+      width: 42px;
+      display: block;
+      float: right; }
 
   div.heading-img {
     padding: 12px;
@@ -254,8 +267,51 @@ div.heading-img {
   body {
     font-size: 1em; } }
 @media only screen and (max-width: 480px) {
+  header div#header-wrapper div:last-child {
+    position: static; }
+
+  nav {
+    position: relative; }
+    nav ul {
+      background-color: #ec6338;
+      position: absolute;
+      right: 0;
+      top: 49px;
+      display: none; }
+      nav ul.open {
+        display: block; }
+      nav ul li {
+        margin: 0;
+        padding: 0;
+        float: right;
+        width: 100%;
+        display: block;
+        line-height: normal;
+        white-space: nowrap; }
+        nav ul li a {
+          -moz-border-radius: 0;
+          -webkit-border-radius: 0;
+          -khtml-border-radius: 0;
+          border-radius: 0;
+          display: block;
+          width: 100%;
+          padding: 12px; }
+    nav img#menu-icon {
+      width: 42px;
+      display: block;
+      float: right; }
+
+  header {
+    padding: 0; }
+    header div#header-wrapper div:last-child {
+      top: 21.33333px; }
+    header div#header-wrapper div img#logo {
+      width: 64px; }
+    header h1 {
+      line-height: 64px; }
+
   h1 {
-    font-size: 3em; }
+    font-size: 2.2em; }
 
   h2, h3, h4 {
     font-size: 2em; }

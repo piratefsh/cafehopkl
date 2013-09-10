@@ -1,5 +1,14 @@
 @import 'constants'
 
+@mixin header-dimensions($logo-size)
+    div#header-wrapper
+        div 
+            &:last-child
+                top: $logo-size/3
+            img#logo
+                width: $logo-size 
+    h1 
+        line-height: $logo-size
 
 // Everything Else
 body
@@ -9,14 +18,17 @@ body
     font-size: 1.4em
 
 header
+    @include header-dimensions($logo-size)
     width: 100%
     background-color: $orange
     margin-top: 0
+    padding: $space/2
     div#header-wrapper
         max-width: $wrapper-width
         width: 100%
         margin: 0 auto
-        border-spacing: $space/ 2
+        // border-spacing: $space/ 2
+        display: table
         position: relative
         div 
             white-space: no-wrap
@@ -27,12 +39,10 @@ header
                 position: absolute
                 max-width: 50%
                 right: 0
-                top: $logo-size/3
 
             img#logo
                 display: block
                 float: left
-                width: $logo-size 
     h1 
         @include non-text-link-style
         @include text-shadow($dark-orange)
@@ -40,7 +50,6 @@ header
         font-size: 3em
         text-align: left
         display: inline-block
-        line-height: $logo-size
         a
             margin: 
                 top: $space
@@ -54,7 +63,6 @@ nav
         display: block
         @include clear-spacing
         li 
-            float: right
             @include non-text-link-style
             display: inline-block
             margin: 0 $space/2 $space/2
@@ -62,7 +70,7 @@ nav
                 padding: $space/2
     img#menu-icon
         display: none
-        margin-right: $space
+        margin-right: $space* 2
 
 
 div#wrapper
@@ -191,17 +199,25 @@ div.heading-img
 
 //RESPONSIVE STUFF
 $icons-mobile-size: 80px 
-@mixin collapsed-nav
+$logo-size-small: $logo-size * 0.8
+@mixin collapsed-nav($header-height)
+    header div#header-wrapper
+        div:last-child
+            position: static
     nav
+        position: relative
         ul
             background-color: $orange
             position: absolute
             right: 0
+            top: $header-height - $menu-icon-size /2 + $space/2
             display: none
             &.open
                 display: block
             li 
                 @include clear-spacing
+                float: right
+                width: 100%
                 display: block    
                 line-height: normal
                 white-space: nowrap
@@ -212,7 +228,9 @@ $icons-mobile-size: 80px
                     padding: $space
 
         img#menu-icon
+            width: $menu-icon-size
             display: block
+            float: right
 
 @mixin smaller-imgs
     div.heading-img
@@ -223,7 +241,7 @@ $icons-mobile-size: 80px
             padding: $space/2
 
 @media only screen and (max-width : 650px)
-    @include collapsed-nav
+    @include collapsed-nav($logo-size)
     @include smaller-imgs
     body
         font-size: 1em
@@ -233,10 +251,16 @@ $icons-mobile-size: 80px
     //     font-size: 1.5em
 
 @media only screen and (max-width : 480px)
+    @include collapsed-nav($logo-size-small)
+    header    
+        @include header-dimensions($logo-size-small)
+        padding: 0
     h1
-        font-size: 3em
+        font-size: 2.2em
     h2, h3, h4
         font-size: 2em
+
+
     footer 
         padding: $space/2
         ul#sponsor_list
