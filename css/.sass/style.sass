@@ -17,9 +17,13 @@ header
         width: 100%
         margin: 0 auto
         border-spacing: $space/ 2
+        display: table 
         div 
             white-space: no-wrap
-            display: inline-block
+            display: table-cell
+            vertical-align: middle
+            &:first-child 
+                width: 50%
             img#logo
                 display: block
                 float: left
@@ -41,16 +45,10 @@ header
         a:hover 
             background-color: $orange //no cbg-color change on hover 
 nav 
-    position: relative
-    right: 0px
-    top: 0px
-    display: block
     float: right
     ul
         @include clear-spacing
-        display: inline
         li 
-            line-height: $logo-size
             @include non-text-link-style
             display: inline-block
             margin: 0 $space/2 $space/2

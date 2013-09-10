@@ -31,10 +31,14 @@ header {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    border-spacing: 6px; }
+    border-spacing: 6px;
+    display: table; }
     header div#header-wrapper div {
       white-space: no-wrap;
-      display: inline-block; }
+      display: table-cell;
+      vertical-align: middle; }
+      header div#header-wrapper div:first-child {
+        width: 50%; }
       header div#header-wrapper div img#logo {
         display: block;
         float: left;
@@ -68,17 +72,11 @@ header {
       background-color: #ec6338; }
 
 nav {
-  position: relative;
-  right: 0px;
-  top: 0px;
-  display: block;
   float: right; }
   nav ul {
     margin: 0;
-    padding: 0;
-    display: inline; }
+    padding: 0; }
     nav ul li {
-      line-height: 80px;
       display: inline-block;
       margin: 0 6px 6px; }
       nav ul li a {
