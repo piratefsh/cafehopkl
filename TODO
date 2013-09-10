@@ -1,0 +1,23 @@
+/create contacf, get a copy and a placeholder blog page
+?polish up on the map usability once I've heard back from Jo. 
+/make navigation and footer responsive
+
+
+adding 'directions' (llink to GMaps) and 'website' links to locations
+add zones. I'll be estimating them based on the physical map.
+getting user's current location and zoning in on cafes near the user.
+add site info
+
+
+ldp hop bounds
+3.030084,101.57954
+3.170811,101.626232
+
+kl hop bounds
+3.16177,101.71614
+3.112791,101.672152
+
+duta hop
+3.186451,101.674769
+3.162948,101.656568
+
