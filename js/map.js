@@ -20,6 +20,7 @@ $(document).ready(function(){
     var defaultBounds 
     var defaultZoom 
     
+    var userMarker //user's current location
     var latlngAddressMap = new Array()
 
     //################################################ INITIALIZERS ###################################################
@@ -51,12 +52,16 @@ $(document).ready(function(){
     function parserCallback(doc){
         listLocations(doc)
         prepGmaps()
-        navigator.geolocation.getCurrentPosition(showUserOnMap);
+        getUserLocation(showUserOnMap)
+    }
+
+    function getUserLocation(callback){
+        navigator.geolocation.getCurrentPosition(callback);
     }
 
     //Get user location
     function showUserOnMap(position){
-        var userMarker = new google.maps.Marker({
+        userMarker = new google.maps.Marker({
             position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
             icon: markerIcons['me']
         })
@@ -379,6 +384,19 @@ $(document).ready(function(){
         if($(this).attr('id') == "all"){
             gmap.fitBounds(defaultBounds)
             gmap.setZoom(defaultZoom)
+        }
+        else if($(this).attr('id') == 'near-me'){
+            if(userMarker == null){
+                getUserLocation(function(){
+                    gmap.setCenter(userMarker.getPosition())
+                    gmap.setZoom(13)
+                })
+            }
+            else{
+                gmap.setCenter(userMarker.getPosition())
+                gmap.setZoom(13)
+
+            }
         }
         else{
             zoomToZone($(this).attr('id'))
