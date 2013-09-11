@@ -27,6 +27,9 @@ div#map-canvas {
     font-family: "Champagne", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0; }
+  div#map-canvas a {
+    display: inline-block;
+    margin-right: 6px; }
 
 div#locations-list-wrapper {
   width: 100%; }
