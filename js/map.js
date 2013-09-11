@@ -10,9 +10,10 @@ $(document).ready(function(){
     cafes['notInKV']            = new Array()
 
     var markerIcons = []
-    markerIcons['outOfTown']       = chklBaseUrl + 'maplocationlister/img/map-icons/chkl-pin-01.png'
-    markerIcons['participating']   = chklBaseUrl + 'maplocationlister/img/map-icons/chkl-pin-03.png'
-    markerIcons['default']         = chklBaseUrl + 'maplocationlister/img/map-icons/chkl-pin-02.png'
+    markerIcons['outOfTown']       = chklBaseUrl + '/img/map-icons/chkl-pin-01.png'
+    markerIcons['participating']   = chklBaseUrl + '/img/map-icons/chkl-pin-03.png'
+    markerIcons['default']         = chklBaseUrl + '/img/map-icons/chkl-pin-02.png'
+    markerIcons['me']         = chklBaseUrl + '/img/map-icons/chkl-pin-me.png'
 
     var globalInfoWindow = new google.maps.InfoWindow() //only want one custom infowindow open
 
@@ -50,7 +51,26 @@ $(document).ready(function(){
     function parserCallback(doc){
         listLocations(doc)
         prepGmaps()
+        navigator.geolocation.getCurrentPosition(showUserOnMap);
     }
+
+    //Get user location
+    function showUserOnMap(position){
+        var userMarker = new google.maps.Marker({
+            position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+            icon: markerIcons['me']
+        })
+
+        google.maps.event.addListener(userMarker, 'click', function(){
+            globalInfoWindow.setContent("<h3>You Are Here!</h3>")
+            globalInfoWindow.open(gmap, this)
+            gmap.setCenter(this.getPosition())
+            gmap.setZoom(13)
+        })
+
+        userMarker.setMap(gmap)
+    }
+
 
     function prepGmaps(){
         //Add listener, sometimes zoom is set before map is done loading
