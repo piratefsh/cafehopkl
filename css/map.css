@@ -17,9 +17,8 @@
 div#map-canvas {
   border-bottom: 1px solid #c53d13;
   width: 100%;
-  height: 380px;
+  height: 350px;
   background-color: #412218;
-  padding: 36px;
   color: #412218;
   font-family: "Champagne", Helvetica, Arial, sans-serif; }
   div#map-canvas h3 {

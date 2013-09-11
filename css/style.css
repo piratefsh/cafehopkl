@@ -24,7 +24,8 @@ header {
   width: 100%;
   background-color: #ec6338;
   margin-top: 0;
-  padding: 6px; }
+  padding-top: 6px;
+  padding-bottom: 6px; }
   header div#header-wrapper div:last-child {
     top: 26.66667px; }
   header div#header-wrapper div img#logo {
