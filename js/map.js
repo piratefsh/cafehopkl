@@ -19,6 +19,7 @@ $(document).ready(function(){
     var defaultBounds 
     var defaultZoom 
     
+    var latlngAddressMap = new Array()
 
     //################################################ INITIALIZERS ###################################################
     function initializeListScroller(){
@@ -93,8 +94,9 @@ $(document).ready(function(){
             var cleanDescriptions = removeStyle($('<span class="loc-desc">' + placemark.description + '</span>'))
 
             //Create li element with title and description as contents
-            
-            var liElement = $('<li>').append($('<strong class="title">').attr('id', markerID).append(placemark.name)).append(cleanDescriptions).attr('id', markerID)
+            //Link to loc on Google Maps (external)
+            var liElement = $('<li>').attr('id', markerID).append($('<strong class="title">').attr('id', markerID).append(placemark.name))
+            liElement.append(cleanDescriptions)
             $(locationsList).append(liElement)
 
             var m = marker
@@ -147,7 +149,7 @@ $(document).ready(function(){
 
                 var thisPlacemark = getPlaceMarkForMarker(this)
                  //Clean infowindow
-                globalInfoWindow.setContent("<h3>" + thisPlacemark.name + "</h3>" +  removeStyle($('<span class="loc-desc">' + thisPlacemark.description + '</span>')))
+                globalInfoWindow.setContent("<h3>" + thisPlacemark.name + "</h3>")
 
                 globalInfoWindow.open(gmap, this)
             })
@@ -184,6 +186,21 @@ $(document).ready(function(){
 
 
     //####################################### MARKER/LOCATION LI ONLCLICK FUNCTIONS //#######################################
+    function getLinkToLocOnGmaps(marker){
+        var markerLatLng = marker.getPosition()
+        var desc = marker.title + "+" + latlngAddressMap[markerLatLng.toUrlValue()]
+        desc = desc.replace(/[\s\W]/g, "+")
+
+        console.log("desc")
+        var linkToLoc = "http://maps.google.com/maps?"
+            + "q=" + desc 
+            + "&ll=" + markerLatLng.toUrlValue()
+            + "&iwloc=A&hl=en" 
+
+        // var linkToLoc = "<a target='_blank' href='http://maps.google.com/?ie=UTF8&#!q=" + (marker.title).replace("/\s/" + "+") +  "+Malaysia" + "&z=13'>" + "Directions</a>"
+
+        return linkToLoc
+    }
     function getPlaceMarkForMarker(marker){
         var placemark 
 
@@ -232,14 +249,21 @@ $(document).ready(function(){
     }
 
     //Use Geocoder to get address. takes in a LatLng object and JQuery object to append it to
-    function getAddress(latlng, resultContainer) {
+    function getAddress(latlng, marker, resultContainer) {
         var geocoder = new google.maps.Geocoder()
         var geocoderRequest = {
-            location: latlng
+            latLng: marker.getPosition()
         }
 
         geocoder.geocode(geocoderRequest, function(results, status){
-            $(resultContainer).html("Address: " + results[0].formatted_address)
+            var add = results[0].formatted_address
+            $(resultContainer).html("Address: " + add)
+            console.log(results[0].geometry)
+            var loc = results[0].geometry.location
+            var pos = marker.getPosition()
+            latlngAddressMap[pos.toUrlValue()] = add
+            console.log( latlngAddressMap[pos.toUrlValue()] )
+            getAndInsertDirections($(resultContainer), marker)
 
         })
     }
@@ -256,6 +280,14 @@ $(document).ready(function(){
 
     }
 
+    function getAndInsertDirections(obj, marker){
+        console.log(obj)
+        var link = getLinkToLocOnGmaps(marker)
+        var a = "<a href='" + link + "'>Directions</a>"
+        console.log(a)
+        $(obj).parent().append(a)
+    }
+
     //Get address and insert it to obj
     function getAndInsertAddress(obj, marker){
         var addressSpanSelector = "span.loc-desc span.address"
@@ -269,7 +301,7 @@ $(document).ready(function(){
         }
         //if address isn't already there
         if(addressSpan.html() == ""){
-            getAddress(marker.getPosition(), addressSpan)
+            getAddress(marker.getPosition(), marker, addressSpan)
         }
     }
 
