@@ -88,7 +88,6 @@ $(document).ready(function(){
             var marker = markers[i]
 
             var markerID = makeID(marker.title)
-            // console.log("Marker: " + markerID)
 
              //Remove inline styling from placemark description
             var cleanDescriptions = removeStyle($('<span class="loc-desc">' + placemark.description + '</span>'))
@@ -149,6 +148,7 @@ $(document).ready(function(){
 
                 var thisPlacemark = getPlaceMarkForMarker(this)
                  //Clean infowindow
+
                 globalInfoWindow.setContent("<h3>" + thisPlacemark.name + "</h3>")
 
                 globalInfoWindow.open(gmap, this)
@@ -191,7 +191,6 @@ $(document).ready(function(){
         var desc = marker.title + "+" + latlngAddressMap[markerLatLng.toUrlValue()]
         desc = desc.replace(/[\s\W]/g, "+")
 
-        console.log("desc")
         var linkToLoc = "http://maps.google.com/maps?"
             + "q=" + desc 
             + "&ll=" + markerLatLng.toUrlValue()
@@ -258,11 +257,11 @@ $(document).ready(function(){
         geocoder.geocode(geocoderRequest, function(results, status){
             var add = results[0].formatted_address
             $(resultContainer).html("Address: " + add)
-            console.log(results[0].geometry)
+
             var loc = results[0].geometry.location
             var pos = marker.getPosition()
+
             latlngAddressMap[pos.toUrlValue()] = add
-            console.log( latlngAddressMap[pos.toUrlValue()] )
             getAndInsertDirections($(resultContainer), marker)
 
         })
@@ -281,10 +280,8 @@ $(document).ready(function(){
     }
 
     function getAndInsertDirections(obj, marker){
-        console.log(obj)
         var link = getLinkToLocOnGmaps(marker)
         var a = "<a href='" + link + "'>Directions</a>"
-        console.log(a)
         $(obj).parent().append(a)
     }
 
