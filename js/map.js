@@ -136,9 +136,8 @@ $(document).ready(function(){
 
                 selectLocationLi(markerID, this)
 
-                //Zoom to location and center it
-                //have to set center first, for first time click otherwise it'll zoom in some random position even though getPosition() returns 
-                //correct latlng values. Some bug.
+                //Zoom to location and center it. Have to set center first, for first time click otherwise it'll zoom in 
+                //some random position even though getPosition() returns correct latlng values. Some bug.
                 gmap.setCenter(this.getPosition())
                 gmap.setZoom(15)
                 gmap.panTo(this.getPosition())

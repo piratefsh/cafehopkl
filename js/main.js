@@ -24,7 +24,16 @@ $(document).ready(function(){
         var navIconSelector = "#collapsed-nav-icon"
         $(navIconSelector).click(function(){
             var navList = $("nav ul")
-            $(navList).toggleClass("open")
+            var speed = 'fast'
+            if($(navList).hasClass('selected')){
+                $(navList).hide(speed, function(){
+                    $(this).removeClass('selected')
+                })
+            }
+            else{
+                $(navList).addClass('selected')
+                $(navList).show(speed)
+            }
         })
     }
     //###################################################### RUN CODE #####################################################

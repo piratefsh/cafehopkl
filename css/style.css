@@ -244,7 +244,8 @@ div.heading-img {
         width: 100%;
         display: block;
         line-height: normal;
-        white-space: nowrap; }
+        white-space: nowrap;
+        border-top: 1px solid #c53d13; }
         nav ul li a {
           -moz-border-radius: 0;
           -webkit-border-radius: 0;
@@ -289,7 +290,8 @@ div.heading-img {
         width: 100%;
         display: block;
         line-height: normal;
-        white-space: nowrap; }
+        white-space: nowrap;
+        border-top: 1px solid #c53d13; }
         nav ul li a {
           -moz-border-radius: 0;
           -webkit-border-radius: 0;
