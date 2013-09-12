@@ -40,7 +40,7 @@ header
 
             &:last-child
                 position: absolute
-                max-width: 50%
+                max-width: 60%
                 right: 0
 
             img#logo
@@ -60,7 +60,7 @@ header
                 left: $space
             color: $beige
         a:hover 
-            background-color: $orange //no cbg-color change on hover 
+            background-color: $orange //no bg-color change on hover 
 nav 
     ul
         display: block
@@ -68,9 +68,22 @@ nav
         li 
             @include non-text-link-style
             display: inline-block
-            margin: 0 $space/2 $space/2
+            margin: 0 $space/2 
             a
                 padding: $space/2
+                background-color: $orange
+                @include fade-in
+                &:hover 
+                    background-color: $dark-orange
+            img 
+                display: inline-block
+                vertical-align: middle
+        li.soc-media-links
+            a 
+                padding: 0
+
+            a:hover, a:focus
+                background-color: $orange //no color change when hover over soc media icons
     img#menu-icon
         display: none
         margin-right: $space* 2
@@ -225,12 +238,14 @@ $logo-size-small: $logo-size * 0.8
                 display: block    
                 line-height: normal
                 white-space: nowrap
+                font-size: 1.5em
                 border-top: 1px solid $dark-orange
+                a, img
+                    padding: $space
                 a 
                     @include rounded-corners(0)
                     display: block
                     width: 100%
-                    padding: $space
 
         img#menu-icon
             width: $menu-icon-size

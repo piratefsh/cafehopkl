@@ -46,7 +46,7 @@ header {
       vertical-align: middle; }
       header div#header-wrapper div:last-child {
         position: absolute;
-        max-width: 50%;
+        max-width: 60%;
         right: 0; }
       header div#header-wrapper div img#logo {
         display: block;
@@ -67,7 +67,12 @@ header {
       background-color: #ec6338;
       color: #f9c36f;
       text-decoration: none;
-      font-weight: bold; }
+      font-weight: bold;
+      -o-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
       header h1 a:hover, header h1 a.selected, header h1 a:focus {
         background-color: #c53d13; }
     header h1 a {
@@ -84,7 +89,7 @@ nav ul {
   padding: 0; }
   nav ul li {
     display: inline-block;
-    margin: 0 6px 6px; }
+    margin: 0 6px; }
     nav ul li a {
       -moz-border-radius: 6px;
       -webkit-border-radius: 6px;
@@ -94,11 +99,31 @@ nav ul {
       background-color: #ec6338;
       color: #f9c36f;
       text-decoration: none;
-      font-weight: bold; }
+      font-weight: bold;
+      -o-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
       nav ul li a:hover, nav ul li a.selected, nav ul li a:focus {
         background-color: #c53d13; }
     nav ul li a {
-      padding: 6px; }
+      padding: 6px;
+      background-color: #ec6338;
+      -o-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      nav ul li a:hover {
+        background-color: #c53d13; }
+    nav ul li img {
+      display: inline-block;
+      vertical-align: middle; }
+  nav ul li.soc-media-links a {
+    padding: 0; }
+  nav ul li.soc-media-links a:hover, nav ul li.soc-media-links a:focus {
+    background-color: #ec6338; }
 nav img#menu-icon {
   display: none;
   margin-right: 24px; }
@@ -248,15 +273,17 @@ div.heading-img {
         display: block;
         line-height: normal;
         white-space: nowrap;
+        font-size: 1.5em;
         border-top: 1px solid #c53d13; }
+        nav ul li a, nav ul li img {
+          padding: 12px; }
         nav ul li a {
           -moz-border-radius: 0;
           -webkit-border-radius: 0;
           -khtml-border-radius: 0;
           border-radius: 0;
           display: block;
-          width: 100%;
-          padding: 12px; }
+          width: 100%; }
     nav img#menu-icon {
       width: 42px;
       display: block;
@@ -294,15 +321,17 @@ div.heading-img {
         display: block;
         line-height: normal;
         white-space: nowrap;
+        font-size: 1.5em;
         border-top: 1px solid #c53d13; }
+        nav ul li a, nav ul li img {
+          padding: 12px; }
         nav ul li a {
           -moz-border-radius: 0;
           -webkit-border-radius: 0;
           -khtml-border-radius: 0;
           border-radius: 0;
           display: block;
-          width: 100%;
-          padding: 12px; }
+          width: 100%; }
     nav img#menu-icon {
       width: 42px;
       display: block;
