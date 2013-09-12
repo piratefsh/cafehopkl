@@ -121,7 +121,7 @@ nav ul {
       background-color: #ec6338; }
 nav img#menu-icon {
   display: none;
-  margin-right: 12px; }
+  margin-right: 24px; }
 
 div#wrapper {
   width: 95%;
@@ -264,7 +264,8 @@ div.heading-img {
       position: absolute;
       right: 0;
       z-index: 1000;
-      top: 59px;
+      margin-top: 47px;
+      clear: both;
       display: none; }
       nav ul.open {
         display: block; }
@@ -296,16 +297,9 @@ div.heading-img {
           padding-right: 0;
           display: inline; }
     nav img#menu-icon {
-      width: 42px;
+      width: 36px;
       display: block;
       float: right; }
-
-  div.heading-img {
-    padding: 12px;
-    width: 120px; }
-    div.heading-img img {
-      width: 105.6px;
-      padding: 6px; }
 
   header {
     padding: 0; }
@@ -313,6 +307,13 @@ div.heading-img {
       width: 64px; }
     header h1 {
       line-height: 64px; }
+
+  div.heading-img {
+    padding: 12px;
+    width: 120px; }
+    div.heading-img img {
+      width: 105.6px;
+      padding: 6px; }
 
   body {
     font-size: 1em; } }
@@ -335,7 +336,8 @@ div.heading-img {
       position: absolute;
       right: 0;
       z-index: 1000;
-      top: 43px;
+      margin-top: 47px;
+      clear: both;
       display: none; }
       nav ul.open {
         display: block; }
@@ -367,7 +369,7 @@ div.heading-img {
           padding-right: 0;
           display: inline; }
     nav img#menu-icon {
-      width: 42px;
+      width: 36px;
       display: block;
       float: right; }
 

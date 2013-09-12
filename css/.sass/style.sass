@@ -86,7 +86,8 @@ nav
                 background-color: $orange //no color change when hover over soc media icons
     img#menu-icon
         display: none
-        margin-right: $space
+        margin-right: $space* 2
+
 
 div#wrapper
     @include wrapper-style
@@ -232,7 +233,9 @@ $logo-size-small: $logo-size * 0.8
             position: absolute
             right: 0
             z-index: 1000
-            top: $header-height - $menu-icon-size /2
+            // top: $header-height - $menu-icon-size/3
+            margin-top: $menu-icon-size + $space - 1px
+            clear: both
             display: none
             &.open
                 display: block
@@ -271,15 +274,12 @@ $logo-size-small: $logo-size * 0.8
             width: ($heading-icon-size - $space * 2) * 0.6
             padding: $space/2
 
-@mixin narrow-header
+@media only screen and (max-width : 650px)
+    @include collapsed-nav($logo-size)
     header    
         @include header-dimensions($logo-size-small)
         padding: 0
-
-@media only screen and (max-width : 650px)
-    @include collapsed-nav($logo-size)
     @include smaller-imgs
-    @include narrow-header
     body
         font-size: 1em
     // h1
@@ -289,7 +289,9 @@ $logo-size-small: $logo-size * 0.8
 
 @media only screen and (max-width : 480px)
     @include collapsed-nav($logo-size-small)
-    @include narrow-header
+    header    
+        @include header-dimensions($logo-size-small)
+        padding: 0
     h1
         font-size: 2.2em
     h2, h3, h4
