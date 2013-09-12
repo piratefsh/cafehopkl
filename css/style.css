@@ -121,7 +121,7 @@ nav ul {
       background-color: #ec6338; }
 nav img#menu-icon {
   display: none;
-  margin-right: 24px; }
+  margin-right: 12px; }
 
 div#wrapper {
   width: 95%;
@@ -264,7 +264,7 @@ div.heading-img {
       position: absolute;
       right: 0;
       z-index: 1000;
-      top: 65px;
+      top: 59px;
       display: none; }
       nav ul.open {
         display: block; }
@@ -307,6 +307,13 @@ div.heading-img {
       width: 105.6px;
       padding: 6px; }
 
+  header {
+    padding: 0; }
+    header div#header-wrapper div img#logo {
+      width: 64px; }
+    header h1 {
+      line-height: 64px; }
+
   body {
     font-size: 1em; } }
 @media only screen and (max-width: 480px) {
@@ -328,7 +335,7 @@ div.heading-img {
       position: absolute;
       right: 0;
       z-index: 1000;
-      top: 49px;
+      top: 43px;
       display: none; }
       nav ul.open {
         display: block; }
