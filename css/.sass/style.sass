@@ -3,8 +3,8 @@
 @mixin header-dimensions($logo-size)
     div#header-wrapper
         div 
-            &:last-child
-                top: $logo-size/3
+            // &:last-child
+            //     top: $logo-size/3
             img#logo
                 width: $logo-size 
     h1 
@@ -37,11 +37,12 @@ header
             white-space: no-wrap
             display: table-cell
             vertical-align: middle
-
+            width: 45%
             &:last-child
-                position: absolute
-                max-width: 60%
-                right: 0
+                text-align: right
+                // position: absolute
+                // right: 0
+                width: 55%
 
             img#logo
                 display: block
@@ -72,13 +73,11 @@ nav
             a
                 padding: $space/2
                 background-color: $orange
-                @include fade-in
-                &:hover 
-                    background-color: $dark-orange
             img 
                 display: inline-block
                 vertical-align: middle
         li.soc-media-links
+            @include clear-spacing
             a 
                 padding: 0
 
@@ -218,8 +217,11 @@ $icons-mobile-size: 80px
 $logo-size-small: $logo-size * 0.8
 @mixin collapsed-nav($header-height)
     header div#header-wrapper
+        div 
+            width: 90%
         div:last-child
             position: static
+            max-width: 10%
     nav
         position: relative
         ul

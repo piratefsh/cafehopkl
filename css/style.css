@@ -28,8 +28,6 @@ header {
   margin-top: 0;
   padding-top: 6px;
   padding-bottom: 6px; }
-  header div#header-wrapper div:last-child {
-    top: 26.66667px; }
   header div#header-wrapper div img#logo {
     width: 80px; }
   header h1 {
@@ -43,11 +41,11 @@ header {
     header div#header-wrapper div {
       white-space: no-wrap;
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      width: 45%; }
       header div#header-wrapper div:last-child {
-        position: absolute;
-        max-width: 60%;
-        right: 0; }
+        text-align: right;
+        width: 55%; }
       header div#header-wrapper div img#logo {
         display: block;
         float: left; }
@@ -109,21 +107,17 @@ nav ul {
         background-color: #c53d13; }
     nav ul li a {
       padding: 6px;
-      background-color: #ec6338;
-      -o-transition: 0.5s;
-      -ms-transition: 0.5s;
-      -moz-transition: 0.5s;
-      -webkit-transition: 0.5s;
-      transition: 0.5s; }
-      nav ul li a:hover {
-        background-color: #c53d13; }
+      background-color: #ec6338; }
     nav ul li img {
       display: inline-block;
       vertical-align: middle; }
-  nav ul li.soc-media-links a {
+  nav ul li.soc-media-links {
+    margin: 0;
     padding: 0; }
-  nav ul li.soc-media-links a:hover, nav ul li.soc-media-links a:focus {
-    background-color: #ec6338; }
+    nav ul li.soc-media-links a {
+      padding: 0; }
+    nav ul li.soc-media-links a:hover, nav ul li.soc-media-links a:focus {
+      background-color: #ec6338; }
 nav img#menu-icon {
   display: none;
   margin-right: 24px; }
@@ -251,8 +245,11 @@ div.heading-img {
   text-shadow: #b15c41 1px 1px 0; }
 
 @media only screen and (max-width: 650px) {
+  header div#header-wrapper div {
+    width: 90%; }
   header div#header-wrapper div:last-child {
-    position: static; }
+    position: static;
+    max-width: 10%; }
 
   nav {
     position: relative; }
@@ -299,8 +296,11 @@ div.heading-img {
   body {
     font-size: 1em; } }
 @media only screen and (max-width: 480px) {
+  header div#header-wrapper div {
+    width: 90%; }
   header div#header-wrapper div:last-child {
-    position: static; }
+    position: static;
+    max-width: 10%; }
 
   nav {
     position: relative; }
@@ -339,8 +339,6 @@ div.heading-img {
 
   header {
     padding: 0; }
-    header div#header-wrapper div:last-child {
-      top: 21.33333px; }
     header div#header-wrapper div img#logo {
       width: 64px; }
     header h1 {
