@@ -22,15 +22,20 @@ div#map-canvas {
   background-color: #412218;
   color: #412218;
   font-family: "Champagne", Helvetica, Arial, sans-serif; }
+  div#map-canvas div.iw-holder {
+    min-width: 150px;
+    overflow: auto; }
   div#map-canvas h3 {
     text-shadow: none;
     font-size: 1.2em;
     font-family: "Champagne", Helvetica, Arial, sans-serif;
     color: #90120e;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    display: block; }
   div#map-canvas a {
     display: inline-block;
+    clear: both;
     margin-right: 6px; }
 
 div#locations-list-wrapper {

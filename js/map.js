@@ -173,7 +173,7 @@ $(document).ready(function(){
                 var thisPlacemark = getPlaceMarkForMarker(this)
                  //Clean infowindow
 
-                globalInfoWindow.setContent("<div id=" + markerID + "-iw><h3>" + thisPlacemark.name + "</h3>" + '<a class="directions-link" href="#' + markerID + '">Details</a></div>')
+                globalInfoWindow.setContent("<div class='iw-holder' id=" + markerID + "-iw><h3>" + thisPlacemark.name + "</h3>" + '<a class="directions-link" href="#' + markerID + '">Details</a></div>')
                 globalInfoWindow.open(gmap, this)
                 $('div#' + markerID + "-iw").on('linkReady', function(event, link){
                     $(this).append(link)
