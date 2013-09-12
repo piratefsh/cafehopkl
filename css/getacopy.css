@@ -38,3 +38,6 @@ ul#participating-cafes-list {
         ul#participating-cafes-list li div.cafe div.logo img {
           margin: 0 auto;
           width: 80px; }
+
+img.pin-sample {
+  vertical-align: bottom; }
