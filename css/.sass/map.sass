@@ -8,9 +8,12 @@ div
         background-color: $brown
         color: $brown
         font-family: $body-font
+
         h3
             text-shadow: none
+            font-size: 1.2em
             font-family: $body-font
+            color: $red
             padding: 0
             margin: 0
         a 
@@ -33,13 +36,15 @@ div#locations-list-wrapper
                 
                 .title
                     font-weight: bold
+                font-size: 0.8em
                 span 
                     display: block
                     &.loc-desc
                         display: block
                         a
-                            display: inline-block
-                            width: auto
+                            display: inline
+                            // &.directions-link
+                                // float: right
                         span.address
                             font-style: italic
                             margin:
@@ -111,3 +116,20 @@ div#zones
                     background-color: $dark-orange
                     color: $beige
 
+@media only screen and (min-width : 650px)
+    div#map-canvas
+        position: relative
+        z-index: -1
+        float: left
+        height: 600px
+
+    div#wrapper
+        @include box-sizing
+        background-color: $light-beige
+        max-width: 30%
+        height: 600px
+        width: 30%!important
+        position: absolute
+        right: 0
+        padding: $space
+        z-index: 100        

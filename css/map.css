@@ -23,7 +23,9 @@ div#map-canvas {
   font-family: "Champagne", Helvetica, Arial, sans-serif; }
   div#map-canvas h3 {
     text-shadow: none;
+    font-size: 1.2em;
     font-family: "Champagne", Helvetica, Arial, sans-serif;
+    color: #90120e;
     padding: 0;
     margin: 0; }
   div#map-canvas a {
@@ -40,7 +42,8 @@ div#locations-list-wrapper {
     overflow: visible; }
     div#locations-list-wrapper div#locations-list ul#locations li {
       border-bottom: solid 1px #f8b582;
-      padding: 12px; }
+      padding: 12px;
+      font-size: 0.8em; }
       div#locations-list-wrapper div#locations-list ul#locations li .title {
         font-weight: bold; }
       div#locations-list-wrapper div#locations-list ul#locations li span {
@@ -48,8 +51,7 @@ div#locations-list-wrapper {
         div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc {
           display: block; }
           div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc a {
-            display: inline-block;
-            width: auto; }
+            display: inline; }
           div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc span.address {
             font-style: italic;
             margin-bottom: 6px; }
@@ -124,3 +126,23 @@ div#zones {
         div#zones ul#zones-list li a.selected {
           background-color: #c53d13;
           color: #f9c36f; }
+
+@media only screen and (min-width: 650px) {
+  div#map-canvas {
+    position: relative;
+    z-index: -1;
+    float: left;
+    height: 600px; }
+
+  div#wrapper {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ffe9c6;
+    max-width: 30%;
+    height: 600px;
+    width: 30% !important;
+    position: absolute;
+    right: 0;
+    padding: 12px;
+    z-index: 100; } }

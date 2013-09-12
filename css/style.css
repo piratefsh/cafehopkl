@@ -18,7 +18,9 @@ body {
   background-color: #ffe9c6;
   color: #90120e;
   font-family: "Champagne", Helvetica, Arial, sans-serif;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  position: relative;
+  z-index: -100; }
 
 header {
   width: 100%;
