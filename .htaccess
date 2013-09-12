@@ -1,0 +1,16 @@
+#hide the index.html
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.html -f
+    RewriteRule ^(.*)$ $1.html
+
+#Prevent directory listing
+    Options -Indexes 
+
+#Anyone can access the 404 page
+    <Files /public_html/404.html> 
+    allow from all 
+    </Files>
+ 
+#Error documents
+    ErrorDocument 404 /public_html/404.html
