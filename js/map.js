@@ -26,7 +26,7 @@ $(document).ready(function(){
     //################################################ INITIALIZERS ###################################################
     function initializeListScroller(){
         //Set plugin scrollbar
-        $(divWithLocationsListSelector).height('400px').mCustomScrollbar({
+        $(divWithLocationsListSelector).height('520px').mCustomScrollbar({
             theme: 'dark-thick',
         })
     }

@@ -16,6 +16,7 @@
 
 div#map-canvas {
   border-bottom: 1px solid #c53d13;
+  margin-bottom: 12px;
   width: 100%;
   height: 350px;
   background-color: #412218;
@@ -67,7 +68,7 @@ div#locations-list-wrapper {
     box-sizing: border-box;
     padding: 6px;
     width: 100%;
-    margin: 12px auto;
+    margin: 0 auto 6px auto;
     background-color: #f8b582;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -84,21 +85,28 @@ div#locations-list-wrapper {
       box-shadow: none;
       border: none; }
 
-ul#map-legend {
-  margin: 0;
-  padding: 0;
-  margin-top: 6px; }
-  ul#map-legend li {
-    list-style: none;
-    display: inline-block;
-    font-size: 0.8em;
-    margin-right: 12px; }
-    ul#map-legend li img {
-      margin-right: 6px; }
+div#legend {
+  width: 100%;
+  background-color: #412218;
+  color: #ffe9c6; }
+  div#legend ul#map-legend {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px; }
+    div#legend ul#map-legend li {
+      list-style: none;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 12px;
+      padding: 6px; }
+      div#legend ul#map-legend li img {
+        margin-right: 6px;
+        width: 20px; }
 
 div#zones {
   width: 100%;
-  background-color: #f8b582; }
+  background-color: #c53d13; }
   div#zones ul#zones-list {
     margin: 0;
     padding: 0;
@@ -117,15 +125,15 @@ div#zones {
         display: block;
         background-color: transparent;
         text-decoration: none;
-        color: #90120e;
+        color: #f9c36f;
         text-shadow: none;
         font-size: 0.8em; }
         div#zones ul#zones-list li a:hover {
           color: #f8b582;
           background-color: #c53d13; }
         div#zones ul#zones-list li a.selected {
-          background-color: #c53d13;
-          color: #f9c36f; }
+          background-color: #f9c36f;
+          color: #c53d13; }
 
 @media only screen and (min-width: 650px) {
   div#map-canvas {

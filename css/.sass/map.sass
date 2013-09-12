@@ -3,6 +3,7 @@
 div 
     &#map-canvas
         border-bottom: 1px solid $dark-orange
+        margin-bottom: $space
         width: 100%
         height: $map-height
         background-color: $brown
@@ -57,7 +58,7 @@ div#locations-list-wrapper
         @include box-sizing
         padding: $space/2
         width: 100%
-        margin: $space auto
+        margin: 0 auto $space/2 auto
         background-color: $search-box-color
         -webkit-box-sizing: border-box
         -moz-box-sizing: border-box
@@ -76,21 +77,28 @@ div#locations-list-wrapper
                 box-shadow: none
                 border: none
 
-ul#map-legend
-    @include clear-spacing
-    margin-top: $space / 2
-    li 
-        list-style: none
-        display: inline-block
-        font-size: $small-font
-        margin-right: $space
+div#legend
+    width: 100%
+    background-color: $brown
+    color: $light-beige
+    ul#map-legend
+        @include clear-spacing
+        @include center-element
+        max-width: $wrapper-width
+        li 
+            list-style: none
+            display: inline-block
+            font-size: $small-font
+            margin-right: $space
+            padding: $space/2
 
-        img
-            margin-right: $space/ 2
+            img
+                margin-right: $space/ 2
+                width: 20px
 
 div#zones 
     width: 100%
-    background-color: $light-orange
+    background-color: $dark-orange
     //text-align: center
     ul#zones-list
         @include clear-spacing
@@ -106,15 +114,15 @@ div#zones
                 display: block
                 background-color: transparent
                 text-decoration: none
-                color: $red
+                color: $beige
                 text-shadow: none
                 font-size: $small-font
                 &:hover
                     color: $light-orange
                     background-color: $dark-orange
                 &.selected
-                    background-color: $dark-orange
-                    color: $beige
+                    background-color: $beige
+                    color: $dark-orange
 
 @media only screen and (min-width : 650px)
     div#map-canvas
