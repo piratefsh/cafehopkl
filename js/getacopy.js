@@ -46,15 +46,15 @@ $(document).ready(function(){
     $.get('js/cafes.json', function(data){
         var cafes = data.cafes
         for(var i = 0; i < cafes.length; i++){
-            var logoName = cafes[i].Logo
+            var logoName = cafes[i].logo
             var logo = $("<a target='_blank' href='" + cafes[i].site + "'>")
 
             if(logoName){
-                var img = $("<img/>").attr('src', logoDir + logoName).attr('alt', cafes[i].Name)
+                var img = $("<img/>").attr('src', logoDir + logoName).attr('alt', cafes[i].name)
                 logo.append(img)
             }
             else{
-                logo.append(cafes[i].Name)
+                logo.append(cafes[i].name)
             }
             
             var logoDiv = $("<div>").attr("class", "logo").append(logo)
