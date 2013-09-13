@@ -31,15 +31,38 @@ $(document).ready(function(){
         "moontree_v2.png",
     ]
 
-    logoNames.sort(function(a, b){
-        return a.toUpperCase().localeCompare(b.toUpperCase())
-    })
+    // logoNames.sort(function(a, b){
+    //     return a.toUpperCase().localeCompare(b.toUpperCase())
+    // })
 
-    for(var i = 0; i < logoNames.length; i++){
-        var logo = $("<img/>").attr('src', logoDir + logoNames[i])
-        var logoDiv = $("<div>").attr("class", "logo").append(logo)
-        var cafe = $("<div>").attr("class", "cafe").append(logoDiv)
-        var li = $("<li>").append(cafe)
-        $(participatingCafesListSelector).append(li)
-    }
+    // for(var i = 0; i < logoNames.length; i++){
+    //     var logo = $("<img/>").attr('src', logoDir + logoNames[i])
+    //     var logoDiv = $("<div>").attr("class", "logo").append(logo)
+    //     var cafe = $("<div>").attr("class", "cafe").append(logoDiv)
+    //     var li = $("<li>").append(cafe)
+    //     $(participatingCafesListSelector).append(li)
+    // }
+
+    $.get('js/cafes.json', function(data){
+        var cafes = data.cafes
+        for(var i = 0; i < cafes.length; i++){
+            console.log(cafes[i])
+
+            var logoName = cafes[i].Logo
+            var logo = $("<a href='" + cafes[i].site + "'>")
+
+            if(logoName){
+                var img = $("<img/>").attr('src', logoDir + logoName)
+                logo.append(img)
+            }
+            else{
+                logo.append(cafes[i].Name)
+            }
+            
+            var logoDiv = $("<div>").attr("class", "logo").append(logo)
+            var cafe = $("<div>").attr("class", "cafe").append(logoDiv)
+            var li = $("<li>").append(cafe)
+            $(participatingCafesListSelector).append(li)    
+        }
+    }, 'json')
 })
