@@ -59,7 +59,6 @@ div#locations-list-wrapper {
           div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc a {
             display: inline; }
           div#locations-list-wrapper div#locations-list ul#locations li span.loc-desc span.address {
-            font-style: italic;
             margin-bottom: 6px; }
       div#locations-list-wrapper div#locations-list ul#locations li.selected {
         background-color: #f8b582; }

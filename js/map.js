@@ -53,6 +53,8 @@ $(document).ready(function(){
         listLocations(doc)
         prepGmaps()
         getUserLocation(showUserOnMap)
+
+        addLocationDetails()
     }
 
     function getUserLocation(callback){
@@ -87,6 +89,28 @@ $(document).ready(function(){
 
         });
     }
+
+    function addLocationDetails(){
+        $.get('js/cafes.json', function(data){
+            var cafes = data.cafes
+            var locationList = $("ul#locations")
+
+            for(var i = 0; i < cafes.length; i++){
+                var currCafe = cafes[i]
+                var currLi = $("li#" + currCafe.key, locationList)
+                var deets = $("span.loc-desc", currLi)
+
+                deets.html("<span>" + currCafe.phoneNumber + "</span>")
+                deets.append("<span>" + currCafe.address + "</span>")
+                deets.append("<span>" + currCafe.hours + "</span>")
+                deets.append("<a href='" + currCafe.site + "'>" + "Facebook Page" + "</a>")
+                currLi.addClass("partner-cafe")
+                deets.addClass("partner-cafe")
+
+                $(currLi).append(deets)
+            }
+        }, 'json')
+    }
     //Append locations to list from geoXML3 doc and set listeners for markers
     function listLocations(doc){
         globalDoc = doc
@@ -120,7 +144,9 @@ $(document).ready(function(){
             //Create li element with title and description as contents
             //Link to loc on Google Maps (external)
             var liElement = $('<li>').attr('id', markerID).append($('<strong class="title">').attr('id', markerID).append(placemark.name))
+            
             liElement.append(cleanDescriptions)
+            
             $(locationsList).append(liElement)
 
             var m = marker
@@ -282,7 +308,9 @@ $(document).ready(function(){
 
         geocoder.geocode(geocoderRequest, function(results, status){
             var add = results[0].formatted_address
-            $(resultContainer).html("Address: " + add)
+            
+            if(!$(resultContainer).parent('span').hasClass('partner-cafe'))
+              $(resultContainer).html(add)
 
             var loc = results[0].geometry.location
             var pos = marker.getPosition()
@@ -402,4 +430,6 @@ $(document).ready(function(){
             zoomToZone($(this).attr('id'))
         }
     })
+
+
 })
