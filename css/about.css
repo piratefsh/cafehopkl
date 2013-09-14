@@ -26,3 +26,22 @@ span.name {
 
 h2, h3 {
   clear: both; }
+
+ul#team li {
+  display: table;
+  vertical-align: top; }
+  ul#team li img, ul#team li p {
+    display: block;
+    text-align: left; }
+  ul#team li img {
+    width: 100px;
+    float: left;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -khtml-border-radius: 50px;
+    border-radius: 50px;
+    margin-right: 12px; }
+  ul#team li p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px; }

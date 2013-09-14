@@ -11,3 +11,20 @@ span.name
 
 h2, h3
     clear: both
+
+ul#team
+    li 
+        display: table
+        vertical-align: top
+        img, p
+            display: block
+            text-align: left
+        img
+            width: 100px
+            float: left
+            @include rounded-corners(50px)
+            margin-right: $space
+
+        p
+            @include clear-spacing
+            margin-bottom: $space
