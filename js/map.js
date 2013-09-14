@@ -23,6 +23,9 @@ $(document).ready(function(){
     var userMarker //user's current location
     var latlngAddressMap = new Array()
 
+    var mouseOverDiv = $("<div>").addClass('mouseover-text').hide()
+    $('body').append(mouseOverDiv)
+
     //################################################ INITIALIZERS ###################################################
     function initializeListScroller(){
         //Set plugin scrollbar
@@ -106,9 +109,33 @@ $(document).ready(function(){
                 deets.append("<a href='" + currCafe.site + "'>" + "Facebook Page" + "</a>")
                 
                 var types = $("<div>").addClass("cafe-types")
-                // if(currCafe.espresso == "Y"){
-                //     deets.append($('<img>').prop('src', cafeTypesIcons['espresso']))
-                // }
+
+                if(currCafe.espresso == "Y"){
+                    types.append($('<img>').prop('src', cafeTypesIcons['espresso']).addClass('Espresso'))
+                }if(currCafe.handbrew == "Y"){
+                    types.append($('<img>').prop('src', cafeTypesIcons['handbrew']).addClass('Handbrew'))
+                }if(currCafe.lunch == "Y"){
+                    types.append($('<img>').prop('src', cafeTypesIcons['lunch']).addClass('Lunch'))
+                }if(currCafe.dinner == "Y"){
+                    types.append($('<img>').prop('src', cafeTypesIcons['dinner']).addClass('Dinner'))
+                }if(currCafe.pastryOnly == "Y"){
+                    types.append($('<img>').prop('src', cafeTypesIcons['pastryOnly']).addClass('Pastry only'))
+                }
+
+                $("img", types).mouseenter(function(){
+                    $(mouseOverDiv).show()
+                    var text = $(mouseOverDiv).html($(this).attr('class'))
+                    // $(text).css({position: 'fixed'})
+                    $(text).offset({
+                        top: $(this).offset().top - 30,
+                        left: $(this).offset().left,
+                        right: $(this).offset().right,
+                    })
+                }).mouseleave(function(){
+                    $(mouseOverDiv).hide()
+                })
+                deets.append(types)
+
                 currLi.addClass("partner-cafe")
                 deets.addClass("partner-cafe")
 
@@ -205,7 +232,9 @@ $(document).ready(function(){
                 var thisPlacemark = getPlaceMarkForMarker(this)
                  //Clean infowindow
 
-                globalInfoWindow.setContent("<div class='iw-holder' id=" + markerID + "-iw><h3>" + thisPlacemark.name + "</h3>" + '<a class="directions-link" href="#' + markerID + '">Details</a></div>')
+                globalInfoWindow.setContent("<div class='iw-holder' id=" + markerID 
+                    + "-iw><h3>" + thisPlacemark.name + "</h3>" + '<a class="directions-link" href="#' 
+                    + markerID + '">Details</a></div>')
                 globalInfoWindow.open(gmap, this)
                 $('div#' + markerID + "-iw").on('linkReady', function(event, link){
                     $(this).append(link)
@@ -340,16 +369,17 @@ $(document).ready(function(){
     function getAndInsertDirections(obj, marker){
         //only add if it isn't there already
         var existingLink = $("a.directions-link", obj.parent()) 
-        if($(existingLink).length > 0){
-            console.log("NOOO")
-            return
-        }
+        var linkExists = $(existingLink).length > 0
 
         var link = getLinkToLocOnGmaps(marker)
         var a = "<a class='directions-link' target='_blank'href='" + link + "'>Directions</a>"
         var markerID = makeID(marker.title)
+
+        if(!linkExists){
+            $(obj).parent().prepend(a)
+        }
+
         $('div#' + markerID + "-iw").trigger('linkReady', a)
-        $(obj).parent().prepend(a)
     }
 
     //Get address and insert it to obj

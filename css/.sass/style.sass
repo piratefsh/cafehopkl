@@ -213,6 +213,19 @@ div.heading-img
     color: $bright-orange
     @include small-text-shadow($light-brown)
 
+div.mouseover-text
+    background-color: white     
+    position: absolute
+    z-index: 10000
+    font-size: 0.8em
+    padding: $space/4
+    @include rounded-corners(4px)
+
+div.cafe-types
+    margin: $space/2 0
+    img 
+        margin-right: $space/4
+
 //RESPONSIVE STUFF
 $icons-mobile-size: 80px 
 $logo-size-small: $logo-size * 0.8

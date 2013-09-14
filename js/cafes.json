@@ -72,7 +72,7 @@
     },
     {
         "name": "Cafe Departure Lounge (Damasara Utama))",
-        "key": "CAFFEine",
+        "key": "DepartureLoungeDamansaraUptown",
         "address": "10, Jln SS 21/39, Damansara Utama",
         "phoneNumber": "Damansara Uptown - 03 77257682",
         "site": "https://www.facebook.com/CafeDepartureLounge",
@@ -86,7 +86,7 @@
     },
     {
         "name": "Cafe Departure Lounge (Solaris Mt Kiara)",
-        "key": "CoffeeFamille",
+        "key": "DepartureLoungeMontKiara",
         "address": "10, Jalan Solaris 4, Solaris Mont' Kiara ",
         "phoneNumber": "03-62030362",
         "site": "https://www.facebook.com/CafeDepartureLounge",
@@ -100,7 +100,7 @@
     },
     {
         "name": "CAFFEine",
-        "key": "CoffeeSocit",
+        "key": "CAFFEine",
         "address": "G-09-1, Level 1, Block G, SetiaWalk",
         "phoneNumber": "03-58790033",
         "site": "http://www.facebook.com/caffeine.my",
@@ -114,7 +114,7 @@
     },
     {
         "name": "Coffee Famille",
-        "key": "DepartureLoungeDamansaraUptown",
+        "key": "CoffeeFamille",
         "address": "6-G, Garden Wing, Sunsuria Avenue",
         "phoneNumber": "03 61505126",
         "site": "",
@@ -128,7 +128,7 @@
     },
     {
         "name": "CoffeeSociété",
-        "key": "DepartureLoungeMontKiara",
+        "key": "CoffeeSocit",
         "address": "Publika, Block D4, Level G3",
         "phoneNumber": "03-62115523",
         "site": "http://facebook.com/coffeesociete",
