@@ -10,3 +10,10 @@ var divWithLocationsListSelector = 'div#locations-list'
 var chklBaseUrl				= "http://www.cafehopkl.com/cafehopkl/"			
 
 var participatingCafesListSelector  = "ul#participating-cafes-list"
+
+var cafeTypesIcons = new Array()
+cafeTypesIcons['espresso']  = "espresso.png"
+cafeTypesIcons['handbrew']  = "handbrew.png"
+cafeTypesIcons['pastryOnly']= "pastryOnly.png"
+cafeTypesIcons['lunch']     = "lunch.png"
+cafeTypesIcons['dinner']    = "dinner.png"

@@ -31,7 +31,7 @@ $(document).ready(function(){
         "moontree_v2.png",
     ]
 
-    $.get('js/cafes.json', function(data){
+    $.get(chklBaseUrl + 'js/cafes.json', function(data){
         var cafes = data.cafes
         for(var i = 0; i < cafes.length; i++){
             var logoName = cafes[i].logo

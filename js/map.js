@@ -91,7 +91,7 @@ $(document).ready(function(){
     }
 
     function addLocationDetails(){
-        $.get('js/cafes.json', function(data){
+        $.get(chklBaseUrl + 'js/cafes.json', function(data){
             var cafes = data.cafes
             var locationList = $("ul#locations")
 
@@ -104,8 +104,14 @@ $(document).ready(function(){
                 deets.append("<span>" + currCafe.address + "</span>")
                 deets.append("<span>" + currCafe.hours + "</span>")
                 deets.append("<a href='" + currCafe.site + "'>" + "Facebook Page" + "</a>")
+                
+                var types = $("<div>").addClass("cafe-types")
+                // if(currCafe.espresso == "Y"){
+                //     deets.append($('<img>').prop('src', cafeTypesIcons['espresso']))
+                // }
                 currLi.addClass("partner-cafe")
                 deets.addClass("partner-cafe")
+
 
                 $(currLi).append(deets)
             }
@@ -248,8 +254,6 @@ $(document).ready(function(){
             + "&ll=" + markerLatLng.toUrlValue()
             + "&iwloc=A&hl=en" 
 
-        // var linkToLoc = "<a target='_blank' href='http://maps.google.com/?ie=UTF8&#!q=" + (marker.title).replace("/\s/" + "+") +  "+Malaysia" + "&z=13'>" + "Directions</a>"
-
         return linkToLoc
     }
     function getPlaceMarkForMarker(marker){
@@ -334,10 +338,17 @@ $(document).ready(function(){
     }
 
     function getAndInsertDirections(obj, marker){
+        //only add if it isn't there already
+        var existingLink = $("a.directions-link", obj.parent()) 
+        if($(existingLink).length > 0){
+            console.log("NOOO")
+            return
+        }
+
         var link = getLinkToLocOnGmaps(marker)
         var a = "<a class='directions-link' target='_blank'href='" + link + "'>Directions</a>"
         var markerID = makeID(marker.title)
-         $('div#' + markerID + "-iw").trigger('linkReady', a)
+        $('div#' + markerID + "-iw").trigger('linkReady', a)
         $(obj).parent().prepend(a)
     }
 
