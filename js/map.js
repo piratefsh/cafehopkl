@@ -10,10 +10,10 @@ $(document).ready(function(){
     cafes['notInKV']            = new Array()
 
     var markerIcons = []
-    markerIcons['outOfTown']       = chklBaseUrl + '/img/map-icons/chkl-pin-01.png'
-    markerIcons['participating']   = chklBaseUrl + '/img/map-icons/chkl-pin-03.png'
-    markerIcons['default']         = chklBaseUrl + '/img/map-icons/chkl-pin-02.png'
-    markerIcons['me']         = chklBaseUrl + '/img/map-icons/chkl-pin-me.png'
+    markerIcons['outOfTown']       = chklDomain + 'img/map-icons/chkl-pin-01.png'
+    markerIcons['participating']   = chklDomain + 'img/map-icons/chkl-pin-03.png'
+    markerIcons['default']         = chklDomain + 'img/map-icons/chkl-pin-02.png'
+    markerIcons['me']         = chklDomain + 'img/map-icons/chkl-pin-me.png'
 
     var globalInfoWindow = new google.maps.InfoWindow() //only want one custom infowindow open
 
@@ -106,7 +106,9 @@ $(document).ready(function(){
                 deets.html("<span>" + currCafe.phoneNumber + "</span>")
                 deets.append("<span>" + currCafe.address + "</span>")
                 deets.append("<span>" + currCafe.hours + "</span>")
-                deets.append("<a href='" + currCafe.site + "'>" + "Facebook Page" + "</a>")
+                
+                if(currCafe.site && currCafe.site.length > 0)
+                    deets.append("<a target='_blank' href='" + currCafe.site + "'>" + "Facebook Page" + "</a>")
                 
                 var types = $("<div>").addClass("cafe-types")
 

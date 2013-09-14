@@ -14,3 +14,5 @@
  
 #Error documents
     ErrorDocument 404 /public_html/404.html
+
+Header set Access-Control-Allow-Origin: *

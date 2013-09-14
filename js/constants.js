@@ -7,7 +7,9 @@ var searchBarSelector 		= "input#search-bar"
 var listToSearchSelector 	= "ul#locations"
 var locationsListSelector 	= 'ul#locations'
 var divWithLocationsListSelector = 'div#locations-list'
-var chklBaseUrl				= "http://www.cafehopkl.com/cafehopkl/"			
+var chklBaseUrl				= "/"			
+
+var chklDomain              = "http://cafehopkl.com/"
 
 var participatingCafesListSelector  = "ul#participating-cafes-list"
 
