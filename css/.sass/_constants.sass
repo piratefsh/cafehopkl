@@ -36,6 +36,7 @@ $min-section-height: 400px
 $mobile-icon-size: 80px
 
 // Font families
+$header-font: 'Matchbook', Helvetica, Arial, sans-serif
 $body-font: 'Champagne', Helvetica, Arial, sans-serif
 $bold-font: 'Champagne Bold', Helvetica, Arial, sans-serif
 
@@ -43,18 +44,21 @@ $bold-font: 'Champagne Bold', Helvetica, Arial, sans-serif
 // Custom Fonts
 @font-face
     font-family: 'Matchbook'
-    src: url('./fonts/Matchbook.ttf')
+    src: url('./fonts/Matchbook.eot?#iefix') format('embedded-opentype') //IE fix
+    src: url('./fonts/Matchbook.ttf') format('truetype')
     // src: local("Matchbook"), url('./fonts/Matchbook.ttf') format("truetype")
     font-weight: normal
 
 @font-face
     font-family: 'Champagne'
+    src: url('./fonts/Champagne_&_Limousines.eot?#iefix') format('embedded-opentype') //IE fix
     src: url('./fonts/Champagne_&_Limousines.ttf')
     // src: local("Champagne & Limousines"), url('./fonts/Champagne_&_Limousines.ttf') format("truetype")
     font-weight: normal
 
 @font-face
     font-family: 'Champagne Bold'
+    src: url('./fonts/Champagne_&_Limousines_Bold.eot?#iefix') format('embedded-opentype') //IE fix
     src: url('./fonts/Champagne_&_Limousines_Bold.ttf')
     // src: local("Champagne & Limousines Bold"), url('./fonts/Champagne_&_Limousines_Bold.ttf') format("truetype")
     font-weight: bold

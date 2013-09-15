@@ -1,15 +1,18 @@
 @font-face {
   font-family: "Matchbook";
-  src: url("./fonts/Matchbook.ttf");
+  src: url("./fonts/Matchbook.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/Matchbook.ttf") format("truetype");
   font-weight: normal; }
 
 @font-face {
   font-family: "Champagne";
+  src: url("./fonts/Champagne_&_Limousines.eot?#iefix") format("embedded-opentype");
   src: url("./fonts/Champagne_&_Limousines.ttf");
   font-weight: normal; }
 
 @font-face {
   font-family: "Champagne Bold";
+  src: url("./fonts/Champagne_&_Limousines_Bold.eot?#iefix") format("embedded-opentype");
   src: url("./fonts/Champagne_&_Limousines_Bold.ttf");
   font-weight: bold;
   font-style: normal; }
@@ -133,7 +136,7 @@ div.clear-both {
   clear: both; }
 
 h1, h2, h3, h4 {
-  font-family: Matchbook, Tahoma, sans-serif;
+  font-family: "Matchbook", Helvetica, Arial, sans-serif;
   margin: 12px;
   text-transform: uppercase;
   font-weight: bold;

@@ -263,7 +263,7 @@
         "pastryOnly": "Y",
         "lunch": "Y",
         "dinner": "",
-        "logo": "",
+        "logo": "missellieteahouse.png",
         "hours": "10am-7pm, Mon off"
     },
     {
@@ -278,7 +278,7 @@
         "lunch": "Y",
         "dinner": "",
         "logo": "moontree_v2.png",
-        "hours": "0800-1700. Last orders at 1600. Tues off"
+        "hours": "10am-8pm"
     },
     {
         "name": "MyEspresso Cafe",
