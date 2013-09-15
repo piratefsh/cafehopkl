@@ -36,6 +36,29 @@
 
     </script>
     <footer>
+        <div id="footer-wrapper">
+            <div id="social-media-share">
+            <h3>Share</h3>
+            <ul>
+                <li><a href="#" 
+                  onclick="
+                    window.open(
+                      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+                      'facebook-share-dialog', 
+                      'width=626,height=436'); 
+                    return false;">
+                  Share on Facebook
+                </a></li>
+
+                <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="cafehopkl">Tweet</a>
+                    <script>
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                    </script>
+                </li>
+            </ul>
+        </div>
+
         <div id="sponsors">
             <h3>Supported by</h3>
             <ul id="sponsor_list">
@@ -70,6 +93,9 @@
                     </a>
                 </li>
             </ul>
+        </div>
+
+        <div class="clear-both"></div>
         </div>
     </footer>
 </div>

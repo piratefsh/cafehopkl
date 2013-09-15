@@ -134,9 +134,20 @@ footer
     background-color: $red
     padding: $space
     margin-top: $space * 4
-    div#sponsors 
+    h3
+        display: block
+    div#footer-wrapper
         max-width: $wrapper-width
         margin: 0 auto
+        div#sponsors 
+            float: right
+            width: 80%
+        div#social-media-share
+            float: left
+            width: 20%
+            ul 
+                @include clear-spacing
+                list-style: none 
     ul#sponsor_list
         @include clear-spacing
         width: 100%
@@ -144,9 +155,10 @@ footer
         text-align: center
 
         li 
-            display: table-cell
+            display: inline-block
             vertical-align: middle
             max-width: $sponsor_width
+            clear: both
             img
                 margin: 0 auto
                 margin-bottom: $space
@@ -313,6 +325,11 @@ $logo-size-small: $logo-size * 0.8
 
     footer 
         padding: $space/2
+        div#footer-wrapper
+            div#social-media-share, div#sponsors
+                float: none
+                width: 100%
+                display: block
         ul#sponsor_list
             display: block
             li

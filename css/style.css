@@ -172,9 +172,21 @@ footer {
   background-color: #90120e;
   padding: 12px;
   margin-top: 48px; }
-  footer div#sponsors {
+  footer h3 {
+    display: block; }
+  footer div#footer-wrapper {
     max-width: 1000px;
     margin: 0 auto; }
+    footer div#footer-wrapper div#sponsors {
+      float: right;
+      width: 80%; }
+    footer div#footer-wrapper div#social-media-share {
+      float: left;
+      width: 20%; }
+      footer div#footer-wrapper div#social-media-share ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
   footer ul#sponsor_list {
     margin: 0;
     padding: 0;
@@ -182,9 +194,10 @@ footer {
     display: table;
     text-align: center; }
     footer ul#sponsor_list li {
-      display: table-cell;
+      display: inline-block;
       vertical-align: middle;
-      max-width: 100px; }
+      max-width: 100px;
+      clear: both; }
       footer ul#sponsor_list li img {
         margin: 0 auto;
         margin-bottom: 12px;
@@ -407,6 +420,10 @@ div.cafe-types {
 
   footer {
     padding: 6px; }
+    footer div#footer-wrapper div#social-media-share, footer div#footer-wrapper div#sponsors {
+      float: none;
+      width: 100%;
+      display: block; }
     footer ul#sponsor_list {
       display: block; }
       footer ul#sponsor_list li {
