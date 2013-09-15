@@ -20,6 +20,17 @@ $(document).ready(function(){
        
     }
 
+    function templateInitializerCallback(){
+        initializeResponsiveNav()
+
+        setSocialMedia()
+    }
+
+    function setSocialMedia(){
+        //Twitter
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    }
+
     function initializeResponsiveNav(){
         var navIconSelector = "#collapsed-nav-icon"
         $(navIconSelector).click(function(){
@@ -37,7 +48,9 @@ $(document).ready(function(){
         })
     }
     //###################################################### RUN CODE #####################################################
-    initializeTemplates(initializeResponsiveNav)
+    initializeTemplates(templateInitializerCallback)
+
+
 
     //###################################################### GOOGLE ANALYTICS #####################################################
     // var _gaq=[['_setAccount','UA-43969265-1'],['_trackPageview']];

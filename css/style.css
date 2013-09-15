@@ -187,6 +187,24 @@ footer {
         margin: 0;
         padding: 0;
         list-style: none; }
+        footer div#footer-wrapper div#social-media-share ul a.share-button {
+          margin-bottom: 6px;
+          display: inline-block;
+          background-color: #3b5998;
+          padding: 6px;
+          color: white;
+          font-size: medium;
+          text-shadow: none;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          -khtml-border-radius: 3px;
+          border-radius: 3px; }
+          footer div#footer-wrapper div#social-media-share ul a.share-button img {
+            width: 18px;
+            margin-right: 3px;
+            display: inline-block; }
+          footer div#footer-wrapper div#social-media-share ul a.share-button span {
+            line-height: 18px; }
   footer ul#sponsor_list {
     margin: 0;
     padding: 0;
@@ -424,6 +442,13 @@ div.cafe-types {
       float: none;
       width: 100%;
       display: block; }
+      footer div#footer-wrapper div#social-media-share ul#share-button, footer div#footer-wrapper div#sponsors ul#share-button {
+        width: 100%;
+        text-align: center;
+        display: table; }
+        footer div#footer-wrapper div#social-media-share ul#share-button li, footer div#footer-wrapper div#sponsors ul#share-button li {
+          display: table-cell;
+          vertical-align: top; }
     footer ul#sponsor_list {
       display: block; }
       footer ul#sponsor_list li {

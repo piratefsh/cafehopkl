@@ -66,7 +66,7 @@ nav
     ul
         display: block
         @include clear-spacing
-        li 
+        li
             @include non-text-link-style
             display: inline-block
             margin: 0 $space/2 
@@ -148,6 +148,21 @@ footer
             ul 
                 @include clear-spacing
                 list-style: none 
+                a.share-button
+                    margin-bottom: $space/2
+                    display: inline-block
+                    background-color: #3B5998
+                    padding: $space/2
+                    color: white
+                    font-size: medium
+                    text-shadow: none
+                    @include rounded-corners($space/4)
+                    img
+                        width: 18px
+                        margin-right: $space/4
+                        display: inline-block
+                    span    
+                        line-height: 18px
     ul#sponsor_list
         @include clear-spacing
         width: 100%
@@ -330,6 +345,13 @@ $logo-size-small: $logo-size * 0.8
                 float: none
                 width: 100%
                 display: block
+                ul#share-button
+                    width: 100%
+                    text-align: center
+                    display: table
+                    li 
+                        display: table-cell
+                        vertical-align: top
         ul#sponsor_list
             display: block
             li

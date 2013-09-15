@@ -38,24 +38,27 @@
     <footer>
         <div id="footer-wrapper">
             <div id="social-media-share">
-            <h3>Share</h3>
-            <ul>
-                <li><a href="#" 
-                  onclick="
-                    window.open(
-                      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
-                      'facebook-share-dialog', 
-                      'width=626,height=436'); 
-                    return false;">
-                  Share on Facebook
-                </a></li>
+            <h3>Spread the Word</h3>
+            <ul id="share-button">
+                <li>
+                    <a class="share-button" href="#" 
+                      onclick="
+                        window.open(
+                          'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+                          'facebook-share-dialog', 
+                          'width=626,height=436'); 
+                        return false;">
+                      <img src="img/soc-media/soc-media-fb.png"/><span>Share</span>
+                    </a>
+                </li>
+                <li>
+                    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fcafehopkl.com&amp;width=450&amp;height=46&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=true&amp;appId=121188047967674" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:109px; height:27px;" allowTransparency="true"></iframe>
+                </li>
 
                 <li>
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="cafehopkl">Tweet</a>
-                    <script>
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-                    </script>
+                  <a href="http://twitter.com/share" class="twitter-share-button" data-text="Check out CafeHop KL, a project mapping unique cafes around KL!" data-via="cafehopkl">Tweet</a>
                 </li>
+
             </ul>
         </div>
 
