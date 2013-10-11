@@ -342,16 +342,19 @@ $(document).ready(function(){
         }
 
         geocoder.geocode(geocoderRequest, function(results, status){
-            var add = results[0].formatted_address
-            
-            if(!$(resultContainer).parent('span').hasClass('partner-cafe'))
-              $(resultContainer).html(add)
 
-            var loc = results[0].geometry.location
-            var pos = marker.getPosition()
+            if(results.length > 0){
+                var add = results[0].formatted_address
+                
+                if(!$(resultContainer).parent('span').hasClass('partner-cafe'))
+                  $(resultContainer).html(add)
 
-            latlngAddressMap[pos.toUrlValue()] = add
-            getAndInsertDirections($(resultContainer), marker)
+                var loc = results[0].geometry.location
+                var pos = marker.getPosition()
+
+                latlngAddressMap[pos.toUrlValue()] = add
+                getAndInsertDirections($(resultContainer), marker)
+            }
 
         })
     }

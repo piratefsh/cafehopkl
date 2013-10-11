@@ -845,7 +845,7 @@ Shah Alam, Selangor,
   </Placemark>
   <Placemark>
     <name>Grandeur Gallery Cafe</name>
-    <description><![CDATA[<div dir="ltr"><b style="font-size:10pt">Opening times: </b><span style="font-size:10pt">Closed Mondays</span><br>   Tue - Sun: 09:00 - 18:30<br><br>&nbsp;</div>]]></description>
+    <description><![CDATA[<div dir="ltr"><b style="font-size:10pt">Opening times: </b><span style="font-size:10pt">Closed Mondays</span><br>	 Tue - Sun: 09:00 - 18:30<br><br>&nbsp;</div>]]></description>
     <styleUrl>#style46</styleUrl>
     <Point>
       <coordinates>101.537025,3.003593,0.000000</coordinates>
@@ -908,11 +908,11 @@ Shah Alam, Selangor,
     </Point>
   </Placemark>
   <Placemark>
-    <name>J&amp;D Espresso</name>
-    <description><![CDATA[<div dir="ltr"><br>&nbsp;</div>]]></description>
+    <name>Cafe J&amp;D Espresso</name>
+    <description><![CDATA[<div dir="ltr">G.B06, Oasis BU11, Lebuh Bandar Utama, 47800 Petaling Jaya, Malaysia</div>]]></description>
     <styleUrl>#style50</styleUrl>
     <Point>
-      <coordinates>101.602707,3.124615,0.000000</coordinates>
+      <coordinates>101.602409,3.124533,0.000000</coordinates>
     </Point>
   </Placemark>
   <Placemark>
