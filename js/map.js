@@ -38,6 +38,9 @@ $(document).ready(function(){
     function initialize() {
         var mapOptions = {
           mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: new google.maps.LatLng(-1, -1),
+          zoom: 8,
+
         };
         
         gmap = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
