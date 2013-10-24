@@ -33,7 +33,7 @@ header {
   padding-bottom: 6px; }
   header div#header-wrapper div img#logo {
     width: 80px; }
-  header h1 {
+  header h1 a {
     line-height: 80px; }
   header div#header-wrapper {
     max-width: 1000px;
@@ -358,7 +358,7 @@ div.cafe-types {
     padding: 0; }
     header div#header-wrapper div img#logo {
       width: 64px; }
-    header h1 {
+    header h1 a {
       line-height: 64px; }
 
   div.heading-img {
@@ -430,7 +430,7 @@ div.cafe-types {
     padding: 0; }
     header div#header-wrapper div img#logo {
       width: 64px; }
-    header h1 {
+    header h1 a {
       line-height: 64px; }
 
   h1 {
