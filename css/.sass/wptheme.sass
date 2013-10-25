@@ -1,0 +1,1053 @@
+@import 'constants'
+@import url('css/reset.css')
+
+// Custom Fonts
+@font-face
+  font-family: 'Matchbook'
+  src: url('http://cafehopkl.com/css/fonts/Matchbook.eot')
+  src: url('http://cafehopkl.com/css/fonts/Matchbook.eot?#iefix') format('embedded-opentype'), url('http://cafehopkl.com/css/fonts/Matchbook.ttf')
+  // src: local("Matchbook"), url('http://cafehopkl.com/css/fonts/Matchbook.ttf') format("truetype")
+  font-weight: normal
+
+@font-face
+  font-family: 'Champagne'
+  src: url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines.eot')
+  src: url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines.eot?#iefix') format('embedded-opentype'), url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines.ttf')
+  // src: local("Champagne & Limousines"), url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines.ttf') format("truetype")
+  font-weight: normal
+
+@font-face
+  font-family: 'Champagne Bold'
+  src: url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines_Bold.eot')
+  src: url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines_Bold.eot?#iefix') format('embedded-opentype'), url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines_Bold.ttf')
+  // src: local("Champagne & Limousines Bold"), url('http://cafehopkl.com/css/fonts/Champagne_&_Limousines_Bold.ttf') format("truetype")
+  font-weight: bold
+  font-style: normal
+
+body, body.custom-background
+  background: $brown
+  /*background: #999;
+  font: 13px / 30px "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 300
+
+pre, code, kbd, tt, var
+  font: 12px / 20px Consolas, Monaco, Lucida Console, monospace
+
+pre
+  word-wrap: normal
+  margin-bottom: 20px
+  padding: 15px 20px
+  background: #f5f5f5
+  overflow: auto
+  max-width: 100%
+
+a
+  color: $dark-orange
+  &:visited, &:active
+    color: $dark-orange
+  &:hover
+    color: $red
+
+#page
+  background: white
+  width: 1020px
+  margin: 40px auto
+
+.site-footer
+  clear: both
+  padding: 40px 40px
+  color: #aaaaaa
+  a
+    color: #aaaaaa
+    &:hover
+      color: $dark-orange
+
+.site-header .site-branding
+  background: $orange
+  color: $beige 
+  position: relative
+
+.site-title-group
+  margin: 50px 40px 50px 40px
+
+.site-title
+  font-size: 34px
+  line-height: 34px
+  a
+    @include text-shadow($dark-orange)
+    text-decoration: none
+    color: $beige
+    &:hover
+      color: $dark-orange
+    display: block
+
+.site-description
+  font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 300
+  color: $light-beige
+
+.expound-custom-header
+  display: block
+  float: left
+  position: absolute
+  width: 100%
+  top: 0
+  img
+    display: block
+    float: left
+    position: absolute
+    width: 100%
+    top: 0
+
+.site-header .menu-toggle
+  background: $red
+  color: white
+  font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 300
+  padding: 10px 22px
+  margin: 0
+  &:hover
+    background: #474747
+  &:before
+    content: '\2261'
+    font-size: 14px
+    margin-right: 10px
+
+.main-small-navigation
+  > ul
+    display: none
+  ul ul
+    display: block
+  .menu-toggle
+    background: #474747
+  ul
+    margin: 0
+    list-style: none
+  a
+    display: block
+    color: white
+    padding: 10px 40px
+    text-decoration: none
+  li
+    background: $red
+    &:hover
+      background: #474747
+  ul
+    ul
+      a
+        padding-left: 60px
+      ul a
+        padding-left: 80px
+    >
+      .current_page_item, .current-menu-item
+        background: $dark-orange
+
+.navigation-main
+  background: $orange
+  ul
+    margin: 0 30px
+    position: relative
+    z-index: 9990
+  a
+    color: white
+    padding: 10px
+    position: relative
+  li
+    background: $orange
+    &:hover
+      background: $dark-orange
+  ul
+    >
+      .current_page_item, .current-menu-item, .current-post-ancestor, .current-menu-ancestor, .current-menu-parent, .current-post-parent
+        background: $dark-orange
+      .current_page_item:hover, .current-menu-item:hover, .current-post-ancestor:hover, .current-menu-ancestor:hover, .current-menu-parent:hover, .current-post-parent:hover
+        background: $orange
+      .current_page_item:hover a:after, .current-menu-item:hover a:after, .current-post-ancestor:hover a:after, .current-menu-ancestor:hover a:after, .current-menu-parent:hover a:after, .current-post-parent:hover a:after
+        border-top-color: $orange
+      .current_page_item ~ .current_page_item a, .current-menu-item ~ .current-menu-item a, .current-post-ancestor ~ .current-post-ancestor a, .current-menu-parent ~ .current-menu-parent a, .current-post-parent ~ .current-post-parent a
+        background: $red
+      .current_page_item ~ .current_page_item a:hover, .current-menu-item ~ .current-menu-item a:hover, .current-post-ancestor ~ .current-post-ancestor a:hover, .current-menu-parent ~ .current-menu-parent a:hover, .current-post-parent ~ .current-post-parent a:hover
+        background: #474747
+      .current_page_item a:after, .current-menu-item a:after, .current-post-ancestor a:after, .current-menu-parent a:after, .current-post-parent a:after
+        content: ''
+        font-size: 0px
+        line-height: 0%
+        width: 0px
+        border-top: 6px solid $dark-orange
+        border-left: 6px solid transparent
+        border-right: 6px solid transparent
+        position: absolute
+        bottom: -6px
+        left: 50%
+        margin-left: -6px
+        z-index: 9995
+      .current_page_item ~ .current_page_item a:after, .current-menu-item ~ .current-menu-item a:after, .current-post-ancestor ~ .current-post-ancestor a:after, .current-menu-parent ~ .current-menu-parent a:after, .current-post-parent ~ .current-post-parent a:after
+        content: ''
+        border: none !important
+    ul
+      li a:after
+        content: ''
+        border: none !important
+      margin: 0
+      top: 40px
+      z-index: 9990
+    &.social
+      padding: 0
+      list-style: none
+      float: right
+      margin-right: 36px
+      /* -4px bc of padding
+      li
+        &:hover
+          background: none
+        a
+          width: 24px
+          padding-left: 0
+          padding-right: 0
+          background: url('../images/social.png') 0 50% no-repeat
+          color: transparent
+          text-indent: -9999px
+          padding-left: 4px
+          opacity: 0.2
+          &:hover
+            opacity: 0.5
+        &.twitter a
+          background-position: -205px 50%
+        &.facebook a
+          background-position: -12px 50%
+        &.feed a
+          background-position: -108px 50%
+        &.vkontakte a
+          background-position: -59px 50%
+        &.google-plus a
+          background-position: -157px 50%
+
+.site-main
+  float: left
+  width: 100%
+  clear: both
+
+#primary
+  float: left
+  width: 740px
+  margin-right: 10px
+
+.site-intro
+  padding-top: 40px
+  padding-bottom: 20px
+  padding-left: 40px
+  padding-right: 40px
+  background: white url('../images/absurdidad.png') 0 0 repeat
+  font-family: $header-font
+  font-size: 20px
+  line-height: 28px
+
+.page-header
+  padding-top: 20px
+  padding-bottom: 20px
+  padding-left: 40px
+  padding-right: 40px
+  background: white url('../images/absurdidad.png') 0 0 repeat
+  h1
+    font-family: $header-font
+    font-size: 20px
+    line-height: 28px
+  p
+    margin-bottom: 0
+    margin-top: 10px
+
+.featured-content-secondary
+  padding-top: 40px
+  padding-bottom: 20px
+  padding-left: 30px
+  padding-right: 30px
+  overflow: hidden
+
+.widget_recent_entries
+  .entry-thumbnail
+    float: left
+    img
+      float: left
+  .has-post-thumbnail .entry-title
+    margin-left: 60px
+
+.single .site-content .related-content
+  overflow: hidden
+  padding-left: 20px
+  padding-top: 20px
+  border-bottom: solid 1px #dddddd
+  .related-content-title
+    font-size: 16px
+    margin-bottom: 0px
+    margin-left: 20px
+  article
+    float: left
+    width: 220px
+    margin: 0 0 0 20px
+    padding: 20px 0
+    border: none
+  .entry-title
+    font-size: 13px
+    line-height: 18px
+    margin: -4px 0 0 0
+    padding: 0
+    clear: none
+    font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-weight: 300
+  .entry-thumbnail
+    float: left
+    img
+      float: left
+  .has-post-thumbnail .entry-title
+    margin-left: 60px
+
+#secondary
+  float: right
+  width: 260px
+  margin-left: 10px
+
+h1, h2, h3
+  font-family: $header-font
+  margin: $space
+  text-transform: uppercase
+  font-weight: bold
+  text-align: center
+  margin-bottom: 0
+
+.site-content
+  .entry-content h1, .comment-content h1
+    font-size: 34px
+    line-height: 44px
+
+#tinymce h1
+  font-size: 34px
+  line-height: 44px
+
+.site-content
+  .entry-content h2, .comment-content h2
+    font-size: 20px
+    line-height: 28px
+
+#tinymce h2
+  font-size: 20px
+  line-height: 28px
+
+.site-content
+  .entry-content h3, .comment-content h3
+    font-size: 16px
+    line-height: 18px
+    color: #606060
+
+#tinymce h3
+  font-size: 16px
+  line-height: 18px
+  color: #606060
+
+.site-content
+  .entry-content h1, .comment-content h1
+    margin-bottom: 10px
+    margin-top: 40px
+
+#tinymce h1
+  margin-bottom: 10px
+  margin-top: 40px
+
+.site-content
+  .entry-content h2, .comment-content h2
+    margin-bottom: 10px
+    margin-top: 40px
+
+#tinymce h2
+  margin-bottom: 10px
+  margin-top: 40px
+
+.site-content
+  .entry-content h3, .comment-content h3
+    margin-bottom: 10px
+    margin-top: 40px
+
+#tinymce h3
+  margin-bottom: 10px
+  margin-top: 40px
+
+.site-content
+  .entry-content hr, .comment-content hr
+    background-color: #dddddd
+    border: 0
+    height: 1px
+    margin-bottom: 20px
+
+#tinymce hr
+  background-color: #dddddd
+  border: 0
+  height: 1px
+  margin-bottom: 20px
+
+.site-content
+  .entry-content table, .comment-content table
+    margin-bottom: 20px
+
+#tinymce table
+  margin-bottom: 20px
+
+.site-content
+  .entry-content th, .comment-content th
+    padding: 8px 8px
+    border-bottom: solid 1px #dddddd
+
+#tinymce th
+  padding: 8px 8px
+  border-bottom: solid 1px #dddddd
+
+.site-content
+  .entry-content td, .comment-content td
+    padding: 8px 8px
+    border-bottom: solid 1px #dddddd
+
+#tinymce td
+  padding: 8px 8px
+  border-bottom: solid 1px #dddddd
+
+.site-content
+  .entry-content tr:hover td, .comment-content tr:hover td
+    background: #f7f7f7
+
+#tinymce tr:hover td
+  background: #f7f7f7
+
+.site-content
+  .entry-content ul, .comment-content ul
+    margin-bottom: 20px
+
+#tinymce ul
+  margin-bottom: 20px
+
+.site-content
+  .entry-content ol, .comment-content ol
+    margin-bottom: 20px
+
+#tinymce ol
+  margin-bottom: 20px
+
+.site-content
+  .entry-content blockquote, .comment-content blockquote
+    margin-left: -40px
+    margin-top: 20px
+    margin-bottom: 20px
+    padding-top: 20px
+    padding-bottom: 1px
+    padding-right: 20px
+    padding-left: 80px
+    background: #f7f7f7
+    position: relative
+
+#tinymce blockquote
+  margin-left: -40px
+  margin-top: 20px
+  margin-bottom: 20px
+  padding-top: 20px
+  padding-bottom: 1px
+  padding-right: 20px
+  padding-left: 80px
+  background: #f7f7f7
+  position: relative
+
+.site-content
+  .entry-content blockquote:before, .comment-content blockquote:before
+    content: '\0201C'
+    font-family: Georgia, 'Times New Roman', serif
+    font-size: 50px
+    position: absolute
+    left: 40px
+    top: 32px
+    color: #aaaaaa
+
+#tinymce blockquote:before
+  content: '\0201C'
+  font-family: Georgia, 'Times New Roman', serif
+  font-size: 50px
+  position: absolute
+  left: 40px
+  top: 32px
+  color: #aaaaaa
+
+.site-content
+  .entry-content blockquote cite:before, .comment-content blockquote cite:before
+    content: '\02014  '
+
+#tinymce blockquote cite:before
+  content: '\02014  '
+
+.entry-title a
+  text-decoration: none
+
+.single .site-content .entry-title
+  font-size: 44px
+  line-height: 54px
+  margin-bottom: 20px
+
+.site-content
+  article
+    border-bottom: solid 1px #dddddd
+    padding-left: 40px
+    margin: 0
+    padding-top: 40px
+    padding-bottom: 40px
+  .entry-title
+    font-size: 20px
+    line-height: 28px
+    a
+      color: $red
+      &:hover
+        color: $dark-orange
+  .entry-meta
+    font-size: 12px
+    line-height: 15px
+    color: #aaaaaa
+    a
+      color: #aaaaaa
+      text-decoration: none
+      &:hover
+        color: $dark-orange
+  .entry-content, .entry-header, .entry-summary
+    -ms-word-wrap: break-word
+    word-wrap: break-word
+  .entry-header .entry-meta
+    font-size: 12px
+    .author
+      color: $red
+      font-weight: 600
+
+.blog .site-content .has-post-thumbnail .entry-thumbnail, .archive .site-content .has-post-thumbnail .entry-thumbnail, .search .site-content .has-post-thumbnail .entry-thumbnail, .blog .site-content .has-post-thumbnail .entry-thumbnail img, .archive .site-content .has-post-thumbnail .entry-thumbnail img, .search .site-content .has-post-thumbnail .entry-thumbnail img
+  float: left
+
+.blog .site-content .has-post-thumbnail .entry-title, .archive .site-content .has-post-thumbnail .entry-title, .search .site-content .has-post-thumbnail .entry-title
+  clear: none
+  margin-top: -5px
+
+.blog .site-content .has-post-thumbnail .entry-meta, .archive .site-content .has-post-thumbnail .entry-meta, .search .site-content .has-post-thumbnail .entry-meta
+  clear: none
+
+.blog .site-content .has-post-thumbnail .entry-meta:after, .archive .site-content .has-post-thumbnail .entry-meta:after, .search .site-content .has-post-thumbnail .entry-meta:after
+  display: table
+  content: ''
+  line-height: 0
+  clear: both
+
+.blog .site-content .has-post-thumbnail .entry-header, .archive .site-content .has-post-thumbnail .entry-header, .search .site-content .has-post-thumbnail .entry-header, .blog .site-content .has-post-thumbnail .entry-summary, .archive .site-content .has-post-thumbnail .entry-summary, .search .site-content .has-post-thumbnail .entry-summary, .blog .site-content .has-post-thumbnail .entry-meta, .archive .site-content .has-post-thumbnail .entry-meta, .search .site-content .has-post-thumbnail .entry-meta
+  margin-left: 240px
+
+.featured-content
+  background: $light-beige
+  article
+    padding-top: 40px
+    padding-bottom: 40px
+    margin: 0
+    padding-left: 40px
+    padding-right: 40px
+    border-bottom: solid 1px #dddddd
+  .entry-title
+    font-size: 20px
+    line-height: 28px
+    a
+      color: $red
+      &:hover
+        color: $dark-orange
+  .has-post-thumbnail
+    .entry-thumbnail
+      float: left
+      a, img
+        float: left
+      width: 50%
+      a
+        margin-right: 10px
+      img
+        width: 100%
+    .entry-title
+      clear: none
+      margin-top: -5px
+    .entry-header, .entry-summary, .entry-meta
+      margin-left: 50%
+      padding-left: 10px
+    .entry-summary:after
+      display: table
+      content: ''
+      line-height: 0
+      clear: both
+
+.featured-content-secondary
+  margin-top: -1px
+  /* cover the bottom border of the main featured content area
+  background: white url('../images/absurdidad.png') 0 0 repeat
+  article
+    margin-left: 10px
+    margin-right: 10px
+    width: 220px
+    float: left
+  .entry-thumbnail
+    margin-bottom: 20px
+  .entry-title
+    font-size: 20px
+    line-height: 28px
+    a
+      color: $red
+      &:hover
+        color: $dark-orange
+
+article:hover
+  .entry-thumbnail img
+    opacity: 0.9
+  .entry-title a
+    color: $dark-orange
+
+.entry-thumbnail
+  position: relative
+  img
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
+    max-width: 100%
+    height: auto
+
+.entry-thumbnail-category
+  position: absolute
+  left: -6px
+  top: 8px
+  background: $red
+  padding: 2px 8px
+  font-size: 8px
+  text-transform: uppercase
+  color: #777
+  &:hover
+    background: $dark-orange
+    &:before
+      border-top: 6px solid #0d5c89
+  a
+    color: white
+    text-decoration: none
+  &:before
+    content: ''
+    font-size: 0px
+    line-height: 0%
+    width: 0px
+    border-top: 6px solid #212121
+    border-left: 6px solid transparent
+    position: absolute
+    left: 0px
+    top: 24px
+
+.wp-caption
+  border: none
+  .wp-caption-text
+    max-width: 98%
+    width: 100%
+    display: block
+    background: #efefef
+    border: solid 1px #efefef
+    margin: 0
+    padding: 5px
+    color: #999
+  img
+    border: solid 1px #ccc
+    padding: 5px
+    margin: 0
+    &[class*="wp-image-"]
+      border: solid 1px #ccc
+      padding: 5px
+      margin: 0
+
+.widget-area
+  padding-top: 41px
+  .widget
+    margin-bottom: 40px
+    margin-right: 40px
+    ul
+      list-style: none
+      margin-left: 0
+      li
+        padding-bottom: 8px
+  .widget-title
+    font-size: 16px
+    margin-bottom: 20px
+    a
+      color: $red
+      &:hover
+        color: $dark-orange
+  .widget_recent_entries .post-date
+    color: #aaaaaa
+  .widget_twitter
+    a
+      color: $red
+      text-decoration: none
+      &:hover
+        color: $dark-orange
+    .timesince
+      color: #aaaaaa
+    .tweets li
+      padding: 20px 0
+      border-bottom: solid 1px #f7f7f7
+      &:last-child
+        border-bottom: none
+  .widget_categories ul.children, .widget_pages ul.children
+    margin-left: 1.5em
+  .widget_categories ul.children li, .widget_pages ul.children li
+    padding-bottom: 0
+    padding-top: 8px
+  .widget_nav_menu ul.sub-menu
+    margin-left: 1.5em
+    li
+      padding-bottom: 0
+      padding-top: 8px
+
+input, textarea
+  font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 100%
+
+button
+  display: inline-block
+  background: $dark-orange
+  color: white
+  text-decoration: none
+  padding: 10px
+  border: none
+  font-weight: 300
+  cursor: pointer
+  font-size: 100%
+
+input
+  &[type="button"], &[type="reset"], &[type="submit"]
+    display: inline-block
+    background: $dark-orange
+    color: white
+    text-decoration: none
+    padding: 10px
+    border: none
+    font-weight: 300
+    cursor: pointer
+    font-size: 100%
+
+.button-primary, a.button-primary, .wpm-button-primary, a.wpm-button-primary
+  display: inline-block
+  background: $dark-orange
+  color: white
+  text-decoration: none
+  padding: 10px
+  border: none
+  font-weight: 300
+  cursor: pointer
+  font-size: 100%
+
+button:hover
+  background: $orange
+
+input
+  &[type="button"]:hover, &[type="reset"]:hover, &[type="submit"]:hover
+    background: $orange
+
+.button-primary:hover, a.button-primary:hover, .wpm-button-primary:hover, a.wpm-button-primary:hover, button:focus
+  background: $orange
+
+input
+  &[type="button"]:focus, &[type="reset"]:focus, &[type="submit"]:focus
+    background: $orange
+
+.button-primary:focus, a.button-primary:focus, .wpm-button-primary:focus, a.wpm-button-primary:focus, button:active
+  background: $orange
+
+input
+  &[type="button"]:active, &[type="reset"]:active, &[type="submit"]:active
+    background: $orange
+
+.button-primary:active, a.button-primary:active, .wpm-button-primary:active, a.wpm-button-primary:active
+  background: $orange
+
+.button, a.button, .wpm-button, a.wpm-button
+  display: inline-block
+  background: $red
+  color: white
+  text-decoration: none
+  padding: 10px
+
+.button:hover, a.button:hover, .wpm-button:hover, a.wpm-button:hover
+  background: #474747
+
+.navigation-paging, .navigation-post
+  padding-left: 40px
+  padding-top: 15px
+  padding-bottom: 15px
+  padding-right: 10px
+  background: #f7f7f7
+
+.comments-area
+  padding-left: 40px
+  margin-top: 40px
+  .comments-title
+    font-size: 20px
+    line-height: 28px
+  .comment-list
+    list-style: none
+    padding: 0
+    margin: 40px 0 0 0
+  ul.children
+    list-style: none
+    padding-left: 56px
+    margin: 0
+  article
+    margin: 0
+    padding: 20px 0 32px 0
+    /* added 12 due to avatar top: 12
+    border-top: solid 1px #dddddd
+    border-bottom: none
+  .comment-content
+    h1
+      font-size: 16px
+    h2, h3, h4, h5, h6
+      font-size: 13px
+    h1, h2, h3, h4, h5
+      margin: 20px 0
+    blockquote
+      background: none
+    margin-left: 56px
+  .reply, li.comment #respond
+    margin-left: 56px
+  footer
+    margin-bottom: 20px
+    .comment-author, .comment-meta
+      display: inline-block
+    cite
+      font-style: normal
+    .says
+      display: none
+    .comment-author
+      font-family: $header-font
+      font-size: 20px
+      line-height: 28px
+      a
+        text-decoration: none
+        color: $red
+        &:hover
+          color: $dark-orange
+      .avatar
+        position: relative
+        top: 12px
+        margin-right: 10px
+        border-radius: 50%
+    .comment-meta
+      margin-left: 4px
+      color: #aaaaaa
+      text-decoration: none
+      font-size: 12px
+      a
+        color: #aaaaaa
+        text-decoration: none
+        font-size: 12px
+      &:hover, a:hover
+        color: $dark-orange
+  #respond
+    border-top: solid 1px #dddddd
+    padding-top: 40px
+  #reply-title
+    font-size: 20px
+    line-height: 28px
+
+#commentform label
+  display: block
+  .required
+    color: red
+
+#disqus_thread
+  margin-top: 40px
+  margin-left: 40px
+
+.clear
+  display: block
+  clear: both
+  height: 0px
+  width: 100%
+
+/* Widgets
+
+.widget.widget_calendar
+  table
+    margin-bottom: 20px
+    border-spacing: 1px
+    border-collapse: separate
+  th, td
+    padding: 6px 6px
+    text-align: center
+  tbody td
+    background: #f7f7f7
+    &.pad
+      background: none
+      &:hover
+        background: none
+    &:hover
+      background: #dddddd
+    a
+      font-weight: 600
+      text-decoration: none
+  #today
+    font-weight: bold
+  #next
+    text-align: right
+  #prev
+    text-align: left
+
+/* Full-width Template
+
+.expound-full-width
+  #secondary
+    display: none
+  #primary
+    width: 1020px
+    margin-right: 0
+  .site-content article, .navigation-paging, .navigation-post, .comments-area
+    padding-right: 40px
+
+/* WP-PageNavi Support
+
+#nav-below .wp-pagenavi
+  clear: none
+  .pages
+    padding-left: 0
+  a, span
+    text-decoration: none
+    border: none
+    text-align: center
+    padding: 5px 10px
+    margin: 0
+  .current
+    background: $dark-orange
+    font-weight: normal
+    color: white
+  a:hover
+    background: #fcfcfc
+
+/* Media Queries
+@media (max-width: 1080px)
+  #page
+    width: 960px
+  #primary
+    width: 680px
+  .expound-full-width #primary
+    width: 960px
+  .featured-content-secondary
+    padding-top: 20px
+    padding-bottom: 0
+    padding-left: 40px
+    padding-right: 40px
+    article
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+      padding-top: 20px
+      padding-bottom: 20px
+    .entry-thumbnail
+      float: left
+      margin-bottom: 0
+    .has-post-thumbnail
+      .entry-header, .entry-summary
+        margin-left: 240px
+      .entry-title
+        clear: none
+        margin-top: -5px
+  .single .site-content .related-content article
+    width: 200px
+
+@media (max-width: 1020px)
+  #page
+    width: 900px
+  #primary
+    width: 620px
+  .expound-full-width #primary
+    width: 900px
+  .single .site-content .related-content article
+    width: 180px
+
+@media (max-width: 960px)
+  #page
+    width: 840px
+  #primary
+    width: 560px
+  .expound-full-width #primary
+    width: 840px
+  .single .site-content .related-content article
+    width: 160px
+
+@media (max-width: 900px)
+  #page
+    width: 87%
+  #primary
+    width: 100%
+    margin-right: 0
+  #secondary
+    width: 100%
+    margin-left: 0
+  .expound-full-width #primary
+    width: 100%
+  .featured-content .has-post-thumbnail
+    .entry-thumbnail
+      width: 220px
+      a
+        margin-right: 0
+    .entry-header, .entry-summary
+      margin-left: 240px
+      padding-left: 0
+  .site-content article
+    padding-right: 40px
+  .widget-area .widget
+    margin-left: 40px
+  .comments-area
+    padding-right: 40px
+  #disqus_thread
+    margin-right: 40px
+
+@media (max-width: 700px)
+  .featured-content .has-post-thumbnail .entry-thumbnail, .featured-content-secondary .has-post-thumbnail .entry-thumbnail, .has-post-thumbnail .entry-thumbnail
+    float: left
+    display: block
+    width: 100%
+    margin-bottom: 30px
+  .featured-content .has-post-thumbnail
+    .entry-header, .entry-summary
+      margin-left: 0
+      clear: both
+  .featured-content-secondary .has-post-thumbnail
+    .entry-header, .entry-summary
+      margin-left: 0
+      clear: both
+  .blog .site-content .has-post-thumbnail
+    .entry-header, .entry-summary, .entry-meta
+      margin-left: 0
+      clear: both
+  .archive .site-content .has-post-thumbnail
+    .entry-header, .entry-summary, .entry-meta
+      margin-left: 0
+      clear: both
+  .search .site-content .has-post-thumbnail
+    .entry-header, .entry-summary, .entry-meta
+      margin-left: 0
+      clear: both
+  .single .site-content .entry-title
+    font-size: 28px
+    line-height: 38px
+  .site-content
+    .entry-content h1, .comment-content h1
+      font-size: 28px
+      line-height: 38px
+  .single .site-content
+    .related-content
+      padding-bottom: 20px
+      padding-left: 40px
+      padding-right: 40px
+      .related-content-title
+        margin-left: 0
+      article
+        width: 100%
+        padding: 20px 0 0 0
+        margin: 0
+    .has-post-thumbnail .entry-thumbnail
+      width: 50px
+      margin-bottom: 0
+
+@media (max-width: 600px)
+  #page
+    width: 85%

@@ -158,7 +158,8 @@ $(document).ready(function(){
         var placemarks = doc[0].placemarks
         var markers = doc[0].markers
 
-
+        //Append number of cafes
+        $("li a#all").append(" " + markers.length + " Cafes")
         //Sort placemarks and markers
         placemarks = placemarks.sort(function(a, b){
             return (a.name).localeCompare(b.name)
@@ -222,6 +223,17 @@ $(document).ready(function(){
 
             google.maps.event.addListener(m, 'click', function(){
                 var markerID = makeID(this.title)
+               
+                //show all cafes
+                $(searchBarSelector).val('')
+                $(listToSearchSelector + " li").show(function(){
+                    //Update scrollbar
+                    $(divWithLocationsListSelector).mCustomScrollbar("update")
+
+                    //Scroll to selected position
+                    $(divWithLocationsListSelector).mCustomScrollbar("scrollTo", "li#" + markerID)
+                })    
+
 
                 selectLocationLi(markerID, this)
 
@@ -230,9 +242,6 @@ $(document).ready(function(){
                 gmap.setCenter(this.getPosition())
                 gmap.setZoom(15)
                 gmap.panTo(this.getPosition())
-
-                //Scroll to selected position
-                $(divWithLocationsListSelector).mCustomScrollbar("scrollTo", "li#" + markerID)
 
                 var thisPlacemark = getPlaceMarkForMarker(this)
                  //Clean infowindow
@@ -243,6 +252,7 @@ $(document).ready(function(){
                 globalInfoWindow.open(gmap, this)
                 $('div#' + markerID + "-iw").on('linkReady', function(event, link){
                     $(this).append(link)
+
                 })
             })
         }
