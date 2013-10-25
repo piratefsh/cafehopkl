@@ -218,7 +218,8 @@ footer {
       display: inline-block;
       vertical-align: middle;
       max-width: 100px;
-      clear: both; }
+      clear: both;
+      margin-left: 12px; }
       footer ul#sponsor_list li img {
         margin: 0 auto;
         margin-bottom: 12px;
