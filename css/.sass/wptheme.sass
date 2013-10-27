@@ -1,6 +1,10 @@
 @import 'constants'
 @import url('css/reset.css')
 
+
+$old-body-font: "Helvetica Neue", Helvetica, Arial, sans-serif
+$old-body-font-alt: Georgia, 'Times New Roman', serif
+
 // Custom Fonts
 @font-face
   font-family: 'Matchbook'
@@ -26,8 +30,8 @@
 
 body, body.custom-background
   background: $brown
-  /*background: #999;
-  font: 13px / 30px "Helvetica Neue", Helvetica, Arial, sans-serif
+  color: $brown
+  font: 18px / 30px $body-font
   font-weight: 300
 
 pre, code, kbd, tt, var
@@ -64,27 +68,50 @@ a
 
 .site-header .site-branding
   background: $orange
+  text-align: center
   color: $beige 
   position: relative
 
 .site-title-group
-  margin: 50px 40px 50px 40px
+  margin: 40px 30px 30px 30px
+  background: rgba($orange,.85)
+  text-align: center
+  display: inline-block
+  padding: $space
+  @include rounded-corners($space)
+
+#logo
+  width: 80px
+  margin: 0 auto
+  display: inline-block
+  img
+    vertical-align: middle
 
 .site-title
-  font-size: 34px
-  line-height: 34px
+  display: inline
+  font-size: 4em
+  line-height: 80px
+  vertical-align: middle
   a
     @include text-shadow($dark-orange)
+    display: inline
+    vertical-align: middle
     text-decoration: none
     color: $beige
     &:hover
-      color: $dark-orange
-    display: block
+      color: $beige
 
 .site-description
-  font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
-  font-weight: 300
-  color: $light-beige
+  @include text-shadow($dark-orange)
+  display: block
+  margin-top: -12px
+  font: 18px / 28px $body-font
+  font-weight: bold
+  color: $beige
+  padding-top: $space / 2
+  text-transform: none
+  vertical-align: middle
+  a
 
 .expound-custom-header
   display: block
@@ -100,14 +127,14 @@ a
     top: 0
 
 .site-header .menu-toggle
-  background: $red
-  color: white
-  font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
-  font-weight: 300
+  background: $dark-orange
+  color: $light-beige
+  font: 13px / 20px $body-font
+  font-weight: bold
   padding: 10px 22px
   margin: 0
   &:hover
-    background: #474747
+    background: $red
   &:before
     content: '\2261'
     font-size: 14px
@@ -119,19 +146,21 @@ a
   ul ul
     display: block
   .menu-toggle
-    background: #474747
+    background: $red
   ul
     margin: 0
     list-style: none
   a
     display: block
-    color: white
+    color: $beige
+    font-weight: bold
     padding: 10px 40px
     text-decoration: none
   li
-    background: $red
+    background: $orange
+    border-bottom: 1px solid $dark-orange
     &:hover
-      background: #474747
+      background: $red
   ul
     ul
       a
@@ -142,38 +171,43 @@ a
       .current_page_item, .current-menu-item
         background: $dark-orange
 
+// NAVIGATION
 .navigation-main
-  background: $orange
+  background: $dark-orange
   ul
     margin: 0 30px
     position: relative
     z-index: 9990
   a
-    color: white
+    color: $beige
     padding: 10px
     position: relative
   li
-    background: $orange
+    @include fade-in
+    @include text-shadow($red)
+    background: $dark-orange
+    color: $beige 
+    font-weight: bold
     &:hover
-      background: $dark-orange
+      background: $red
   ul
     >
       .current_page_item, .current-menu-item, .current-post-ancestor, .current-menu-ancestor, .current-menu-parent, .current-post-parent
-        background: $dark-orange
-      .current_page_item:hover, .current-menu-item:hover, .current-post-ancestor:hover, .current-menu-ancestor:hover, .current-menu-parent:hover, .current-post-parent:hover
-        background: $orange
-      .current_page_item:hover a:after, .current-menu-item:hover a:after, .current-post-ancestor:hover a:after, .current-menu-ancestor:hover a:after, .current-menu-parent:hover a:after, .current-post-parent:hover a:after
-        border-top-color: $orange
-      .current_page_item ~ .current_page_item a, .current-menu-item ~ .current-menu-item a, .current-post-ancestor ~ .current-post-ancestor a, .current-menu-parent ~ .current-menu-parent a, .current-post-parent ~ .current-post-parent a
         background: $red
+      .current_page_item:hover, .current-menu-item:hover, .current-post-ancestor:hover, .current-menu-ancestor:hover, .current-menu-parent:hover, .current-post-parent:hover
+        background: $red
+      .current_page_item:hover a:after, .current-menu-item:hover a:after, .current-post-ancestor:hover a:after, .current-menu-ancestor:hover a:after, .current-menu-parent:hover a:after, .current-post-parent:hover a:after
+        border-top-color: $red
+      .current_page_item ~ .current_page_item a, .current-menu-item ~ .current-menu-item a, .current-post-ancestor ~ .current-post-ancestor a, .current-menu-parent ~ .current-menu-parent a, .current-post-parent ~ .current-post-parent a
+        background: $orange
       .current_page_item ~ .current_page_item a:hover, .current-menu-item ~ .current-menu-item a:hover, .current-post-ancestor ~ .current-post-ancestor a:hover, .current-menu-parent ~ .current-menu-parent a:hover, .current-post-parent ~ .current-post-parent a:hover
-        background: #474747
+        background: $orange
       .current_page_item a:after, .current-menu-item a:after, .current-post-ancestor a:after, .current-menu-parent a:after, .current-post-parent a:after
         content: ''
         font-size: 0px
         line-height: 0%
         width: 0px
-        border-top: 6px solid $dark-orange
+        border-top: 6px solid $red
         border-left: 6px solid transparent
         border-right: 6px solid transparent
         position: absolute
@@ -277,7 +311,7 @@ a
   padding-top: 20px
   border-bottom: solid 1px #dddddd
   .related-content-title
-    font-size: 16px
+    font-size: 20px
     margin-bottom: 0px
     margin-left: 20px
   article
@@ -287,12 +321,12 @@ a
     padding: 20px 0
     border: none
   .entry-title
-    font-size: 13px
+    font-size: 18px
     line-height: 18px
     margin: -4px 0 0 0
     padding: 0
     clear: none
-    font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+    font: 13px / 20px $body-font
     font-weight: 300
   .entry-thumbnail
     float: left
@@ -313,6 +347,7 @@ h1, h2, h3
   font-weight: bold
   text-align: center
   margin-bottom: 0
+  color: $red
 
 .site-content
   .entry-content h1, .comment-content h1
@@ -334,14 +369,14 @@ h1, h2, h3
 
 .site-content
   .entry-content h3, .comment-content h3
-    font-size: 16px
+    font-size: 28px
     line-height: 18px
-    color: #606060
+    color: $red
 
 #tinymce h3
-  font-size: 16px
+  font-size: 28px
   line-height: 18px
-  color: #606060
+  color: $red
 
 .site-content
   .entry-content h1, .comment-content h1
@@ -455,7 +490,7 @@ h1, h2, h3
 .site-content
   .entry-content blockquote:before, .comment-content blockquote:before
     content: '\0201C'
-    font-family: Georgia, 'Times New Roman', serif
+    font-family: $body-font
     font-size: 50px
     position: absolute
     left: 40px
@@ -464,7 +499,7 @@ h1, h2, h3
 
 #tinymce blockquote:before
   content: '\0201C'
-  font-family: Georgia, 'Times New Roman', serif
+  font-family: $body-font
   font-size: 50px
   position: absolute
   left: 40px
@@ -494,13 +529,15 @@ h1, h2, h3
     padding-top: 40px
     padding-bottom: 40px
   .entry-title
-    font-size: 20px
-    line-height: 28px
+    font-size: 36px
+    line-height: 36px
+    color: $red
     a
       color: $red
       &:hover
         color: $dark-orange
   .entry-meta
+    text-align: center
     font-size: 12px
     line-height: 15px
     color: #aaaaaa
@@ -547,8 +584,8 @@ h1, h2, h3
     padding-right: 40px
     border-bottom: solid 1px #dddddd
   .entry-title
-    font-size: 20px
-    line-height: 28px
+    font-size: 36px
+    line-height: 36px
     a
       color: $red
       &:hover
@@ -587,7 +624,7 @@ h1, h2, h3
   .entry-thumbnail
     margin-bottom: 20px
   .entry-title
-    font-size: 20px
+    font-size: 28px
     line-height: 28px
     a
       color: $red
@@ -664,9 +701,13 @@ article:hover
       margin-left: 0
       li
         padding-bottom: 8px
+  h1, h2, h3
+    text-align: left
+    margin: 0px
   .widget-title
-    font-size: 16px
-    margin-bottom: 20px
+    color: $dark-orange
+    font-size: 28px
+    margin-bottom: $space/2
     a
       color: $red
       &:hover
@@ -698,10 +739,11 @@ article:hover
       padding-top: 8px
 
 input, textarea
-  font: 13px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif
+  font: 13px / 20px $body-font
   font-size: 100%
 
 button
+  @include fade-in
   display: inline-block
   background: $dark-orange
   color: white
@@ -725,6 +767,7 @@ input
     font-size: 100%
 
 .button-primary, a.button-primary, .wpm-button-primary, a.wpm-button-primary
+  @include fade-in
   display: inline-block
   background: $dark-orange
   color: white
@@ -739,6 +782,7 @@ button:hover
   background: $orange
 
 input
+  @include fade-in
   &[type="button"]:hover, &[type="reset"]:hover, &[type="submit"]:hover
     background: $orange
 
@@ -798,7 +842,7 @@ input
     border-bottom: none
   .comment-content
     h1
-      font-size: 16px
+      font-size: 20px
     h2, h3, h4, h5, h6
       font-size: 13px
     h1, h2, h3, h4, h5
@@ -845,7 +889,8 @@ input
     border-top: solid 1px #dddddd
     padding-top: 40px
   #reply-title
-    font-size: 20px
+    color: $red
+    font-size: 28px
     line-height: 28px
 
 #commentform label
@@ -1001,6 +1046,12 @@ input
     margin-right: 40px
 
 @media (max-width: 700px)
+  .site-title 
+    font-size: 3em
+    line-height: inherit
+  .site-description
+    line-height: inherit
+
   .featured-content .has-post-thumbnail .entry-thumbnail, .featured-content-secondary .has-post-thumbnail .entry-thumbnail, .has-post-thumbnail .entry-thumbnail
     float: left
     display: block
@@ -1040,6 +1091,7 @@ input
       padding-right: 40px
       .related-content-title
         margin-left: 0
+        color: $red
       article
         width: 100%
         padding: 20px 0 0 0
