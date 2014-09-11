@@ -43,15 +43,19 @@ header {
     position: relative; }
     header div#header-wrapper div {
       white-space: no-wrap;
-      display: table-cell;
+      display: table-cell !important;
       vertical-align: middle;
-      width: 45%; }
+      width: auto; }
       header div#header-wrapper div:last-child {
-        text-align: right;
-        width: 55%; }
+        text-align: right; }
       header div#header-wrapper div img#logo {
         display: block;
         float: left; }
+	  header div#header-wrapper div.addthis_horizontal_follow_toolbox {
+	    position: relative;
+		top: -19px; }
+	  header div#header-wrapper li.soc-media-links {
+	    height: 20px; }
   header h1 {
     text-shadow: #c53d13 1px 2px 0;
     margin: 0;
@@ -208,6 +212,13 @@ footer {
             display: inline-block; }
           footer div#footer-wrapper div#social-media-share ul a.share-button span {
             line-height: 18px; }
+		footer div#share-button a {
+		  height: 38px;
+		  clear: both;
+		  display: block;
+		  margin-left: 35% }
+		  footer div#share-button a.addthis_button_facebook_like {
+			height: 27px; }
   footer ul#sponsor_list {
     margin: 0;
     padding: 0;
@@ -305,7 +316,11 @@ div.cafe-types {
   header div#header-wrapper div:last-child {
     position: static;
     max-width: 10%; }
-
+  header div#header-wrapper li.soc-media-links {
+	height: auto;
+	padding: 0 0 18px 12px;	}
+    header div#header-wrapper li.soc-media-links a {
+	  width: auto; }
   nav {
     position: relative; }
     nav ul {

@@ -12,7 +12,187 @@ www.cafehopkl.com
 			<name>Untitled layer</name>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
+				<name>TBC Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[2-39-1, Persiaran Anggerik Vanilla Sinaran Kota 1, Kota Kemuning, Shah Alam]]></description>
+				<Point>
+					<coordinates>101.5328738,3.0003689,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Hop Hop Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[7, JALAN SS18/6, Subang Jaya, Petaling Jaya, Malaysia]]></description>
+				<Point>
+					<coordinates>101.58586150000001,3.0655351,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Good Friends Restaurant &amp; Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>101.58822299999997,3.074053,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Absolute Coffee Stop</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[A9-G, Jalan SS15/4D, Subang Jaya]]></description>
+				<Point>
+					<coordinates>101.5864375,3.0744393000000003,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>BEAM</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[25, Jalan Gangsa SD 5/3B, Bandar Sri Damansara, Kuala Lumpur]]></description>
+				<Point>
+					<coordinates>101.6159083,3.2039121,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>The Fix</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[The Gardens South Tower (Lobby), Mid Valley City Lingkaran Syed Putra, 59200 Kuala Lumpur, Malaysia]]></description>
+				<Point>
+					<coordinates>101.6754304,3.1173676,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>PCLO </name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[7 Jalan Riong, Bangsar, Kuala Lumpur.]]></description>
+				<Point>
+					<coordinates>101.6743523,3.1275657000000003,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>"W" Espresso Sporting Club </name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[CS01-12, Country Garden Danga Bay, Jalan Skudai 80200, Johor Bahru, Malaysia., Johor Bahru3.           016-716 10984.            https://www.facebook.com/pages/W-Espresso-Sporting-Club/226333567563742?fref=ts/  and http://www.divisionby-m.com5.            Sunday to Thursdays 10am-10pm, Friday and Saturday 10am-11pm]]></description>
+				<Point>
+					<coordinates>103.721838,1.4777011,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Just Want Coffee, The Factory 30
+</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[No 30, Jln Mutiara Emas 5/3, Tmn Mount Austin 81100 Johor Bahru Tel: 07-350 7739 Site: http://justwantcoffee.com/jwc/5.           2pm to 12am everyday. ]]></description>
+				<Point>
+					<coordinates>103.775847,1.5490016,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Three Little Birds, Desa Parkcity</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Waterfront  G-8D Desa Parkcity 52200 Kuala Lumpur       http://www.threelittlebirdscoffee.com.my/ and https://www.facebook.com/threelittlebirdscoffee?fref=ts Daily 8am to 11pm.]]></description>
+				<Point>
+					<coordinates>101.6280252,3.1865878,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Bread Fruits</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>101.64930200000003,3.16199,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>BAD Cafe by Wood and Steel</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[BAD Cafe by Wood & Steel Glomac Galleria, Galleria Hartamas, Desa Sri Hartamas, Kuala Lumpur]]></description>
+				<Point>
+					<coordinates>101.6513014,3.1614486,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>London Sandwich Co. (LSC)</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[C68 Suria KLCC, 
+Weekdays - 730am to 10pm Saturday, Sunday and Public Holiday - 10 am to 10pm https://www.facebook.com/londonsandwichco?fref=ts]]></description>
+				<Point>
+					<coordinates>101.7119247,3.1582776,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-102</styleUrl>
+				<name>Coffee Affairs</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>100.34211900000003,5.41825,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-102</styleUrl>
+				<name>Secawan n Such</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[205 Jalan Hutton 10500 George Town, Malaysia Closed Monday. Tues-Sun: 08:00 - 00:00 Phone	019-528 8112 Email	secawanmalaysia@gmail.com]]></description>
+				<Point>
+					<coordinates>100.3280443,5.4213806,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-102</styleUrl>
+				<name>Coffee Junkies at Hin Bus Depot Art Centre</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Formerly Coffee Junkies @ Junk. Monday to Sunday 12noon-7pm]]></description>
+				<Point>
+					<coordinates>100.3282857,5.4132577,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-102</styleUrl>
+				<name>Dcova Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Logan Heritage No. 4 Lebuh Bishop, George Town 10200 Penang, Malaysia Closed Tuesdays,  Open 9am-10pm weekdays, Fri, Sun  9am-12midnight and Sunday 830am-900pm Phone	04-261 3121 Email	dcovalogan@gmail.com]]></description>
+				<Point>
+					<coordinates>100.34265160000001,5.4181069,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-102</styleUrl>
+				<name>The LightBulb Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>100.32529999999997,5.416342,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
 				<name>Artisan Roast Coffee, TTDI</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Times: Mon – Fri  08:00 – 00:00 Sat &amp; Sun  09:00 – 00:00 Holidays  09:00 – 00:00
 
 http://www.artisanroast.com.my/ (http://www.artisanroast.com.my/our-cafes/artisan-roast-coffee-ttdi/)]]></description>
@@ -23,6 +203,8 @@ http://www.artisanroast.com.my/ (http://www.artisanroast.com.my/our-cafes/artisa
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>CoffeeSociété</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.666381,3.171534,0.0</coordinates>
 				</Point>
@@ -30,6 +212,8 @@ http://www.artisanroast.com.my/ (http://www.artisanroast.com.my/our-cafes/artisa
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Moustache Houze</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[No. 24, Lebuh Campbell, 10100 Pinang George Town, Pulau Pinang, Malaysia
 
  
@@ -50,6 +234,8 @@ https://www.facebook.com/MoustacheHouze (https://www.facebook.com/MoustacheHouze
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Coffee Elements (Gurney Paragon)</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Gurney Paragon (163D-3-K1), George Town, Penang 10250
 
  
@@ -64,6 +250,8 @@ https://www.facebook.com/CoffeeElementsMalaysia (https://www.facebook.com/Coffee
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Coffee Elements (All Seasons Place)</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[All Seasons Place (6G-2-17 &amp; 6G-AF2-17), Air Itam, Penang 11500
 
  
@@ -82,25 +270,17 @@ https://www.facebook.com/CoffeeElementsMalaysia (https://www.facebook.com/Coffee
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Tipsy Brew O' Coffee</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
-					<coordinates>101.617366,3.031551,0.0</coordinates>
-				</Point>
-			</Placemark>
-			<Placemark>
-				<styleUrl>#icon-503-DB4436</styleUrl>
-				<name>Cat in The Box</name>
-				<description><![CDATA[Cat in the Box Cafe @ The Centre for Asian Photographers, 100-L1-019, First Floor, The School, Jaya One, No. 72A Jalan Universiti
-46200 Petaling Jaya, Malaysia
-
-Mon-Sun: 12:00-9:00
-https://www.facebook.com/catinthebox.events]]></description>
-				<Point>
-					<coordinates>101.636259,3.11804,0.0</coordinates>
+					<coordinates>101.617366,3.0315510000000003,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-503-DB4436</styleUrl>
 				<name>WACafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[WACafe
 Center Court, Level 6, Pavilion Kuala Lumpur
 https://www.facebook.com/mywacafe]]></description>
@@ -111,6 +291,8 @@ https://www.facebook.com/mywacafe]]></description>
 			<Placemark>
 				<styleUrl>#icon-503-DB4436</styleUrl>
 				<name>Jam and Kaya Cafe </name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[PJ Palms Sports Center, Lorong Sultan, Petaling Jaya
 
 Tues-Thurs: 10am-10pm, Fri-Sun: 8am-11pm]]></description>
@@ -121,6 +303,8 @@ Tues-Thurs: 10am-10pm, Fri-Sun: 8am-11pm]]></description>
 			<Placemark>
 				<styleUrl>#icon-503-DB4436</styleUrl>
 				<name>Lucy in the Sky Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[- 167 Jalan Tun H.S. Lee
 - 50000 Kuala Lumpur, Malaysia
 Tue - Sun: 08:00 - 19:00
@@ -133,6 +317,8 @@ https://www.facebook.com/lucyintheskykl]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Nowhereman Coffee by Artisan Roast</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.670455,3.131312,0.0</coordinates>
 				</Point>
@@ -140,6 +326,8 @@ https://www.facebook.com/lucyintheskykl]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee Ink</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[No 19-1, Jalan Remia 3, Bandar Botanic, Klang, Malaysia
 
  
@@ -159,6 +347,8 @@ https://www.facebook.com/pages/Coffee-Ink/212039452295640 (https://www.facebook.
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>HotShots Coffee &amp; Tea </name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening times: Closed Weekends.
 Mon - Fri: 09:00 - 18:00
 
@@ -170,6 +360,8 @@ A2-UG1-07 Solaris Dutamas, 50480 Kuala Lumpur, Malaysia]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Jac's on the 8th</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.578609,3.120045,0.0</coordinates>
 				</Point>
@@ -177,6 +369,8 @@ A2-UG1-07 Solaris Dutamas, 50480 Kuala Lumpur, Malaysia]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Frisky Goat</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[72, Jalan Burhanudin Helmi, Taman Tun Dr Ismail, Kuala Lumpur, Malaysia
 
  
@@ -191,6 +385,8 @@ https://www.facebook.com/FriskyGoat (https://www.facebook.com/FriskyGoat)]]></de
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Thursdvys</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[22 Lorong Datuk Sulaiman 1
 Taman Tun Dr Ismail
 60000 Kuala Lumpur
@@ -203,6 +399,8 @@ Malaysia]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>The Grumpy Cyclist</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.629665,3.141856,0.0</coordinates>
 				</Point>
@@ -210,6 +408,8 @@ Malaysia]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Three Little Birds Coffee</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.691951,3.183856,0.0</coordinates>
 				</Point>
@@ -217,6 +417,8 @@ Malaysia]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>無限發掘 Findars</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[No.8, 4th Floor, Jalan Panggong, Kuala Lumpur, Malaysia
 
  Mon - Fri: 18:00 - 22:00
@@ -231,6 +433,8 @@ https://www.facebook.com/FINDARS (https://www.facebook.com/FINDARS)]]></descript
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Le Lapin</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[31-1, Plaza Danau 2, Jalan 109F, Taman Danau Desa, Kuala Lumpur, Malaysia
  
 
@@ -252,6 +456,8 @@ https://www.facebook.com/LeLapinCafe (https://www.facebook.com/LeLapinCafe)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>THIRDWAVE</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Unit 1-11, Level 1, Nexus, Bangsar South, Kuala Lumpur, Malaysia
 
  
@@ -263,6 +469,8 @@ Mon - Sun: 10:00 - 22:00]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>The Bearded Lady</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[53 Jalan SS15/5A Subang Jaya, 47500 Petaling Jaya, Malaysia
  
 Tues - Fri: 15:00 - 23:00
@@ -282,6 +490,8 @@ http://instagram.com/thebeardedladycoffee (http://instagram.com/thebeardedladyco
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Tyrst</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[74 Jalan SS15/4C, Subang Jaya, Petaling Jaya, Malaysia
 
  
@@ -300,6 +510,8 @@ https://www.facebook.com/trystss15 (https://www.facebook.com/trystss15)]]></desc
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee Stain by Joseph</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening hours: Closed Monday
 Tue - Thu: 08:00 - 20:00 Fri - Sun: 08:00 - 22:00
 
@@ -312,6 +524,8 @@ Kuala Lumpur, Malaysia]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee Cottage</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[1-1, Jalan SS15/8A
 Petaling Jaya, Malaysia
 
@@ -331,6 +545,8 @@ https://www.facebook.com/coffeecottagemy (https://www.facebook.com/coffeecottage
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Awesome Canteen</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[19, Jalan 20/13, Taman Paramount, Petaling Jaya, Malaysia
 
 Tue - Thu: 11:00 - 22:00
@@ -341,12 +557,14 @@ Sun: 11:00 - 22:00
 
 https://www.facebook.com/pages/Awesome-Canteen/537315976360362 (https://www.facebook.com/pages/Awesome-Canteen/537315976360362)]]></description>
 				<Point>
-					<coordinates>101.624868,3.106256,0.0</coordinates>
+					<coordinates>101.62486800000002,3.106256,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Roast Factory Glee</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[G06 Village Shops @ The Club, 9 Bukit Utama, No. 9 Persiaran Bukit Utama, Bandar Utama, Petaling Jaya, Malaysia
 
  
@@ -361,6 +579,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>The Red Beanbag</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.666987,3.170645,0.0</coordinates>
 				</Point>
@@ -368,6 +588,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>The Bee (Publika)</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.635823,3.118003,0.0</coordinates>
 				</Point>
@@ -375,6 +597,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee In Love</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[PUBLIKA @ SOLARIS DUTAMAS level UG, (red block) near to BIG suprmkt , 50480 Kuala Lumpur, Malaysia]]></description>
 				<Point>
 					<coordinates>101.666531,3.1711,0.0</coordinates>
@@ -383,6 +607,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Plan B. Roasters</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.667148,3.171015,0.0</coordinates>
 				</Point>
@@ -390,6 +616,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>The Bee (Jaya One)</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.635823,3.118003,0.0</coordinates>
 				</Point>
@@ -397,6 +625,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Whisk Espresso Bar &amp; Bake Shop</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.582916,3.081761,0.0</coordinates>
 				</Point>
@@ -404,6 +634,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Dotz Cafe </name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/dotzcafe (https://www.facebook.com/dotzcafe)]]></description>
 				<Point>
 					<coordinates>101.539668,3.00452,0.0</coordinates>
@@ -412,6 +644,8 @@ https://www.facebook.com/roastfactor (https://www.facebook.com/roastfactor)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Artisan Coffee (BV2)</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Times: Mon – Fri 08:00 – 00:00 Sat &amp; Sun 09:00 – 00:00 Holidays 09:00 – 00:00
 
 http://www.artisanroast.com.my/ (http://www.artisanroast.com.my/our-cafes/artisan-roast-coffee-ttdi/)]]></description>
@@ -422,17 +656,21 @@ http://www.artisanroast.com.my/ (http://www.artisanroast.com.my/our-cafes/artisa
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Brew &amp; Bread</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[No. 10, Jalan Anggerik Vanilla M31/M,
 Kota Kemuning, Seksyen 31,
 Shah Alam, Selangor,
 40460]]></description>
 				<Point>
-					<coordinates>101.538824,3.004284,0.0</coordinates>
+					<coordinates>101.53882400000002,3.004284,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Butter + Beans at Seventeen</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[BG- 1a, Happy Mansion, Jalan 17/13, Seksyen 17, 46400 Petaling Jaya, Malaysia]]></description>
 				<Point>
 					<coordinates>101.634521,3.123268,0.0</coordinates>
@@ -441,20 +679,26 @@ Shah Alam, Selangor,
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>The Brew Culture</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.656609,3.163007,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
-				<name>Top Brew Coffee Bar</name>
+				<name>Kaffiene</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
-					<coordinates>101.656365,3.162156,0.0</coordinates>
+					<coordinates>101.65636500000005,3.162156,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Pedro Espresso</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening hours: Closed Sun.
 Weekdays 8am-6pm
 Saturday 9am-5pm.]]></description>
@@ -465,6 +709,8 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Departure Lounge Mont Kiara</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.659536,3.175691,0.0</coordinates>
 				</Point>
@@ -472,6 +718,8 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>LewisGene | espresso, tea &amp; machines</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.659777,3.175053,0.0</coordinates>
 				</Point>
@@ -479,13 +727,17 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>ChinaHouse</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
-					<coordinates>100.33867,5.414734,0.0</coordinates>
+					<coordinates>100.33867000000001,5.414734,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-169</styleUrl>
 				<name>Monsta Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>103.65911,1.49248,0.0</coordinates>
 				</Point>
@@ -493,6 +745,8 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-169</styleUrl>
 				<name>Mods Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[14, Jalan Tokong , 75200 Malacca]]></description>
 				<Point>
 					<coordinates>102.245306,2.198049,0.0</coordinates>
@@ -501,13 +755,17 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>RAW Coffee </name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
-					<coordinates>101.7119,3.159666,0.0</coordinates>
+					<coordinates>101.7119,3.1596660000000005,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-157</styleUrl>
 				<name>Black Bean Coffee</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>110.347951,1.557603,0.0</coordinates>
 				</Point>
@@ -515,6 +773,8 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Coffee Famille 咖啡家</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.590607,3.154533,0.0</coordinates>
 				</Point>
@@ -522,6 +782,8 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Grandeur Gallery Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening times: Closed Mondays
 	 Tue - Sun: 09:00 - 18:30]]></description>
 				<Point>
@@ -531,6 +793,8 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Mukha</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.622537,3.153693,0.0</coordinates>
 				</Point>
@@ -538,15 +802,19 @@ Saturday 9am-5pm.]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Jin Yi/ Coffee Ritual</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening hours: Closed Mondays. 
 Tue - Sun: 11:00 - 22:00]]></description>
 				<Point>
-					<coordinates>101.62141,3.134741,0.0</coordinates>
+					<coordinates>101.62141000000001,3.134741,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Departure Lounge Damansara Uptown</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Hours: 8 a.m. – 7 p.m.]]></description>
 				<Point>
 					<coordinates>101.621422,3.136627,0.0</coordinates>
@@ -555,6 +823,8 @@ Tue - Sun: 11:00 - 22:00]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Haikara Style Cafe/Bakery</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[URL: http://haikara.com.my/about.php (http://haikara.com.my/about.php)
 
 
@@ -570,6 +840,8 @@ E-Tiara Ground Floor, Jalan Kemajuan SS16/1, 47500 Subang Jaya, Selangor  +603-5
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>New Black Coffee Lab</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Hours: 
 Mon - Tue: 15:00 - 23:00
 Wed - Sun: 12:00 - 23:00
@@ -585,6 +857,8 @@ Tel: 03-4131-0182]]></description>
 			<Placemark>
 				<styleUrl>#icon-503-DB4436</styleUrl>
 				<name>Cafe J&amp;D Espresso</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[G.B06, Oasis BU11, Lebuh Bandar Utama, 47800 Petaling Jaya, Malaysia]]></description>
 				<Point>
 					<coordinates>101.60241,3.124533,0.0</coordinates>
@@ -593,6 +867,8 @@ Tel: 03-4131-0182]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee 5 Cups</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening hours: 11am-6pm (double check their FB)
 
 Address: No B-0-17, Plaza Damas 3, Jalan Sri Hartamas 1
@@ -606,6 +882,8 @@ https://www.facebook.com/Coffee5Cups (https://www.facebook.com/Coffee5Cups)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Paper + Toast</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Hours: Mon - Fri: 07:00 - 19:00 Sat - Sun: 10:00 - 16:00
 A-0-5 One Residency
 1 Jalan Nagasari
@@ -618,6 +896,8 @@ MALAYSIA]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Royal Post Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Hours:
 
 Mon - Fri: 07:00 - 19:00
@@ -630,17 +910,21 @@ https://www.facebook.com/royalpostcafe?fref=ts (https://www.facebook.com/royalpo
 			<Placemark>
 				<styleUrl>#icon-503-DB4436</styleUrl>
 				<name>Pickle &amp; Fig</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening hours:
 Mon- Tues:10:00 - 23:00 
 Fri - Sat: 10:00 - 00:00 
 Sun: 10:00 - 23:00]]></description>
 				<Point>
-					<coordinates>101.628383,3.140232,0.0</coordinates>
+					<coordinates>101.62838300000001,3.140232,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>That Latte Place</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening times: Mondays closed. Tues- Sun - 8am - 5pm. 
 
 https://www.facebook.com/That.Latte.Place?fref=ts (https://www.facebook.com/That.Latte.Place?fref=ts)]]></description>
@@ -651,6 +935,8 @@ https://www.facebook.com/That.Latte.Place?fref=ts (https://www.facebook.com/That
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Crave Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Hours: Mon - Sat: 08:30 - 18:30 CLOSED SUNDAY
 
 https://www.facebook.com/CraveMalaysia (https://www.facebook.com/CraveMalaysia)]]></description>
@@ -661,18 +947,22 @@ https://www.facebook.com/CraveMalaysia (https://www.facebook.com/CraveMalaysia)]
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Epiphany Coffee and Tobacco</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening times:Mon - Sat: 09:00 - 18:00
 
 Sun: 09:00 - 16:00
 
 https://www.facebook.com/EpiphanyCoffeeTobacco/info (https://www.facebook.com/EpiphanyCoffeeTobacco/info)]]></description>
 				<Point>
-					<coordinates>101.573871,3.114227,0.0</coordinates>
+					<coordinates>101.573871,3.1142270000000005,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Cafe Nine</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/cafeninekl (https://www.facebook.com/cafeninekl?fref=ts)]]></description>
 				<Point>
 					<coordinates>101.698562,3.150128,0.0</coordinates>
@@ -681,6 +971,8 @@ https://www.facebook.com/EpiphanyCoffeeTobacco/info (https://www.facebook.com/Ep
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Proud Janny</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/proudjanny?fref=ts (https://www.facebook.com/proudjanny?fref=ts)]]></description>
 				<Point>
 					<coordinates>101.707081,3.151476,0.0</coordinates>
@@ -689,6 +981,8 @@ https://www.facebook.com/EpiphanyCoffeeTobacco/info (https://www.facebook.com/Ep
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Artisan Roast HQ</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.639081,3.113444,0.0</coordinates>
 				</Point>
@@ -696,6 +990,8 @@ https://www.facebook.com/EpiphanyCoffeeTobacco/info (https://www.facebook.com/Ep
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Cozy in the Rocket</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[262 &amp; 264 Lebuh Pantai
 Georgetown, 
 10300 Pulau Pinang
@@ -710,6 +1006,8 @@ Opening Hours: 10am - 5pm; Closed on Mondays.
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>The Daily Dose Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[8C, Lebuh Carnarvon, George Town, Penang.
 
 
@@ -724,6 +1022,8 @@ Opening Hours: Mon - Tue: 10:00 - 19:00, Thu - Sun: 10:00 - 19:00]]></descriptio
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Typica Café</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.712256,3.139825,0.0</coordinates>
 				</Point>
@@ -731,6 +1031,8 @@ Opening Hours: Mon - Tue: 10:00 - 19:00, Thu - Sun: 10:00 - 19:00]]></descriptio
 			<Placemark>
 				<styleUrl>#icon-111</styleUrl>
 				<name>French Kisses Patisserie </name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opposite Cinema.]]></description>
 				<Point>
 					<coordinates>100.501315,5.660047,0.0</coordinates>
@@ -739,6 +1041,8 @@ Opening Hours: Mon - Tue: 10:00 - 19:00, Thu - Sun: 10:00 - 19:00]]></descriptio
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>The Mugshot Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[302 Lebuh Chulia, Georgetown, 10200 Pulau Pinang
 
 
@@ -754,6 +1058,8 @@ Tristan: +6016 482 5501]]></description>
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Coffee Lane</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>100.340234,5.418584,0.0</coordinates>
 				</Point>
@@ -761,6 +1067,8 @@ Tristan: +6016 482 5501]]></description>
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>PIKNIK</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening Hours:
 
 Mon: 15:00 - 00:00
@@ -774,6 +1082,8 @@ Sun: 15:00 - 00:00]]></description>
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Full of Beans </name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Serves Specialty Coffee]]></description>
 				<Point>
 					<coordinates>100.306691,5.333756,0.0</coordinates>
@@ -782,13 +1092,17 @@ Sun: 15:00 - 00:00]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>My Espresso Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
-					<coordinates>101.581988,3.023535,0.0</coordinates>
+					<coordinates>101.58198800000001,3.023535,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Mr &amp; Mrs Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[(next to Crave) B-G-3A Block B, Oasis Square, Jalan PJU 1A/7A Ara Damansara, 47301 Petaling Jaya, Malaysia
 
 Opening times:
@@ -804,6 +1118,8 @@ https://www.facebook.com/mr8mscafe?fref=ts]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Aku Cafe and Gallery</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Aku Cafe and Gallery
 
 Opening hours: 11am-8pm (closed Mondays)
@@ -816,6 +1132,8 @@ https://www.facebook.com/akucafegallery?fref=ts (https://www.facebook.com/akucaf
 			<Placemark>
 				<styleUrl>#icon-157</styleUrl>
 				<name>Pregio by Barista Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>116.113002,5.976197,0.0</coordinates>
 				</Point>
@@ -823,6 +1141,8 @@ https://www.facebook.com/akucafegallery?fref=ts (https://www.facebook.com/akucaf
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Exhibit Cafe TTDI</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/exhibitcafe.ttdi (https://www.facebook.com/exhibitcafe.ttdi)
 86 Jalan Burhanuddin Helmi
 Taman Tun Dr Ismail, 60000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur]]></description>
@@ -833,6 +1153,8 @@ Taman Tun Dr Ismail, 60000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur]]></de
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Moontree House</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.697199,3.142037,0.0</coordinates>
 				</Point>
@@ -840,6 +1162,8 @@ Taman Tun Dr Ismail, 60000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur]]></de
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Bricks Coffee</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/BricksCoffee (https://www.facebook.com/BricksCoffee)
 Jalan PJU 8/5d
 Damansara Perdana, 47820 Petaling Jaya, Selangor]]></description>
@@ -850,6 +1174,8 @@ Damansara Perdana, 47820 Petaling Jaya, Selangor]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Podgy &amp; the Banker</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/pages/Podgy-the-Banker/ (https://www.facebook.com/pages/Podgy-the-Banker/158034657715990?fref=ts)
  (https://www.facebook.com/pages/Podgy-the-Banker/)
 Jalan Sri Hartamas 8
@@ -861,13 +1187,17 @@ Sri Hartamas, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur]]></descripti
 			<Placemark>
 				<styleUrl>#icon-123</styleUrl>
 				<name>Bread Espresso Dessert</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
-					<coordinates>101.080834,4.606152,0.0</coordinates>
+					<coordinates>101.080834,4.606152000000001,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-123</styleUrl>
 				<name>Burps &amp; Giggles</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/?q=#/BurpsGiggles?ref=ts&amp;fref=ts (https://www.facebook.com/BurpsGiggles)
 
 
@@ -881,6 +1211,8 @@ Closed Tuesdays
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee Stain by Joseph, Parkayama/Farenheit 88</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.713057,3.14712,0.0</coordinates>
 				</Point>
@@ -888,6 +1220,8 @@ Closed Tuesdays
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>SooHongry</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/soohongry]]></description>
 				<Point>
 					<coordinates>100.337793,5.415563,0.0</coordinates>
@@ -896,6 +1230,8 @@ Closed Tuesdays
 			<Placemark>
 				<styleUrl>#icon-111</styleUrl>
 				<name>Maraschino Kafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.972933,6.018627,0.0</coordinates>
 				</Point>
@@ -903,6 +1239,8 @@ Closed Tuesdays
 			<Placemark>
 				<styleUrl>#icon-503-DB4436</styleUrl>
 				<name>Doi Chaang Coffee Malaysia</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.636635,3.117925,0.0</coordinates>
 				</Point>
@@ -910,6 +1248,8 @@ Closed Tuesdays
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>CAFFEine;</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.616969,3.031669,0.0</coordinates>
 				</Point>
@@ -917,6 +1257,8 @@ Closed Tuesdays
 			<Placemark>
 				<styleUrl>#icon-169</styleUrl>
 				<name>La Roasteria Coffee</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/laroasteriacoffee
 
 Opening times
@@ -929,6 +1271,8 @@ Monday - Sunday: 8am - 6pm
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>LOKL</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening times: Closed Sundays. 
 Mon - Sat: 07:30 - 17:00
 
@@ -940,6 +1284,8 @@ https://www.facebook.com/LoklCoffee/info (https://www.facebook.com/LoklCoffee/in
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Miss Ellie Tea House</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[7 Jalan H3, Taman Melawati, 53100 Kuala Lumpur, Malaysia
 https://www.facebook.com/missellieteahouse
  (https://www.facebook.com/missellieteahouse)
@@ -952,16 +1298,20 @@ Tue - Sat: 10:00 - 19:00]]></description>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Whisk, Outpost.</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening hours: 10.00am - 10.00pm (10.30pm Fri &amp; Sat)
 
 www.facebook.com/whisk.kl]]></description>
 				<Point>
-					<coordinates>101.615553,3.1496,0.0</coordinates>
+					<coordinates>101.61555300000002,3.1496,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Food Foundry</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.634715,3.123333,0.0</coordinates>
 				</Point>
@@ -969,24 +1319,30 @@ www.facebook.com/whisk.kl]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Sprezzatura Coffee / Sprezza Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Soon to roast coffee.]]></description>
 				<Point>
-					<coordinates>101.643895,3.127004,0.0</coordinates>
+					<coordinates>101.64389500000001,3.127004,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Flat White Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening hours: Mon - Sun: 13:00 - 01:00
 
 https://www.facebook.com/flatwhitemy/]]></description>
 				<Point>
-					<coordinates>101.590429,3.07413,0.0</coordinates>
+					<coordinates>101.59042900000001,3.07413,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Fuel Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[111G Jalan 21/37 Damansara Uptown, 47400 Damansara, Kuala Lumpur, Malaysia
 
 
@@ -1007,6 +1363,8 @@ Tel: 017-969 9950]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Lids and Finch Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Ground Floor, Menara I&amp;P 2, Jalan Dungun, Damansara Heights, Kuala Lumpur.
 
 
@@ -1026,6 +1384,8 @@ Tel: 03-2011-8600]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Sevencups</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[G-25, Empire Damansara, Jalan PJU 8/8
 Damansara Perdana 47800
 
@@ -1040,6 +1400,8 @@ https://www.facebook.com/7cups (https://www.facebook.com/7cups)]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>The Good Batch</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[53 Jalan SS 21/1a, Damansara Utama, 47400 Petaling Jaya, Selangor
 
 
@@ -1065,6 +1427,8 @@ Fri - Sat: 10am - 1am]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>De' Coffee Room</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Lot 997, Jalan Koop Cuepacs 3F, Taman Cuepacs, Cheras, Kuala Lumpur, Malaysia
 
 
@@ -1072,12 +1436,14 @@ Fri - Sat: 10am - 1am]]></description>
 
 https://www.facebook.com/DeCoffeeRoom (https://www.facebook.com/DeCoffeeRoom)]]></description>
 				<Point>
-					<coordinates>101.759561,3.076918,0.0</coordinates>
+					<coordinates>101.75956100000002,3.076918,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-62</styleUrl>
 				<name>Await Cafe Kuala Lumpur</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>101.687089,3.100267,0.0</coordinates>
 				</Point>
@@ -1085,6 +1451,8 @@ https://www.facebook.com/DeCoffeeRoom (https://www.facebook.com/DeCoffeeRoom)]]>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>the BULB COFFEE</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[https://www.facebook.com/TheBulbCoffee (https://www.facebook.com/TheBulbCoffee)]]></description>
 				<Point>
 					<coordinates>101.615327,3.126799,0.0</coordinates>
@@ -1093,6 +1461,8 @@ https://www.facebook.com/DeCoffeeRoom (https://www.facebook.com/DeCoffeeRoom)]]>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Knock Knock</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[2-G-2 Pantai Panorama Condominium, Bangsar South
 59200 Kuala Lumpur, Malaysia
 
@@ -1119,6 +1489,8 @@ Sun: 09:00 - 17:00]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Urbean</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Avenue K, C-14, Concourse Level, Kuala Lumpur, Malaysia
 
  https://www.facebook.com/urbeankl (https://www.facebook.com/urbeankl)
@@ -1128,12 +1500,14 @@ Sun: 09:00 - 17:00]]></description>
 
 Mon - Sun: 10:00 - 22:00]]></description>
 				<Point>
-					<coordinates>101.712906,3.15921,0.0</coordinates>
+					<coordinates>101.71290600000002,3.15921,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Garage 51</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[51, Jalan PJS 11/9, Bandar Sunway, Kuala Lumpur, Malaysia
 
  Tues - Sun: 11:00 - 23:00
@@ -1147,6 +1521,8 @@ https://www.facebook.com/Garage51MY (https://www.facebook.com/Garage51MY)]]></de
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>VCR</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[2 Jalan Galloway
 50150
 Kuala Lumpur.
@@ -1167,6 +1543,8 @@ https://www.facebook.com/vcr.my (https://www.facebook.com/vcr.my)]]></descriptio
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Quartet TTDI</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[21 Lorong Datuk Sulaiman, Taman Tun Dr Ismail, 60000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur
 
 
@@ -1189,13 +1567,17 @@ https://www.facebook.com/quartetttdi (https://www.facebook.com/quartetttdi)]]></
 			<Placemark>
 				<styleUrl>#icon-169</styleUrl>
 				<name>Khaki Coffee Bar</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
-					<coordinates>102.255803,2.186313,0.0</coordinates>
+					<coordinates>102.25580300000001,2.186313,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-169</styleUrl>
 				<name>Halia Inc</name>
+				<ExtendedData>
+				</ExtendedData>
 				<Point>
 					<coordinates>102.247801,2.193324,0.0</coordinates>
 				</Point>
@@ -1203,6 +1585,8 @@ https://www.facebook.com/quartetttdi (https://www.facebook.com/quartetttdi)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Standing Theory</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[26, Jalan SS2/103, SS2, 47300 Petaling Jaya, Malaysia
 
  
@@ -1220,6 +1604,8 @@ https://www.facebook.com/StandingTheory (https://www.facebook.com/StandingTheory
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>The Mad Alchemy</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Everywhere but mostly outside IMU.
 
  Mon - Fri: 11:00 - 18:00
@@ -1236,6 +1622,8 @@ https://www.facebook.com/TheMadAlchemy (https://www.facebook.com/TheMadAlchemy)]
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Mollydooker's Coffee Bar</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Opening times: Closed Sundays.
 Mon - Fri: 09:00 - 20:00 Sat: 12:00 - 19:00
 
@@ -1250,6 +1638,8 @@ Kuala Lumpur.]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Wood &amp; Steel Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[33G, Jalan PJU 5/20E, The Strand, Kota Damansara, Petaling Jaya.
 
 
@@ -1261,6 +1651,8 @@ Tues - Sun: 09:00 - 23:00]]></description>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee Amo</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[1st Floor, 54 Jalan Sultan, 50000 Kuala Lumpur, Malaysia
 
 Mon - Sun: 10:30 - 21:00
@@ -1277,6 +1669,8 @@ https://www.facebook.com/coffeeamo (https://www.facebook.com/coffeeamo)]]></desc
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Rekindle - SS2</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[25 Jalan SS 2/64, SS 2, 47300 Petaling Jaya, Selangor, Malaysia
 
  
@@ -1295,6 +1689,8 @@ https://www.facebook.com/rekindless2 (https://www.facebook.com/rekindless2)]]></
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Feeka</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[19, Jalan Mesui , 50200 Kuala Lumpur, Malaysia
 
  
@@ -1311,6 +1707,8 @@ Mon - Sun: 08:30 - 00:00
 			<Placemark>
 				<styleUrl>#icon-123</styleUrl>
 				<name>Roquette Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[101 Jalan Sultan Yusuff, 30000 Ipoh, Perak, Malaysia
 
 
@@ -1327,6 +1725,8 @@ Tue - Sun: 10:00 - 18:00
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Pit Stop no. 12</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[12 Lorong Chulia, 10200 Penang, Malaysia
 
 
@@ -1344,6 +1744,8 @@ https://www.facebook.com/pages/PIT-STOP-no12/579275795467700 (https://www.facebo
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>The Alley</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[5 Stewart Lane, George Town, Penang, Malaysia
 
  
@@ -1359,6 +1761,8 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Oh Scooter Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Oh Scooter Cafe Jalan USJ 21/10, Subang Jaya Tel: 03-8011-5507 Open Mon - Sun : 10am-1130pm. ]]></description>
 				<Point>
 					<coordinates>101.58193000000006,3.026579,0.0</coordinates>
@@ -1367,6 +1771,8 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Coffee Good Golly Miss Molly</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[G-005 Grd Flr, Millenium Square, Dataran Millenium PJ, Jalan 14/1 Petaling Jaya 46100 Petaling Jaya, Malaysia. Tel No: 03-7931 8481 Opening Hours : 11am-8pm]]></description>
 				<Point>
 					<coordinates>101.63597524166107,3.1049599724100414,0.0</coordinates>
@@ -1375,6 +1781,8 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Abah &amp; Sons Motocafe</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[62A Trillium (Lake Fields), Jalan Tasik Utama 7, Kuala Lumpur, Malaysia. Tel: 03-9054 2023 Opening times: Mon: 10:00 - 22:00 Tuesday Off. Wed - Thu: 10:00 - 22:00 Fri - Sun: 10:00 - 23:00]]></description>
 				<Point>
 					<coordinates>101.71013832092285,3.059985484660662,0.0</coordinates>
@@ -1383,14 +1791,18 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Cuppa Espresso</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[C-65-UG , Dataran C180, Cheras, Selangor. Tel: 03-9082 1801 Opening times: Mon - Thu: 10:30 - 23:00 Fri - Sat: 10:30 - 00:00 Sun: 10:30 - 23:00]]></description>
 				<Point>
-					<coordinates>101.76607847213745,3.035836896817174,0.0</coordinates>
+					<coordinates>101.76607847213747,3.035836896817174,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>PULP by Papa Palheta</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[29-01, Jalan Riong, Bangsar, Kuala Lumpur. Tel: 03-2201-3650 Opening times: Closed Mondays. , Weekdays : 9am-7pm, Weekends: 9am-10pm ]]></description>
 				<Point>
 					<coordinates>101.67430400848389,3.124248707207529,0.0</coordinates>
@@ -1399,6 +1811,8 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>FolgerPhobia</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[Wisma Scope International, Technology Park Malaysia, Bukit Jalil, Kuala Lumpur. Opening times: Mon-Fri, 730am-730pm]]></description>
 				<Point>
 					<coordinates>101.70432329177856,3.0550036775342004,0.0</coordinates>
@@ -1407,6 +1821,8 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
 			<Placemark>
 				<styleUrl>#icon-22</styleUrl>
 				<name>Beans Depot</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[B-G-5 Jalan SS7/26, Parklane Commercial Hub @ Kelana Jaya 47301 Petaling Jaya, Malaysia. Tel Tel: 012-785 8488 Opening Times: Mon: 09:00 - 16:00 Tue - Wed: 09:00 - 19:00 Thu: 09:00 - 16:00 Fri: 09:00 - 19:00 Sat - Sun: 11:00 - 19:00]]></description>
 				<Point>
 					<coordinates>101.59411668777466,3.1086559805999916,0.0</coordinates>
@@ -1415,6 +1831,8 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Coffee Journey</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[G-08 Ground Floor Island Plaza, 118 Jalan Tanjung Tokong, Penang 10470
 
  
@@ -1423,12 +1841,14 @@ https://www.facebook.com/thealleypenang (https://www.facebook.com/thealleypenang
  
 https://www.facebook.com/pages/Coffee-Journey/1437169919842000 (https://www.facebook.com/pages/Coffee-Journey/1437169919842000)]]></description>
 				<Point>
-					<coordinates>100.305779,5.450349,0.0</coordinates>
+					<coordinates>100.30577900000002,5.450349,0.0</coordinates>
 				</Point>
 			</Placemark>
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Brew Thirty Two Coffee House</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[No.32, Jalan Green Hall, 10200 Pulau Pinang, George Town, Malaysia
 
  
@@ -1449,6 +1869,8 @@ https://www.facebook.com/BrewThirtyTwoCoffeeHouse (https://www.facebook.com/Brew
 			<Placemark>
 				<styleUrl>#icon-102</styleUrl>
 				<name>Eté Café</name>
+				<ExtendedData>
+				</ExtendedData>
 				<description><![CDATA[79, Lebuh Carnavon, Georgetown, 10100 Penang, Malaysia
 
  
@@ -1462,6 +1884,127 @@ Wed - Sun: 10:00 - 18:00
 https://www.facebook.com/etecafe (https://www.facebook.com/etecafe)]]></description>
 				<Point>
 					<coordinates>100.335482,5.416192,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Roast and Grind </name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Roast & Grind
+6, Lorong Universiti B, Section 16, Petaling Jaya Opening times Tues-Sunday 10am till late]]></description>
+				<Point>
+					<coordinates>101.64246400000002,3.119076,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Whimsical - Gelateria &amp; Caffe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[D2-G3-05, Solaris Dutamas, 1 Jalan Dutamas 1 Opening Times : Not stated]]></description>
+				<Point>
+					<coordinates>101.66507720947266,3.171582537834267,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Brass Broiler by Fahrenheit 600</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>101.66651,3.170997,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Jump Cafe in Jump Street SS13</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Jump Street Asia, Jalan 13/6, Section 13, Petaling Jaya, Selangor. Inside the Bosch factory compound. Everyday 10 am -9pm]]></description>
+				<Point>
+					<coordinates>101.63599999999997,3.11712,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Elixir Espresso</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[E2 Elixir Espresso @ Sri HartamasA-0-15, Plaza Damas 3, Jalan Sri Hartamas 1, Kuala LumpurCurrently open daily, 1030am-7pm. Will eventually extend hours & determine a day to close each week.]]></description>
+				<Point>
+					<coordinates>101.65643647313118,3.1627581582457465,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>The Curious Goat</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>101.60763999999995,3.164148,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-157</styleUrl>
+				<name>Earthlings Coffee Workshop</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[Lot No. 45, Ground Floor No. 1, CityONE Megamall, Jalan Song]]></description>
+				<Point>
+					<coordinates>110.35486600000003,1.520237,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-157</styleUrl>
+				<name>October Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[The Peak Vista
+Lorong Puncak 1, Tanjung Lipat,
+88400 Kota Kinabalu,
+SABAH
+Open 11AM - 10PM (Close on the last Wednesday of every month)]]></description>
+				<Point>
+					<coordinates>116.08509421348572,5.994339812414162,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-157</styleUrl>
+				<name>Breadboss Bakery and Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[2.75KM Jalan Damai Off Road, 88300 Kota Kinabalu Opening times N/A]]></description>
+				<Point>
+					<coordinates>116.094868183136,5.97395940160363,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-22</styleUrl>
+				<name>Faculty Of Caffeine </name>
+				<ExtendedData>
+				</ExtendedData>
+				<description><![CDATA[106, Jalan Trus, 80000 Johor Bahru. Opening times : Closed Mondays. Tue - Thu: 11:00 - 10:00Fri - Sat: 11:00 - 11:00]]></description>
+				<Point>
+					<coordinates>103.76355171203613,1.4601223511994659,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-169</styleUrl>
+				<name>My Liberica Coffee</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>103.78482400000007,1.52153,0.0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#icon-169</styleUrl>
+				<name>Just Want Cafe</name>
+				<ExtendedData>
+				</ExtendedData>
+				<Point>
+					<coordinates>103.81713100000002,1.496511,0.0</coordinates>
 				</Point>
 			</Placemark>
 		</Folder>
